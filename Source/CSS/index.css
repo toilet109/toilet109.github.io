@@ -20,15 +20,28 @@ body{
     padding: 0px;
 }
 
-.Background{
+.IndexBackground{
     position: fixed;
+    margin: 0px;
     background-image: url("../IMG/Background.svg");
-    background-size: 40%;
+    background-size: 55%;
     background-position: top;
     background-repeat:no-repeat;
     width: 100%;
-    height: 100%;
+    top:-15%;
+    height: 120%;
+    padding: 0px;
+    z-index: -999;
+}
+
+.MainBackground{
+    position: fixed;
     margin: 0px;
+    background-image: url("../IMG/MainBackground.png");
+    background-size: 30%;
+    background-position: top;
+    width: 100%;
+    height: 100%;
     padding: 0px;
     z-index: -999;
 }
@@ -40,7 +53,7 @@ body{
     top: 2.5%;
     left: 0%;
     right: 0%;
-    z-index: -998;
+    z-index: 1;
 }
 
 .DownBtn{
@@ -50,11 +63,11 @@ body{
     bottom: 2.5%;
     left: 0%;
     right: 0%;
-    z-index: -997;
+    z-index: 2;
 }
 
 .Liner{
-    border-left:1px solid #626262;
+    border-left:2px solid #626262;
     position:absolute;
     height:80%;
     margin: 0px;
@@ -62,4 +75,49 @@ body{
     bottom: 10%;
     margin-right: 49.9%;
     margin-left: 49.9%;
+}
+
+.ProjectMetaBlock{
+    position: absolute;
+    background-color:#cecece;
+    margin: 0px;
+    padding: 0px;
+    width: 22.5%;
+    top: 7.5%;
+    bottom: 7.5%;
+    left: 0%;
+}
+
+.ProjectMainBlock{
+    position: absolute;
+    background-color:#cecece;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 7.5%;
+    bottom: 7.5%;
+}
+
+.ImagePhotoBlock{
+    position: absolute;
+    background-color:#cecece;
+    margin: 0px;
+    padding: 0px;
+    width: 22.5%;
+    height:30%;
+    top:7.5%;
+    right: 0%;
+}
+
+.AboutBlock{
+    position: absolute;
+    background-color:#cecece;
+    margin: 0px;
+    padding: 0px;
+    width: 22.5%;
+    top: 40%;
+    bottom: 7.5%;
+    right: 0%;
 }

@@ -2,30 +2,35 @@ var IndexViewCtl = new Vue({
     el:"#IndexView",
     data:{
         State: 0,
-        NowSelectGroup  : null, //Save Now Select Group Data, Type:Obect
-        NextSelectGroup : null, //Save Next Select Group Data To Anime Change, Type:Obect
-
+        NowSelectGroupID:0,
+        NextSelectGroupID:0,
+        StudentGroups: Object,
     },
     mounted() {
-        NowSelectGroup = StudentGroups.event.GetNowSelect();
+        this.StudentGroups = StudentGroups;
     },
     methods: {
         /* 向下翻頁 */
         DownPage:function(){
             this.State++;
         },
-        /* 向下翻頁 */
+        /* 向上翻頁 */
         UpPage:function(){
             this.State--;
         },
-        ChangeGroupEvent(SelectPart){
-            //前一位的作品
-            if(SelectPart === 0){
-                NextSelectGroup = StudentGroups.event.GetBeforeGroup();
+        ChangeGroupEvent(IsGetNextPage){
             //後一位的作品
+            if(IsGetNextPage){
+                this.StudentGroups.event.GetNextGroup();
+                this.NextSelectGroupID = this.StudentGroups.event.GetNowSelectID();
+            //前一位的作品
             }else{
-                NextSelectGroup = StudentGroups.event.GetNextGroup();
+                this.StudentGroups.event.GetBeforeGroup();
+                this.NextSelectGroupID = this.StudentGroups.event.GetNowSelectID();
             }
+            //TODO:Run Animate.css event 
+            this.NowSelectGroupID = this.NextSelectGroupID;
+            this.RenderValue++;
         },
 
     },

@@ -24,7 +24,7 @@
             <div v-if="State <= 0">
 
                 <!--Load BG-->
-                <div class="Background animated zoomIn delay-1s ">
+                <div class="IndexBackground animated zoomIn delay-1s ">
                 </div>
                 
                 <!--Load Line-->
@@ -41,7 +41,7 @@
                             <br><br><br><br>
                         </div>
                     </div>
-                    <!--第一列-->
+                    <!--第二列-->
                     <div class="row">
                         <div class="col">
                             <!--Load Left MainText-->
@@ -55,7 +55,7 @@
                         </div>
                     </div>
 
-                    <!--第二列-->
+                    <!--第三列-->
                     <div class="row">
                         <div class="float-right col">
                             <!--None-->
@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <!--第三列-->
+                    <!--第四列-->
                     <div class="row">
                         <br>
                         <div class="float-right col">
@@ -96,17 +96,43 @@
                     </a>
                 </div>
             </div>
-            <div v-if="State > 0" class="animated slideInDown">
+            <div v-else-if="State > 0" >
 
-                <!--置頂-->
-                <div >
-                    <div class="UpBtn">
-                        <a @click="UpPage()">
-                            <img height="2.5%" width="2.5%" src="./Source/IMG/UpBTN.svg" />
-                        </a>
+                <!--Load BG-->
+                <div class="MainBackground animated slideInDown">
+                </div>
+
+                <div class="UpBtn">
+                    <a @click="UpPage()">
+                        <img height="2.5%" width="2.5%" src="./Source/IMG/UpBTN.svg" />
+                    </a>
+                </div>
+
+                <div class="ProjectMetaBlock animated slideInLeft delay-1s">
+                    <div class="container">
+                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].ProjectMeta}}</p>
                     </div>
                 </div>
 
+                <div class="ProjectMainBlock center animated slideInDown">
+                    <div class="container">
+                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].ProjectPhotoPath}}</p>
+                        <a href="#" @click="ChangeGroupEvent(false)">上一組</a>
+                        <a href="#" @click="ChangeGroupEvent(true)">下一組</a>
+                    </div>
+                </div>
+
+                <div class="ImagePhotoBlock animated fadeInDown delay-1s">
+                    <div class="container">
+                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].ImagePhotoPath}}</p>
+                    </div>
+                </div>
+
+                <div class="AboutBlock container animated slideInRight delay-1s">
+                    <div class="container">
+                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].About}}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 636.28 891.43" style="enable-background:new 0 0 636.28 891.43;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EAEAEA;}
+	.st1{fill:#DCDDDD;}
+	.st2{fill:#EFEFEF;}
+	.st3{fill:#F4F4F4;}
+	.st4{fill:#E9E8E8;}
+	.st5{fill:#E7E7E6;}
+	.st6{fill:#E6E5E5;}
+	.st7{fill:#E4E4E3;}
+	.st8{fill:#E3E2E1;}
+	.st9{fill:#E1E0E0;}
+	.st10{fill:#E0DFDE;}
+	.st11{fill:#DEDDDC;}
+	.st12{fill:#DDDBDB;}
+	.st13{fill:#DBDAD9;}
+	.st14{fill:#DAD8D7;}
+	.st15{fill:#D8D7D6;}
+	.st16{fill:#D7D5D4;}
+	.st17{fill:#D5D3D2;}
+	.st18{fill:#D4D2D0;}
+	.st19{fill:#D2D0CF;}
+	.st20{fill:#D1CECD;}
+	.st21{fill:#CFCDCB;}
+	.st22{fill:#CECBCA;}
+	.st23{fill:#CCCAC8;}
+	.st24{fill:#CBC8C6;}
+	.st25{fill:#CAC6C5;}
+	.st26{fill:#C8C5C3;}
+	.st27{fill:#C7C3C2;}
+	.st28{fill:#C5C2C0;}
+	.st29{fill:#C4C0BE;}
+	.st30{fill:#C2BFBD;}
+	.st31{fill:#C1BDBB;}
+	.st32{fill:#BFBBBA;}
+	.st33{fill:#BEBAB8;}
+	.st34{fill:#BDB8B6;}
+	.st35{fill:#BBB7B5;}
+	.st36{fill:#BAB5B3;}
+	.st37{fill:#B8B4B2;}
+	.st38{fill:#B7B2B0;}
+	.st39{fill:#B5B1AF;}
+	.st40{fill:#B4AFAD;}
+	.st41{fill:#B2AEAB;}
+	.st42{fill:#B1ACAA;}
+	.st43{fill:#AFABA8;}
+	.st44{fill:#AEA9A7;}
+	.st45{fill:#ADA8A5;}
+	.st46{fill:#ABA6A4;}
+	.st47{fill:#AAA5A2;}
+	.st48{fill:#A8A3A1;}
+	.st49{fill:#A7A29F;}
+	.st50{fill:#A6A09E;}
+	.st51{fill:#A49F9C;}
+	.st52{fill:#A39D9B;}
+	.st53{fill:#A19C99;}
+	.st54{fill:#A09A98;}
+	.st55{fill:#9E9996;}
+	.st56{fill:#9D9795;}
+	.st57{fill:#9C9694;}
+	.st58{fill:#9A9592;}
+	.st59{fill:#999391;}
+	.st60{fill:#97928F;}
+	.st61{fill:#96908E;}
+	.st62{fill:#948F8C;}
+	.st63{fill:#938D8B;}
+	.st64{fill:#918C8A;}
+	.st65{fill:#908B88;}
+	.st66{fill:#8E8987;}
+	.st67{fill:#8D8886;}
+	.st68{fill:#8C8684;}
+	.st69{fill:#8A8583;}
+	.st70{fill:#898482;}
+	.st71{fill:#878280;}
+	.st72{fill:#86817F;}
+	.st73{fill:#85807E;}
+	.st74{fill:#837E7C;}
+	.st75{fill:#827D7B;}
+	.st76{fill:#807C7A;}
+	.st77{fill:#7F7A79;}
+	.st78{fill:#7E7977;}
+	.st79{fill:#7C7876;}
+	.st80{fill:#7B7775;}
+	.st81{fill:#7A7574;}
+	.st82{fill:#787473;}
+	.st83{fill:#777371;}
+	.st84{fill:#757270;}
+	.st85{fill:#74706F;}
+	.st86{fill:#736F6E;}
+	.st87{fill:#716E6D;}
+	.st88{fill:#706D6C;}
+	.st89{fill:#6F6C6A;}
+	.st90{fill:#6D6A69;}
+	.st91{fill:#6C6968;}
+	.st92{fill:#6B6867;}
+	.st93{fill:#696766;}
+	.st94{fill:#686665;}
+	.st95{fill:#666564;}
+	.st96{fill:#656463;}
+	.st97{fill:#646262;}
+	.st98{fill:#626161;}
+	.st99{fill:#616060;}
+	.st100{fill:#605F5F;}
+	.st101{fill:#5E5E5E;}
+	.st102{fill:#5D5D5D;}
+	.st103{fill:#5C5C5C;}
+	.st104{fill:#5A5B5B;}
+	.st105{fill:#E8E8E8;}
+	.st106{fill:#E7E6E6;}
+	.st107{fill:#E5E4E3;}
+	.st108{fill:#E1E0DF;}
+	.st109{fill:#DFDDDD;}
+	.st110{fill:#DDDBDA;}
+	.st111{fill:#DBD9D8;}
+	.st112{fill:#D9D7D6;}
+	.st113{fill:#D3D1CF;}
+	.st114{fill:#D1CFCD;}
+	.st115{fill:#CDCAC9;}
+	.st116{fill:#CBC8C7;}
+	.st117{fill:#CAC6C4;}
+	.st118{fill:#C8C4C2;}
+	.st119{fill:#C6C2C0;}
+	.st120{fill:#C2BEBC;}
+	.st121{fill:#C0BCBA;}
+	.st122{fill:#BFBAB8;}
+	.st123{fill:#BBB6B4;}
+	.st124{fill:#B9B4B2;}
+	.st125{fill:#B5B0AE;}
+	.st126{fill:#B4AEAC;}
+	.st127{fill:#B2ACAA;}
+	.st128{fill:#B0AAA8;}
+	.st129{fill:#AEA9A6;}
+	.st130{fill:#ACA7A4;}
+	.st131{fill:#ABA5A2;}
+	.st132{fill:#A9A3A0;}
+	.st133{fill:#A7A19E;}
+	.st134{fill:#A59F9C;}
+	.st135{fill:#A49D9A;}
+	.st136{fill:#A29B98;}
+	.st137{fill:#A09996;}
+	.st138{fill:#9E9895;}
+	.st139{fill:#9D9693;}
+	.st140{fill:#9B9491;}
+	.st141{fill:#99928F;}
+	.st142{fill:#98908D;}
+	.st143{fill:#968E8B;}
+	.st144{fill:#948D8A;}
+	.st145{fill:#928B88;}
+	.st146{fill:#918986;}
+	.st147{fill:#8F8784;}
+	.st148{fill:#8D8682;}
+	.st149{fill:#8B8481;}
+	.st150{fill:#8A827F;}
+	.st151{fill:#88807D;}
+	.st152{fill:#867F7C;}
+	.st153{fill:#847D7A;}
+	.st154{fill:#837B78;}
+	.st155{fill:#817A77;}
+	.st156{fill:#7F7875;}
+	.st157{fill:#7E7673;}
+	.st158{fill:#7C7572;}
+	.st159{fill:#7B7370;}
+	.st160{fill:#79716F;}
+	.st161{fill:#77706D;}
+	.st162{fill:#766E6C;}
+	.st163{fill:#746D6A;}
+	.st164{fill:#726B69;}
+	.st165{fill:#716A67;}
+	.st166{fill:#6F6866;}
+	.st167{fill:#6E6764;}
+	.st168{fill:#6C6563;}
+	.st169{fill:#6A6461;}
+	.st170{fill:#696260;}
+	.st171{fill:#67615F;}
+	.st172{fill:#665F5D;}
+	.st173{fill:#645E5C;}
+	.st174{fill:#635D5A;}
+	.st175{fill:#615B59;}
+	.st176{fill:#605A58;}
+	.st177{fill:#5E5857;}
+	.st178{fill:#5D5755;}
+	.st179{fill:#5B5654;}
+	.st180{fill:#5A5453;}
+	.st181{fill:#585352;}
+	.st182{fill:#575250;}
+	.st183{fill:#55504F;}
+	.st184{fill:#544F4E;}
+	.st185{fill:#524E4D;}
+	.st186{fill:#514D4C;}
+	.st187{fill:#4F4B4B;}
+	.st188{fill:#4E4A49;}
+	.st189{fill:#4C4948;}
+	.st190{fill:#4B4847;}
+	.st191{fill:#494746;}
+	.st192{fill:#484545;}
+	.st193{fill:#464444;}
+	.st194{fill:#454343;}
+	.st195{fill:#434242;}
+	.st196{fill:#424141;}
+	.st197{fill:#404040;}
+	.st198{fill:#3F3F3F;}
+	.st199{filter:url(#Adobe_OpacityMaskFilter);}
+	.st200{mask:url(#SVGID_1_);}
+	.st201{fill:none;stroke:#BCBCBC;stroke-width:14;stroke-miterlimit:10;}
+	.st202{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st203{mask:url(#SVGID_2_);}
+	.st204{fill:#BCBCBC;}
+	.st205{fill:none;stroke:#BCBCBC;stroke-width:4.4341;stroke-miterlimit:10;}
+	.st206{fill:#FFFFFF;}
+	.st207{fill:url(#SVGID_3_);}
+	.st208{fill:url(#SVGID_4_);}
+	.st209{fill:url(#SVGID_5_);}
+	.st210{fill:url(#SVGID_6_);}
+	.st211{filter:url(#Adobe_OpacityMaskFilter_2_);}
+	.st212{mask:url(#SVGID_7_);}
+	.st213{fill:#7E7E7F;}
+	.st214{fill:#F8F5E3;}
+	.st215{fill:url(#SVGID_8_);}
+	.st216{fill:url(#SVGID_9_);}
+	.st217{fill:url(#SVGID_10_);}
+	.st218{fill:#343535;}
+	.st219{fill:#3C3D3D;}
+	.st220{fill:#D1D1D1;}
+	.st221{fill:url(#SVGID_11_);}
+	.st222{fill:#555656;}
+	.st223{fill:#3860AC;}
+	.st224{fill:#284B81;}
+	.st225{fill:#EF8FB4;}
+	.st226{fill:#F4B1CE;}
+	.st227{fill:#F5CE98;}
+	.st228{fill:#6B3D2F;}
+	.st229{fill:none;}
+	.st230{filter:url(#Adobe_OpacityMaskFilter_3_);}
+	.st231{mask:url(#SVGID_12_);}
+	.st232{filter:url(#Adobe_OpacityMaskFilter_4_);}
+	.st233{mask:url(#SVGID_13_);}
+	.st234{filter:url(#Adobe_OpacityMaskFilter_5_);}
+	.st235{mask:url(#SVGID_14_);}
+	.st236{filter:url(#Adobe_OpacityMaskFilter_6_);}
+	.st237{mask:url(#SVGID_15_);}
+	.st238{filter:url(#Adobe_OpacityMaskFilter_7_);}
+	.st239{mask:url(#SVGID_16_);}
+	.st240{filter:url(#Adobe_OpacityMaskFilter_8_);}
+	.st241{mask:url(#SVGID_17_);}
+	.st242{filter:url(#Adobe_OpacityMaskFilter_9_);}
+	.st243{mask:url(#SVGID_18_);}
+	.st244{filter:url(#Adobe_OpacityMaskFilter_10_);}
+	.st245{mask:url(#SVGID_19_);}
+	.st246{filter:url(#Adobe_OpacityMaskFilter_11_);}
+	.st247{mask:url(#SVGID_20_);}
+	.st248{filter:url(#Adobe_OpacityMaskFilter_12_);}
+	.st249{mask:url(#SVGID_21_);}
+	.st250{filter:url(#Adobe_OpacityMaskFilter_13_);}
+	.st251{mask:url(#SVGID_22_);}
+	.st252{filter:url(#Adobe_OpacityMaskFilter_14_);}
+	.st253{mask:url(#SVGID_23_);}
+	.st254{opacity:0.69;}
+	.st255{filter:url(#Adobe_OpacityMaskFilter_15_);}
+	.st256{mask:url(#SVGID_24_);}
+	.st257{filter:url(#Adobe_OpacityMaskFilter_16_);}
+	.st258{mask:url(#SVGID_25_);}
+	.st259{opacity:0.9;}
+	.st260{filter:url(#Adobe_OpacityMaskFilter_17_);}
+	.st261{mask:url(#SVGID_26_);}
+	.st262{filter:url(#Adobe_OpacityMaskFilter_18_);}
+	.st263{mask:url(#SVGID_27_);}
+	.st264{filter:url(#Adobe_OpacityMaskFilter_19_);}
+	.st265{mask:url(#SVGID_28_);}
+	.st266{filter:url(#Adobe_OpacityMaskFilter_20_);}
+	.st267{mask:url(#SVGID_29_);}
+	.st268{filter:url(#Adobe_OpacityMaskFilter_21_);}
+	.st269{mask:url(#SVGID_30_);}
+	.st270{filter:url(#Adobe_OpacityMaskFilter_22_);}
+	.st271{mask:url(#SVGID_31_);}
+	.st272{filter:url(#Adobe_OpacityMaskFilter_23_);}
+	.st273{mask:url(#SVGID_32_);}
+	.st274{filter:url(#Adobe_OpacityMaskFilter_24_);}
+	.st275{mask:url(#SVGID_33_);}
+	.st276{filter:url(#Adobe_OpacityMaskFilter_25_);}
+	.st277{mask:url(#SVGID_34_);}
+	.st278{filter:url(#Adobe_OpacityMaskFilter_26_);}
+	.st279{mask:url(#SVGID_35_);}
+	.st280{filter:url(#Adobe_OpacityMaskFilter_27_);}
+	.st281{mask:url(#SVGID_36_);}
+	.st282{filter:url(#Adobe_OpacityMaskFilter_28_);}
+	.st283{mask:url(#SVGID_37_);}
+	.st284{filter:url(#Adobe_OpacityMaskFilter_29_);}
+	.st285{mask:url(#SVGID_38_);}
+	.st286{filter:url(#Adobe_OpacityMaskFilter_30_);}
+	.st287{mask:url(#SVGID_39_);}
+	.st288{filter:url(#Adobe_OpacityMaskFilter_31_);}
+	.st289{mask:url(#SVGID_40_);}
+	.st290{filter:url(#Adobe_OpacityMaskFilter_32_);}
+	.st291{mask:url(#SVGID_41_);}
+	.st292{filter:url(#Adobe_OpacityMaskFilter_33_);}
+	.st293{mask:url(#SVGID_42_);}
+	.st294{filter:url(#Adobe_OpacityMaskFilter_34_);}
+	.st295{mask:url(#SVGID_43_);}
+	.st296{filter:url(#Adobe_OpacityMaskFilter_35_);}
+	.st297{mask:url(#SVGID_44_);}
+	.st298{filter:url(#Adobe_OpacityMaskFilter_36_);}
+	.st299{mask:url(#SVGID_45_);}
+	.st300{filter:url(#Adobe_OpacityMaskFilter_37_);}
+	.st301{mask:url(#SVGID_46_);}
+	.st302{filter:url(#Adobe_OpacityMaskFilter_38_);}
+	.st303{mask:url(#SVGID_47_);}
+	.st304{filter:url(#Adobe_OpacityMaskFilter_39_);}
+	.st305{mask:url(#SVGID_48_);}
+	.st306{filter:url(#Adobe_OpacityMaskFilter_40_);}
+	.st307{mask:url(#SVGID_49_);}
+	.st308{filter:url(#Adobe_OpacityMaskFilter_41_);}
+	.st309{mask:url(#SVGID_50_);}
+	.st310{filter:url(#Adobe_OpacityMaskFilter_42_);}
+	.st311{mask:url(#SVGID_51_);}
+	.st312{filter:url(#Adobe_OpacityMaskFilter_43_);}
+	.st313{mask:url(#SVGID_52_);}
+	.st314{filter:url(#Adobe_OpacityMaskFilter_44_);}
+	.st315{mask:url(#SVGID_53_);}
+	.st316{filter:url(#Adobe_OpacityMaskFilter_45_);}
+	.st317{mask:url(#SVGID_54_);}
+	.st318{filter:url(#Adobe_OpacityMaskFilter_46_);}
+	.st319{mask:url(#SVGID_55_);}
+	.st320{filter:url(#Adobe_OpacityMaskFilter_47_);}
+	.st321{mask:url(#SVGID_56_);}
+	.st322{filter:url(#Adobe_OpacityMaskFilter_48_);}
+	.st323{mask:url(#SVGID_57_);}
+	.st324{filter:url(#Adobe_OpacityMaskFilter_49_);}
+	.st325{mask:url(#SVGID_58_);}
+	.st326{filter:url(#Adobe_OpacityMaskFilter_50_);}
+	.st327{mask:url(#SVGID_59_);}
+	.st328{filter:url(#Adobe_OpacityMaskFilter_51_);}
+	.st329{mask:url(#SVGID_60_);}
+	.st330{filter:url(#Adobe_OpacityMaskFilter_52_);}
+	.st331{mask:url(#SVGID_61_);}
+	.st332{filter:url(#Adobe_OpacityMaskFilter_53_);}
+	.st333{mask:url(#SVGID_62_);}
+	.st334{filter:url(#Adobe_OpacityMaskFilter_54_);}
+	.st335{mask:url(#SVGID_63_);}
+	.st336{filter:url(#Adobe_OpacityMaskFilter_55_);}
+	.st337{mask:url(#SVGID_64_);}
+	.st338{filter:url(#Adobe_OpacityMaskFilter_56_);}
+	.st339{mask:url(#SVGID_65_);}
+	.st340{filter:url(#Adobe_OpacityMaskFilter_57_);}
+	.st341{mask:url(#SVGID_66_);}
+	.st342{filter:url(#Adobe_OpacityMaskFilter_58_);}
+	.st343{mask:url(#SVGID_67_);}
+	.st344{filter:url(#Adobe_OpacityMaskFilter_59_);}
+	.st345{mask:url(#SVGID_68_);}
+	.st346{fill:#2EA7E0;}
+	.st347{fill:#FFE200;}
+</style>
+<g id="圖層_2">
+	<rect x="13.21" y="18.83" class="st0" width="606.61" height="853.23"/>
+</g>
+<g id="馬桶內">
+	<g>
+		<rect x="13.43" y="86.36" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="165.51" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="245.35" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="321.45" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="400.59" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="480.44" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="552.95" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="630.18" class="st2" width="606.61" height="4.11"/>
+		<rect x="13.43" y="713.17" class="st2" width="606.61" height="4.11"/>
+		
+			<rect x="83.74" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 955.7858 -64.9333)" class="st2" width="853.25" height="4.11"/>
+		
+			<rect x="158.2" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1030.2544 -139.4019)" class="st2" width="853.25" height="4.11"/>
+		
+			<rect x="3.89" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 875.9423 14.9101)" class="st2" width="853.25" height="4.11"/>
+		
+			<rect x="-72.21" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 799.8422 91.0103)" class="st2" width="853.25" height="4.11"/>
+		
+			<rect x="-151.35" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 720.6996 170.1529)" class="st2" width="853.25" height="4.11"/>
+		
+			<rect x="-231.19" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 640.8561 249.9964)" class="st2" width="853.25" height="4.11"/>
+		
+			<rect x="-303.71" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 568.3418 322.5107)" class="st2" width="853.25" height="4.11"/>
+		
+			<rect x="-380.94" y="443.37" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 491.1142 399.7383)" class="st2" width="853.25" height="4.11"/>
+	</g>
+</g>
+<g id="圖層_6">
+</g>
+<g id="馬桶">
+</g>
+<g id="字">
+</g>
+<g id="小元素">
+</g>
+</svg>
