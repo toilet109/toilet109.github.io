@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="40mm"
+   viewBox="0 0 210 40"
+   version="1.1"
+   id="svg6119"
+   sodipodi:docname="PhoneEnglishTitle.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <defs
+     id="defs6113" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="577.93094"
+     inkscape:cy="445.72974"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6116">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-257)">
+    <text
+       y="281.86954"
+       x="123.57946"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35268736px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20021895"
+       id="text106">
+      <tspan
+         style="stroke-width:0.20021895"
+         x="123.57946 128.33128 132.08572 134.75386 136.68506 140.66185 144.73393 148.48836 150.48309 151.922 155.89241 159.64687 161.57806 165.65013 169.40459 173.47667 174.91872 179.66418 183.73625 185.66747 189.32025 193.00481 195.77142 198.90964 200.84087 203.509"
+         y="281.86954"
+         sodipodi:role="line"
+         id="tspan104">National Tainan University</tspan>
+    </text>
+    <text
+       y="291.69641"
+       x="123.55402"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.34319019px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.20021895"
+       id="text110">
+      <tspan
+         style="stroke-width:0.20021895"
+         x="123.55402 128.08479 130.31714 133.94466 138.62228 142.9621 145.26785 146.93477 151.64175 154.84338 157.92751 159.59442 165.01372 166.68059 171.92365 176.18271 179.81023 182.04254 186.42644 191.13342"
+         y="291.69641"
+         sodipodi:role="line"
+         id="tspan108">Visual Art &amp; Design</tspan>
+    </text>
+  </g>
+</svg>
