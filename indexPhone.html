@@ -8,7 +8,7 @@
 
         <!--CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+        <link rel="stylesheet" href="./Source/CSS/animate.css">
         <link rel="stylesheet" href="./Source/CSS/indexPhone.css">
 
         <!--JavaScript-->
@@ -21,74 +21,106 @@
         <title>我如同 109th 馬桶上 2020 的你 same as you</title>
     </head>
     <body>
+
+        <div id="InitView" class="InitView animated fadeOut delay-1s"></div>
         <div id="IndexView">
             <div v-if="State <= 0">
-
                 <!--Load BG-->
-                <div class="IndexBackground animated zoomIn delay-1s ">
+                <div class="IndexBackEnd animated fadeIn delay-1s ">
+                    <div class="IndexBackground animated fadeOut delay-4s">
+                    </div>
                 </div>
+
                 <!--Load PhoneUpPartBG-->
-                <div class="IndexUpPartBG center animated zoomIn delay-1s ">
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneUpPartBG.svg" />
+                <div class="IndexUpPartBG center animated slideInDown delay-1s">
+                    <div class="center animated slideOutUp delay-5s">
+                        <img height="100%" width="100%" src="./Source/IMG/PhoneUpPartBG.svg" />
+                    </div>
+                </div>
+
+                <!--Load IndexUpPartTitle-->
+                <div class="animated fadeInDownBig delay-2s">
+                    <div class="IndexUpPartTitle center animated slideOutUp delay-4s">
+                        <img height="100%" width="100%" src="./Source/IMG/PhoneTitle.svg" />
+                    </div>
                 </div>
                 <!--Load IndexUpPartTitle-->
-                <div class="IndexUpPartTitle center animated zoomIn delay-1s ">
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneTitle.svg" />
+                <div class="animated fadeInDownBig delay-2s">
+                    <div  class="IndexUpPartTitle center animated slideOutUp delay-4s">
+                        <img height="100%" width="100%" src="./Source/IMG/PhoneEnglishTitle.svg" />
+                    </div>
                 </div>
-                <!--Load IndexUpPartTitle-->
-                <div class="IndexUpPartTitle center animated zoomIn delay-2s ">
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneEnglishTitle.svg" />
-                </div>
+
                 <!--Load IndexTitle-->
-                <div class="IndexTitle center animated zoomIn delay-1s ">
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneGridTitle.svg" />
-                </div>
-                <!--Load Line-->
-                <div class="Liner animated zoomIn delay-2s">
-                    <!--Svg Line-->
+                <div class="center animated fadeIn delay-3s ">
+                    <div class="IndexTitle center animated slideOutDown delay-5s ">
+                        <img height="100%" width="100%" src="./Source/IMG/PhoneGridTitle.svg" />
+                    </div>
                 </div>
 
-
-                <div class="container-fluid animated fadeInDown delay-1s">
-                </div>
-            </div>
-            <div v-else-if="State > 0" >
-
-                <!--Load BG-->
-                <div class="MainBackground animated slideInDown">
-                </div>
-
-                <div class="UpBtn">
-                    <a @click="UpPage()">
-                        <img height="2.5%" width="2.5%" src="./Source/IMG/UpBTN.svg" />
+                <!--置底-->
+                <div class="DownBtn center animated fadeIn delay-6s">
+                    <a @click="DownPage()">
+                        <img height="10%" width="10%" src="./Source/IMG/DownBTN.svg" />
                     </a>
                 </div>
 
-                <div class="ProjectMetaBlock animated slideInLeft delay-1s">
-                    <div class="container">
-                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].ProjectMeta}}</p>
-                    </div>
+            </div>
+            <div v-else-if="State === 1" >
+
+                <!--Load BG-->
+                <div class="MenuViewBackground animated fadeInLeft delay-1s">
                 </div>
 
-                <div class="ProjectMainBlock center animated slideInDown">
-                    <div class="container">
-                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].ProjectPhotoPath}}</p>
-                        <a href="#" @click="ChangeGroupEvent(false)">上一組</a>
-                        <a href="#" @click="ChangeGroupEvent(true)">下一組</a>
-                    </div>
+                <div @click="UpPage()" class="MenuViewTitle center animated fadeInDown delay-2s ">
+                    <img height="75%" width="75%" src="./Source/IMG/PhoneGridTitle.svg" />
                 </div>
 
-                <div class="ImagePhotoBlock animated fadeInDown delay-1s">
-                    <div class="container">
-                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].ImagePhotoPath}}</p>
-                    </div>
+                <div @click="DownPage()" class="MenuViewMenu center animated fadeInLeft delay-2s ">
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneMenu.svg" />
                 </div>
 
-                <div class="AboutBlock container animated slideInRight delay-1s">
-                    <div class="container">
-                        <p>{{StudentGroups.data.GroupsData[NowSelectGroupID].About}}</p>
-                    </div>
+                <div class="MenuViewFacebookIcon center animated fadeInUp delay-2s ">
+                    <a href="https://www.facebook.com/" target="Web_FB">
+                        <img height="20%" width="20%" src="./Source/IMG/PhoneMenuViewFacebookIcon.svg" />
+                    </a>
                 </div>
+
+                <div class="RightBtn center animated fadeInRight delay-3s ">
+                    <a @click="DownPage()">
+                        <img height="50%" width="50%" src="./Source/IMG/RightBTN.svg" />
+                    </a>
+                </div>
+
+            </div>
+            <div v-else-if="State === 2" >
+            
+                <!--Load BG-->
+                <div class="MenuViewBackground animated fadeOutLeft delay-2s">
+                </div>
+
+                <div class="MenuViewTitle center animated fadeOutUp delay-1s ">
+                    <img height="75%" width="75%" src="./Source/IMG/PhoneGridTitle.svg" />
+                </div>
+
+                <div class="MenuViewMenu center animated fadeOutLeft delay-1s ">
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneMenu.svg" />
+                </div>
+
+                <div class="MenuViewFacebookIcon center animated fadeOutDown delay-1s ">
+                    <a href="#">
+                        <img height="20%" width="20%" src="./Source/IMG/PhoneMenuViewFacebookIcon.svg" />
+                    </a>
+                </div>
+                
+                <div class="RightBtn center animated fadeOutRight delay-1s">
+                    <a href="#">
+                        <img height="50%" width="50%" src="./Source/IMG/RightBTN.svg" />
+                    </a>
+                </div>
+                
+            </div>
+            <div v-else>
             </div>
         </div>
     </body>

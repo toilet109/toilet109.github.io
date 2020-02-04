@@ -8,6 +8,7 @@ var IndexViewCtl = new Vue({
     },
     mounted() {
         this.StudentGroups = StudentGroups;
+        document.getElementsByTagName("div").InitView.style.display = "none"; //讓初始化的延遲界面不被顯示的遮罩關閉
     },
     methods: {
         /* 向下翻頁 */

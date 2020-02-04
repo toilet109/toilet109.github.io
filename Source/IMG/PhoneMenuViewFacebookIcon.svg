@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1858"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="PhoneMenuViewFacebookIcon.svg">
+  <defs
+     id="defs1852" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="527.28084"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1855">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-197)">
+    <text
+       y="271.29138"
+       x="4.5829797"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.07135057px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35857317"
+       id="text32">
+      <tspan
+         style="stroke-width:0.35857317"
+         x="4.5829797 9.8723497 14.051517 17.021484 19.171173 23.597837 28.130573 32.309738 34.53014 36.135342 40.554935 44.734104 46.883801 51.416527 55.595695 60.128441 61.733631 67.01593 71.548668 73.698349 77.764381 81.865761 84.945335 88.438576 90.588272 93.558235"
+         y="271.29138"
+         sodipodi:role="line"
+         id="tspan30">National Tainan University</tspan>
+    </text>
+    <text
+       y="283.50562"
+       x="4.5829797"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.17845917px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35857317"
+       id="text36">
+      <tspan
+         style="stroke-width:0.35857317"
+         x="4.5829797 10.863086 13.957339 18.985498 25.469173 31.484642 34.680679 36.991192 43.515579 47.953384 52.22834 54.533764 62.045464 64.35598 71.62339 77.526909 82.555054 85.649307 91.725845 98.250244"
+         y="283.50562"
+         sodipodi:role="line"
+         id="tspan34">Visual Art &amp; Design</tspan>
+    </text>
+    <path
+       d="M 50.312993,255.60063 H 94.686071 V 211.22756 H 50.312993 Z"
+       style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35857317"
+       id="path228"
+       inkscape:connector-curvature="0" />
+    <text
+       y="257.74612"
+       x="58.233097"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:49.92037964px;font-family:Helvetica;-inkscape-font-specification:Helvetica-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35857317"
+       id="text232">
+      <tspan
+         style="stroke-width:0.35857317"
+         x="58.233097"
+         y="257.74612"
+         id="tspan230">f</tspan>
+    </text>
+  </g>
+</svg>

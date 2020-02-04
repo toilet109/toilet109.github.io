@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg1133"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="PhoneMenu.svg">
+  <defs
+     id="defs1127">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath102">
+      <path
+         d="M 0,2436 H 1125 V 0 H 0 Z"
+         id="path100"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath110">
+      <path
+         d="M 15,678 H 729 V 577.295 H 15 Z"
+         id="path108"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath44">
+      <path
+         d="M 0,2436 H 1125 V 0 H 0 Z"
+         id="path42"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath52">
+      <path
+         d="M 15,1053 H 729 V 946 H 15 Z"
+         id="path50"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath66">
+      <path
+         d="M 15,486 H 729 V 379 H 15 Z"
+         id="path64"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath80">
+      <path
+         d="M 15,865 H 729 V 758 H 15 Z"
+         id="path78"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="587.7515"
+     inkscape:cy="518.82499"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1130">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-97)">
+    <g
+       transform="matrix(0.2734693,0,0,-0.2734693,-1.8229942,394.88404)"
+       id="g38">
+      <g
+         id="g40"
+         clip-path="url(#clipPath44)">
+        <g
+           id="g46">
+          <g
+             id="g48" />
+          <g
+             id="g58">
+            <g
+               clip-path="url(#clipPath52)"
+               id="g56"
+               style="opacity:0.52999902">
+              <path
+                 d="m 15,946 h 714 v 107 H 15 Z"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path54"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="g60">
+          <g
+             id="g62" />
+          <g
+             id="g72">
+            <g
+               clip-path="url(#clipPath66)"
+               id="g70"
+               style="opacity:0.52999902">
+              <path
+                 d="M 15,379 H 729 V 486 H 15 Z"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path68"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="g74">
+          <g
+             id="g76" />
+          <g
+             id="g86">
+            <g
+               clip-path="url(#clipPath80)"
+               id="g84"
+               style="opacity:0.52999902">
+              <path
+                 d="M 15,758 H 729 V 865 H 15 Z"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path82"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text
+       y="179.08682"
+       x="49.86269"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.77105141px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text90">
+      <tspan
+         style="stroke-width:0.2734693"
+         x="49.86269 66.633751 83.4048 100.17584 116.9469 133.71797"
+         y="179.08682"
+         sodipodi:role="line"
+         id="tspan88">新一代設計展</tspan>
+    </text>
+    <text
+       y="178.43881"
+       x="9.2335548"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.40815735px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text94">
+      <tspan
+         style="stroke-width:0.2734693"
+         x="9.2335548 25.641716"
+         y="178.43881"
+         sodipodi:role="line"
+         id="tspan92">臺北</tspan>
+    </text>
+    <g
+       transform="matrix(0.2734693,0,0,-0.2734693,-1.8229942,394.88404)"
+       id="g96">
+      <g
+         id="g98"
+         clip-path="url(#clipPath102)">
+        <g
+           id="g104">
+          <g
+             id="g106" />
+          <g
+             id="g116">
+            <g
+               clip-path="url(#clipPath110)"
+               id="g114"
+               style="opacity:0.52999902">
+              <path
+                 d="M 15,577.296 H 729 V 678 H 15 Z"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path112"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <text
+       y="229.59346"
+       x="48.620327"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.63257217px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text120">
+      <tspan
+         style="stroke-width:0.2734693"
+         x="48.620327 64.252899 79.885468 95.518044"
+         y="229.59346"
+         sodipodi:role="line"
+         id="tspan118">放視大賞</tspan>
+    </text>
+    <text
+       y="230.19638"
+       x="10.368813"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.44275665px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text124">
+      <tspan
+         style="stroke-width:0.2734693"
+         x="10.368813 25.811573"
+         y="230.19638"
+         sodipodi:role="line"
+         id="tspan122">高雄</tspan>
+    </text>
+    <text
+       y="127.7308"
+       x="12.663932"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.40815735px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text130">
+      <tspan
+         style="stroke-width:0.2734693"
+         x="12.663932 29.072083 32.747509 49.15567 52.831097 69.239265"
+         y="127.7308"
+         sodipodi:role="line"
+         id="tspan126">作 品 資訊</tspan>
+      <tspan
+         style="stroke-width:0.2734693"
+         x="12.663932 29.072083 45.480244 61.888401"
+         y="280.86816"
+         sodipodi:role="line"
+         id="tspan128">聯絡資訊</tspan>
+    </text>
+  </g>
+</svg>
