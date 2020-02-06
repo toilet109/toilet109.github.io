@@ -144,3 +144,117 @@ body{
     right: -7.5%;
     z-index: 2;
 }
+
+.ProjectViewBackground{
+    position: fixed;
+    margin: 0px;
+    background-position: center;
+    background-color:#666666;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding: 0px;
+    z-index: -996;
+}
+
+.ProjecTitleViewBackground{
+    position: absolute;
+    margin: 0px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -994;
+}
+
+.ProjecTitleViewTitle{
+    position: absolute;
+    margin: 0px;
+    top: 5.5%;
+    left: 0%;
+    right: 0%;
+    z-index: -993;
+}
+
+.LeftBtn{
+    position: absolute;
+    margin: 0px;
+    top: 1%;
+    left: 1.5%;
+    right: 0%;
+    z-index: 2;
+}
+
+.ProjectViewProjectImageBlock{
+    position: absolute;
+    display:flex;
+    text-align: justify;
+    background-color:#be3e3e;
+    /*background-image: url("../IMG/PhoneMenuViewFacebookIcon.svg");*/
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 45%;
+    margin: 0px;
+    bottom: 42.5%;
+    left: 0%;
+    right: 0%;
+    padding: 0%;
+    z-index: 3;
+    line-height: 1.5;
+    font-size: 90%;
+    z-index: -995;
+}
+
+.ProjectViewMetaTextBlock{
+    position: absolute;
+    display:flex;
+    text-align: justify;
+    background-color:#cccccc;
+    height: 30%;
+    margin: 0px;
+    bottom: 12.5%;
+    left: 0%;
+    right: 0%;
+    padding: 5%;
+    z-index: 3;
+    line-height: 1.5;
+    font-size: 90%;
+}
+
+.ProjectBTN{
+    background-color:#f2f2f2;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4%;
+    width: 35%;
+    z-index: 3;
+}
+
+.ProjectBTN:hover{
+    background-color:#cccccc;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4%;
+    width: 35%;
+    z-index: 3;
+}
+
+.ProjectViewFaceBookBTN{
+    background-color:#f2f2f2;
+    width: 30%;
+    padding: 2%;
+    text-align: right;
+    z-index: 3;
+}
+
+.ProjectViewBottomBTNBlock{
+    position: absolute;
+    display:flex;
+    line-height: 1.5;
+    height: 7.5%;
+    margin: 0px;
+    bottom: 2.5%;
+    left: 0%;
+    right: 0%;
+    z-index: 3;
+}

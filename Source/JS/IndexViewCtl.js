@@ -2,6 +2,7 @@ var IndexViewCtl = new Vue({
     el:"#IndexView",
     data:{
         State: 0,
+        BeforeState: 0,
         NowSelectGroupID:0,
         NextSelectGroupID:0,
         StudentGroups: Object,
@@ -13,10 +14,15 @@ var IndexViewCtl = new Vue({
     methods: {
         /* 向下翻頁 */
         DownPage:function(){
+            this.BeforeState = this.State;
             this.State++;
+            if(this.State == 2){
+                this.SetSwipe();
+            }
         },
         /* 向上翻頁 */
         UpPage:function(){
+            this.BeforeState = this.State;
             this.State--;
         },
         ChangeGroupEvent(IsGetNextPage){
@@ -33,6 +39,21 @@ var IndexViewCtl = new Vue({
             this.NowSelectGroupID = this.NextSelectGroupID;
             this.RenderValue++;
         },
-
+        SetSwipe:function() {
+            setTimeout(() => {
+                $("#CtlBlock").swipe( {
+                    //Generic swipe handler for all directions
+                    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                        if(direction == "right"){
+                            IndexViewCtl.ChangeGroupEvent(true);
+                        }else if(direction == "left"){
+                            IndexViewCtl.ChangeGroupEvent(false);
+                        }
+                    },
+                    //Default is 75px, set to 0 for demo so any distance triggers swipe
+                    threshold:0
+                });
+            }, 5000); 
+        }
     },
 });
