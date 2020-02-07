@@ -182,7 +182,7 @@
                     </div>
 
                     <div class="ProjectViewProjectImageBlock animated fadeOutDown delay-1s">
-                        <img width="100%" height="100%" v-bind:src="StudentGroups.data.GroupsData[NowSelectGroupID].ImagePhotoPath" />
+                        <img width="100%" height="100%" v-bind:src="StudentGroups.data.GroupsData[NowSelectGroupID].ProjectPhotoPath" />
                     </div>
 
                     <div class="ProjectViewMetaTextBlock animated fadeOutDown delay-1s">
@@ -199,7 +199,6 @@
                         </div>
                     </div>
 
-                    
                     <!--Load BG-->
                     <div class="MenuViewBackground animated fadeInLeft delay-5s">
                     </div>
@@ -227,6 +226,11 @@
 
             </div>
             <div v-else-if="State === 2" >
+                <div v-for="(item,index) in StudentGroups.data.GroupsData">
+                    <div>Text</div>
+                </div>
+            </div>
+            <div v-else-if="State === 3" >
                 <!--Load BG-->
                 <div class="MenuViewBackground animated fadeOutLeft delay-2s">
                 </div>
@@ -235,7 +239,7 @@
                     <img height="75%" width="75%" src="./Source/IMG/PhoneGridTitle.svg" />
                 </div>
 
-                <div class="MenuViewMenu center animated fadeOutLeft delay-1s ">
+                <div class="MenuViewMenu center animated fadeOutLeft ">
                     <img height="100%" width="100%" src="./Source/IMG/PhoneMenu.svg" />
                 </div>
 
@@ -282,8 +286,7 @@
                     </div>
                 </div>
                 <div id="CtlBlock" class="ProjectViewProjectImageBlock animated fadeInUp delay-4s">
-                    <img width="100%" height="100%" v-bind:src="StudentGroups.data.GroupsData[NowSelectGroupID].ImagePhotoPath" />
-                    
+                    <img width="100%" height="100%" v-bind:src="StudentGroups.data.GroupsData[NowSelectGroupID].ProjectPhotoPath" />
                 </div>
 
                 <div class="ProjectViewMetaTextBlock animated fadeInUp delay-4s">
@@ -291,12 +294,37 @@
                 </div>
 
                 <div class="ProjectViewBottomBTNBlock animated fadeInUp delay-3s">
-                    <div class="ProjectBTN">作品介紹</div>
-                    <div class="ProjectBTN">製作成員</div>
+                    <div @click="SetProjectAboutView(true)" class="ProjectBTN">作品介紹</div>
+                    <div @click="SetProjectMumberView(true)" class="ProjectBTN">製作成員</div>
                     <div class="ProjectViewFaceBookBTN">
                         <a v-bind:href="StudentGroups.data.FaceBookLink" target="Web_FB">
                             <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewFacebookIcon.svg" />
                         </a>
+                    </div>
+                </div>
+
+                <div v-if="IsProjectAboutView || IsProjectMumberView" class="ProjectViewMask"></div>
+
+                <div v-if="IsProjectAboutView" class="ProjectAboutView">
+                    <a class="CloseBTN" @click="SetProjectAboutView(false)">[X]</a>
+                    <p><br><br></p>
+                    <video id="VideoView" width="100%" height="30%" preload="none" loop="loop" controls="controls">
+                        <source v-bind:src="StudentGroups.data.GroupsData[NowSelectGroupID].ProjectMoviePath" type="video/mp4">
+                        <p>錯誤！瀏覽器不支援Video播放器</p>
+                    </video>
+                
+                    <div class="ProjectAboutTextBlock" style="z-index: 999;">
+                        <br><p>{{StudentGroups.data.GroupsData[NowSelectGroupID].ProjectMeta}}</p>
+                    </div>
+                </div>
+
+                <div v-if="IsProjectMumberView" class="ProjectMumberView">
+                    <a class="CloseBTN" @click="SetProjectMumberView(false)">[X]</a>
+                    <p><br><br></p>
+                    <img width="100%" height="30%" v-bind:src="StudentGroups.data.GroupsData[NowSelectGroupID].ImagePhotoPath" />
+                    
+                    <div class="ProjectAboutTextBlock" style="z-index: 999;">
+                        <br><p>{{StudentGroups.data.GroupsData[NowSelectGroupID].About}}</p>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,9 @@ var IndexViewCtl = new Vue({
         NowSelectGroupID:0,
         NextSelectGroupID:0,
         StudentGroups: Object,
+        IsProjectAboutView: false,
+        IsProjectMumberView: false,
+        IsProjectMovieView: false,
     },
     mounted() {
         this.StudentGroups = StudentGroups;
@@ -54,6 +57,15 @@ var IndexViewCtl = new Vue({
                     threshold:0
                 });
             }, 5000); 
-        }
+        },
+        SetProjectAboutView:function(ShowState) {
+            this.IsProjectAboutView = ShowState;
+        },
+        SetProjectMumberView:function(ShowState) {
+            this.IsProjectMumberView = ShowState;
+        },
+        SetProjectMovieView:function(ShowState) {
+            this.IsProjectMovieView = ShowState;
+        },
     },
 });

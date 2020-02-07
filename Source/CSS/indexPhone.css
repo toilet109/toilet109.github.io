@@ -7,7 +7,7 @@ body{
     padding: 0px;
 }
 
-.InitView{
+#InitView{
     position: fixed;
     margin: 0px;
     background-position: center;
@@ -21,7 +21,7 @@ body{
 }
 
 
-.IndexBackEnd{
+#IndexBackEnd{
     position: fixed;
     margin: 0px;
     background-position: center;
@@ -35,7 +35,7 @@ body{
     z-index: -999;
 }
 
-.IndexBackground{
+#IndexBackground{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/Background.svg");
@@ -50,7 +50,7 @@ body{
     z-index: -998;
 }
 
-.IndexUpPartBG{
+#IndexUpPartBG{
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -60,7 +60,7 @@ body{
     z-index: -996;
 }
 
-.IndexUpPartTitle{
+#IndexUpPartChineseTitle,#IndexUpPartEnglishTitle{
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -70,7 +70,7 @@ body{
     z-index: -995;
 }
 
-.IndexTitle{
+#IndexTitle{
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -81,7 +81,7 @@ body{
     z-index: -997;
 }
 
-.DownBtn{
+#DownBtn{
     text-align: center;
     position: absolute;
     margin: 0px;
@@ -91,7 +91,7 @@ body{
     z-index: 2;
 }
 
-.MenuViewBackground{
+#MenuViewBackground{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/Background.svg");
@@ -106,7 +106,7 @@ body{
     z-index: -999;
 }
 
-.MenuViewMenu{
+#MenuViewMenu{
     position: absolute;
     top: 30%;
     height: 65%;
@@ -116,7 +116,7 @@ body{
     z-index: -998;
 }
 
-.MenuViewFacebookIcon{
+#MenuViewFacebookIcon{
     position: absolute;
     margin: 0px;
     width: 100%;
@@ -126,7 +126,7 @@ body{
     z-index: -998;
 }
 
-.MenuViewTitle{
+#MenuViewTitle{
     position: absolute;
     margin: 0px;
     top: 1.5%;
@@ -134,7 +134,7 @@ body{
     z-index: -997;
 }
 
-.RightBtn{
+#RightBtn{
     text-align: center;
     position: absolute;
     margin: 0px;
@@ -145,7 +145,7 @@ body{
     z-index: 2;
 }
 
-.ProjectViewBackground{
+#ProjectViewBackground{
     position: fixed;
     margin: 0px;
     background-position: center;
@@ -158,16 +158,16 @@ body{
     z-index: -996;
 }
 
-.ProjecTitleViewBackground{
+#ProjecTitleViewBackground{
     position: absolute;
     margin: 0px;
-    top: 0%;
-    left: 0%;
-    right: 0%;
+    top: -1%;
+    left: -2.5%;
+    right: -2.5%;
     z-index: -994;
 }
 
-.ProjecTitleViewTitle{
+#ProjecTitleViewTitle{
     position: absolute;
     margin: 0px;
     top: 5.5%;
@@ -176,16 +176,17 @@ body{
     z-index: -993;
 }
 
-.LeftBtn{
+#LeftBtn{
     position: absolute;
     margin: 0px;
-    top: 1%;
-    left: 1.5%;
+    text-align:right;
     right: 0%;
+    left: 55%;
+    top: 10%;
     z-index: 2;
 }
 
-.ProjectViewProjectImageBlock{
+#ProjectViewProjectImageBlock{
     position: absolute;
     display:flex;
     text-align: justify;
@@ -205,7 +206,7 @@ body{
     z-index: -995;
 }
 
-.ProjectViewMetaTextBlock{
+#ProjectViewMetaTextBlock{
     position: absolute;
     display:flex;
     text-align: justify;
@@ -239,7 +240,7 @@ body{
     z-index: 3;
 }
 
-.ProjectViewFaceBookBTN{
+#ProjectViewFaceBookBTN{
     background-color:#f2f2f2;
     width: 30%;
     padding: 2%;
@@ -247,7 +248,7 @@ body{
     z-index: 3;
 }
 
-.ProjectViewBottomBTNBlock{
+#ProjectViewBottomBTNBlock{
     position: absolute;
     display:flex;
     line-height: 1.5;
@@ -257,4 +258,55 @@ body{
     left: 0%;
     right: 0%;
     z-index: 3;
+}
+
+#ProjectAboutView, #ProjectMumberView{
+    position: absolute;
+    text-align: justify;
+    background-color:hsl(0, 0%, 95%);
+    border-radius: 1.5%;
+    margin: 0px;
+    top:1%;
+    bottom: 1%;
+    left: 1.5%;
+    right: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 5;
+    line-height: 1.5;
+    font-size: 90%;
+}
+
+.ProjectAboutTextBlock{
+    position: absolute;
+    display:flex;
+    vertical-align: top;
+    text-align: justify;
+    margin: 0px;
+    top: 35.5%;
+    left: 0%;
+    right: 0%;
+    padding: 5%;
+    z-index: 3;
+    line-height: 1.5;
+}
+
+.ProjectViewMask{
+    position: absolute;
+    background-color:#020202c0;
+    top:0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 4;
+}
+
+.CloseBTN{
+    position: absolute;
+    position: fixed;
+    top: 2.5%;
+    right: 3.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5%;
+    z-index: 6;
 }
