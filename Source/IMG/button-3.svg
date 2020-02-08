@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 140 61" style="enable-background:new 0 0 140 61;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#666666;}
+	.st2{display:inline;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:url(#SVGID_1_);}
+	.st5{opacity:0.74;fill:#FFFFFF;}
+	.st6{fill:none;}
+	.st7{font-family:'TaipeiSansTCBeta-Light';}
+	.st8{font-size:25.9352px;}
+	.st9{fill:#5E5E5E;}
+</style>
+<g id="背景" class="st0">
+</g>
+<g id="banner_x5F_圖" class="st0">
+</g>
+<g id="副標" class="st0">
+</g>
+<g id="banner_x5F_頂" class="st0">
+	<g class="st2">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="28.2402" y1="158.825" x2="28.2402" y2="-85.7652">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#CACBCB"/>
+		</linearGradient>
+		<path class="st4" d="M341.34,158.82h-626.21c-34.05,0-61.66-27.6-61.66-61.66V-85.77H403V97.17
+			C403,131.22,375.4,158.82,341.34,158.82z"/>
+		<rect x="-346.8" y="-2.34" class="st5" width="748.75" height="64.84"/>
+	</g>
+</g>
+<g id="button">
+	<rect x="15.54" y="17.8" class="st6" width="167.58" height="53.11"/>
+	<text transform="matrix(1 0 0 1 15.5396 40.6177)" class="st7 st8">聯絡資訊</text>
+</g>
+<g id="返回" class="st0">
+</g>
+<g id="標題" class="st0">
+</g>
+</svg>

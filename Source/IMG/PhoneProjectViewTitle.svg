@@ -15,7 +15,7 @@
    version="1.1"
    id="svg1024"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="ProjectViewTitle.svg">
+   sodipodi:docname="PhoneProjectViewTitle.svg">
   <defs
      id="defs1018">
     <clipPath
@@ -42,9 +42,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="526.43275"
-     inkscape:cy="320.5367"
+     inkscape:zoom="0.7"
+     inkscape:cx="536.72476"
+     inkscape:cy="155.39295"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -61,7 +61,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -72,16 +72,21 @@
      transform="translate(0,-272)">
     <g
        transform="matrix(0.18291094,0,0,-0.18291094,-3.8983329,695.64521)"
-       id="g34">
+       id="g34"
+       style="">
       <g
          id="g36"
-         clip-path="url(#clipPath40)">
+         clip-path="url(#clipPath40)"
+         style="">
         <g
-           id="g42">
+           id="g42"
+           style="">
           <g
-             id="g44" />
+             id="g44"
+             style="" />
           <g
-             id="g54">
+             id="g54"
+             style="">
             <g
                clip-path="url(#clipPath48)"
                id="g52"
@@ -97,40 +102,40 @@
       </g>
     </g>
     <text
-       y="287.74774"
+       y="287.96301"
        x="7.4189215"
-       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.98496723px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.40833333px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092;"
        id="text58">
       <tspan
-         style="stroke-width:0.18291092"
+         style="font-weight:normal;stroke-width:0.18291092;font-size:7.40833333px;"
          x="7.4189215 14.403883 21.388845 28.373814 35.358788 42.343746"
-         y="287.74774"
+         y="287.96301"
          sodipodi:role="line"
          id="tspan56">新一代設計展</tspan>
     </text>
     <text
-       y="287.7699"
+       y="287.89157"
        x="58.769913"
-       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.60838175px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.40833333px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092;"
        id="text62">
       <tspan
-         style="stroke-width:0.18291092"
-         x="58.769913 66.378304 73.986679 81.59507"
-         y="287.7699"
+         style="font-weight:normal;stroke-width:0.18291092;font-size:7.40833333px;"
          sodipodi:role="line"
-         id="tspan60">放視大賞</tspan>
+         id="tspan60"
+         x="58.769913"
+         y="287.89157">放視大賞</tspan>
     </text>
     <text
-       y="287.37976"
-       x="95.900833"
-       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.68226004px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092"
+       y="287.85486"
+       x="96.168098"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833333px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092;"
        id="text66">
       <tspan
-         style="stroke-width:0.18291092"
-         x="95.900833 103.5831 111.26536 118.94762"
-         y="287.37976"
+         style="stroke-width:0.18291092;font-size:7.40833333px;"
          sodipodi:role="line"
-         id="tspan64">聯絡資訊</tspan>
+         id="tspan64"
+         x="96.168098"
+         y="287.85486">聯絡資訊</tspan>
     </text>
   </g>
 </svg>
