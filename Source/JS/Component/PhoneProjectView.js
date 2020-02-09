@@ -13,9 +13,9 @@ var PhoneProjectView = {
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitle.svg" />
             </div>
 
-            <div id="LeftBtn">
+            <div id="BackBtn">
                 <a @click="ChangeBeforePage()">
-                    <img height="50%" width="50%" src="./Source/IMG/LeftBTN.svg" />
+                    <img height="50%" width="50%" src="./Source/IMG/BackBTN.svg" />
                 </a>
             </div>
 
@@ -103,7 +103,7 @@ var PhoneProjectView = {
             document.getElementsByTagName("div").ProjectViewBackground.className        = "animated slideInRight delay-0s";
             document.getElementsByTagName("div").ProjecTitleViewBackground.className    = "animated fadeInDown   delay-1s";
             document.getElementsByTagName("div").ProjecTitleViewTitle.className         = "animated fadeInDown   delay-2s";
-            document.getElementsByTagName("div").LeftBtn.className                      = "animated fadeInRight  delay-2s";
+            document.getElementsByTagName("div").BackBtn.className                      = "animated fadeInRight  delay-2s";
                 
             document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeInRight delay-3s";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeInRight delay-3s";
@@ -126,7 +126,7 @@ var PhoneProjectView = {
             document.getElementsByTagName("div").ProjectViewBackground.className        = "animated slideOutRight delay-3s";
             document.getElementsByTagName("div").ProjecTitleViewBackground.className    = "animated fadeOutUp     delay-2s";
             document.getElementsByTagName("div").ProjecTitleViewTitle.className         = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").LeftBtn.className                      = "animated fadeOutRight  delay-1s";       
+            document.getElementsByTagName("div").BackBtn.className                      = "animated fadeOutRight  delay-1s";       
                
             document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeOutRight delay-0s";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeOutRight delay-0s";

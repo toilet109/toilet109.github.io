@@ -12,9 +12,9 @@ var PhoneProjectTypeView = {
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitle.svg" />
             </div>
 
-            <div id="LeftBtn">
+            <div id="BackBtn">
                 <a @click="ChangeBeforePage()">
-                    <img height="50%" width="50%" src="./Source/IMG/LeftBTN.svg" />
+                    <img height="50%" width="50%" src="./Source/IMG/BackBTN.svg" />
                 </a>
             </div>
 
@@ -36,7 +36,7 @@ var PhoneProjectTypeView = {
                 <div class="row">
                     <div class="col">
                         <div id="GraphicDesignBTN">
-                            <a @click="ChangeNextPage(0)">
+                            <a @click="ChangeNextPage(1)">
                                 <img height="100%" width="100%" src="./Source/IMG/PhoneMenuViewFacebookIcon.svg" />
                             </a>
                         </div>
@@ -57,8 +57,6 @@ var PhoneProjectTypeView = {
         } catch (error) {
             this.IsReMount = false;
         }
-        console.log(this.IsReMount);
-        
 
         if(!this.IsReMount){
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className           = "animated fadeInRight delay-0s";
@@ -77,8 +75,9 @@ var PhoneProjectTypeView = {
         ChangeNextPage:function(ProjectID) {
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className           = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").GraphicDesignBTN.className                       = "animated fadeOutLeft delay-0s";
-
-            app.DelayRoutePush("/phoneProjectView/"+ProjectID,1000);
+            
+            app.NowSelectID = ProjectID;
+            app.DelayRoutePush("/phoneProjectView",1000);
         }
     },
 };

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -9,147 +9,118 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="35mm"
+   height="35mm"
+   viewBox="0 0 35 35"
    version="1.1"
-   x="0px"
-   y="0px"
-   viewBox="0 0 80 30"
-   xml:space="preserve"
-   id="svg30"
-   sodipodi:docname="LeftBTN.svg"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   width="80"
-   height="30"><metadata
-   id="metadata36"><rdf:RDF><cc:Work
-       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs34">
-	
-
-		
-		
-		
-	</defs><sodipodi:namedview
-   pagecolor="#ffffff"
-   bordercolor="#666666"
-   borderopacity="1"
-   objecttolerance="10"
-   gridtolerance="10"
-   guidetolerance="10"
-   inkscape:pageopacity="0"
-   inkscape:pageshadow="2"
-   inkscape:window-width="1366"
-   inkscape:window-height="712"
-   id="namedview32"
-   showgrid="false"
-   inkscape:zoom="1.6456954"
-   inkscape:cx="81.685314"
-   inkscape:cy="69.38183"
-   inkscape:window-x="0"
-   inkscape:window-y="25"
-   inkscape:window-maximized="1"
-   inkscape:current-layer="svg30" />
-<style
-   type="text/css"
-   id="style2">
-	.st0{display:none;}
-	.st1{display:inline;fill:#666666;}
-	.st2{display:inline;}
-	.st3{fill:#FFFFFF;}
-	.st4{fill:url(#SVGID_1_);}
-	.st5{opacity:0.74;fill:#FFFFFF;}
-	.st6{fill:#5E5E5E;}
-	.st7{fill:none;}
-	.st8{font-family:'TaipeiSansTCBeta-Bold';}
-	.st9{font-size:20.9649px;}
-</style>
-<g
-   id="背景"
-   class="st0"
-   style="display:none"
-   transform="translate(0,-31)">
-	<rect
-   x="-585.97998"
-   y="9"
-   class="st1"
-   width="748.16998"
-   height="1155.9"
-   id="rect4"
-   style="display:inline;fill:#666666" />
-</g>
-<g
-   id="banner_x5F_圖"
-   class="st0"
-   style="display:none"
-   transform="translate(0,-31)">
-</g>
-<g
-   id="副標"
-   class="st0"
-   style="display:none"
-   transform="translate(0,-31)">
-</g>
-<g
-   id="banner_x5F_頂"
-   class="st0"
-   style="display:none"
-   transform="translate(0,-31)">
-	<g
-   class="st2"
-   id="g16"
-   style="display:inline">
-		<linearGradient
-   id="SVGID_1_"
-   gradientUnits="userSpaceOnUse"
-   x1="-210.7598"
-   y1="75.824997"
-   x2="-210.7598"
-   y2="-168.7652">
-			<stop
-   offset="0"
-   style="stop-color:#FFFFFF"
-   id="stop9" />
-			<stop
-   offset="1"
-   style="stop-color:#CACBCB"
-   id="stop11" />
-		</linearGradient>
-		<path
-   class="st4"
-   d="m 102.34,75.82 h -626.21 c -34.05,0 -61.66,-27.6 -61.66,-61.66 V -168.77 H 164 V 14.17 c 0,34.05 -27.6,61.65 -61.66,61.65 z"
-   id="path14"
-   inkscape:connector-curvature="0"
-   style="fill:url(#SVGID_1_)" />
-	</g>
-</g>
-<g
-   id="button"
-   class="st0"
-   style="display:none"
-   transform="translate(0,-31)">
-</g>
-<path
-   class="st6"
-   d="m 61.280664,16.238793 4.3,-2.48 v 2.9 h 0.35 2.52 0.22 0.02 0.11 c 1,-0.06 1.79,-0.87 1.82,-1.87 v -2.82 -4.2500002 h 4.24 v 8.7100002 c 0,0.08 0,0.15 -0.01,0.23 -0.12,2.36 -2.07,4.24 -4.47,4.24 h -4.82 v 2.79 l -4.3,-2.48 -4.3,-2.48 z"
-   id="path20"
-   inkscape:connector-curvature="0"
-   style="fill:#5e5e5e" /><rect
-   x="4.740665"
-   y="2.2987928"
-   class="st7"
-   width="52.419998"
-   height="26.379999"
-   id="rect22"
-   style="fill:none" /><text
-   class="st6 st8 st9"
-   id="text24"
-   style="font-size:20.96489906px;font-family:TaipeiSansTCBeta-Bold;fill:#5e5e5e"
-   x="4.7405658"
-   y="22.741693">back</text>
-
-<g
-   id="標題"
-   class="st0"
-   style="display:none"
-   transform="translate(0,-31)">
-</g>
+   id="svg3602"
+   sodipodi:docname="LeftBTN.svg_.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <defs
+     id="defs3596">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath100">
+      <path
+         d="M 0,1080 H 1920 V 0 H 0 Z"
+         id="path98"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath112">
+      <path
+         d="m 963,619 h 678 V 547 H 963 Z"
+         id="path110"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath126">
+      <path
+         d="m 963,515 h 678 V 443 H 963 Z"
+         id="path124"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath156">
+      <path
+         d="M 0,1080 H 1920 V 0 H 0 Z"
+         id="path154"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath168">
+      <path
+         d="M 0,2436 H 1125 V 0 H 0 Z"
+         id="path166"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath168-3">
+      <path
+         d="M 0,2436 H 1125 V 0 H 0 Z"
+         id="path166-6"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="-129.83377"
+     inkscape:cy="56.025352"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3599">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-262)">
+    <g
+       transform="matrix(0.35277777,0,0,-0.35277777,-16.446035,689.04941)"
+       id="g162"
+       style="fill:#a0a0a0;fill-opacity:1">
+      <g
+         id="g164"
+         clip-path="url(#clipPath168-3)"
+         style="fill:#a0a0a0;fill-opacity:1">
+        <g
+           id="g170"
+           transform="translate(131.7539,1161.1426)"
+           style="fill:#a0a0a0;fill-opacity:1">
+          <path
+             d="m 0,0 3.108,-43.189 -38.957,18.902 -38.958,18.903 35.85,24.287 35.85,24.286 z"
+             style="fill:#a0a0a0;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path172"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
+  </g>
 </svg>

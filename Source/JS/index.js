@@ -7,6 +7,7 @@ var app = new Vue({
             ProjectViewIsGoBack: false,
             ProjectTypeViewIsGoBack: false,
             Lock: false,
+            NowSelectID: 0,
         }
     },
     mounted() {
@@ -58,9 +59,14 @@ var app = new Vue({
                 component: PhoneProjectTypeView
             },
             {
-                path: `/phoneProjectView/:ProjectName`,
+                path: `/phoneProjectView`,
                 name: `手機版小組作品`,
                 component: PhoneOnlyProjectView
+            },
+            {
+                path: `/phoneCantTransform`,
+                name: `不支援手機旋轉`,
+                component: PhoneCantTransformView
             },
         ]
     }),
@@ -112,3 +118,7 @@ if(app.IsInit && app.$route.path === "/"){
         app.$router.push("/");
     }
 }
+/*
+if(window.orientation === 90){
+    app.$router.push("/CantTransform");
+}*/

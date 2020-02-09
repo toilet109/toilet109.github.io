@@ -5,6 +5,8 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #InitView{
@@ -176,7 +178,7 @@ body{
     z-index: -993;
 }
 
-#LeftBtn{
+#BackBtn{
     position: absolute;
     margin: 0px;
     text-align:right;
@@ -205,6 +207,24 @@ body{
     font-size: 90%;
     z-index: -995;
 }
+
+#CtlMask{
+    position: absolute;
+    display:flex;
+    text-align: center;
+    background-color:#020202c0;
+    color: #f2f2f2;
+    height: 30%;
+    margin: 0px;
+    bottom: 12.5%;
+    left: 0%;
+    right: 0%;
+    padding: 5%;
+    z-index: 999;
+    line-height: 1.5;
+    font-size: 90%;
+}
+
 
 #ProjectViewMetaTextBlock{
     position: absolute;
@@ -323,4 +343,18 @@ body{
 
 #PackagingDesignBTN:hover,#ThreeDimensionalModelingBTN:hover,#GraphicDesignBTN:hover,#PictureBooksBTN:hover,#AlbumBTN,#AnimationBTN{
     background-image: linear-gradient(-45deg, #00c3ff, #6831ff);
+}
+
+#CantTransform{
+    position: absolute;
+    margin: 0px;
+    top:0%;
+    bottom: 0%;
+    left:0%;
+    right: 0%;
+    z-index: 999;
+    padding: 20%;
+    font-size: 150%;
+    vertical-align: middle;
+    text-align: center;
 }
