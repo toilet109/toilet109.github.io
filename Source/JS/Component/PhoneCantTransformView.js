@@ -8,9 +8,11 @@ var PhoneCantTransformView = {
         </div>
     `,
     mounted() {
+        /* 文字載入時用的動畫 */
         document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeInUp    delay-1s";
     },
     methods: {
+        /* 點擊畫面，若手機是垂直時則將文字以動畫退出並回到首頁 */
         ChangeHomePage:function() {
             if(window.orientation === 90){
                 document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-1s";

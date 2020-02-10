@@ -89,22 +89,27 @@ var PhoneProjectView = {
     `,
     data() {
         return {
-            IsReMount:false
+            IsReMount: false , //是否有二次載入(反向載入)的情況
         }
     },
     async mounted() {
         try {
+            /* 用同位異步方式與await等待app元件優先載入完成，並讀取此頁面是否發生二次載入(選擇動畫方向用) */
             this.IsReMount = await(app.ProjectViewIsGoBack);
         } catch (error) {
+            /* 當路由直接指向此頁時，直接視為初次載入 */
             this.IsReMount = false;
         }
 
+        /* 未進行反向載入由右向左切入，反之由左向右切入*/
         if(!this.IsReMount){
+            /* 載入上方控制欄位動畫 */
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-1s";
             document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInDown   delay-2s";
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInRight  delay-2s";
                 
+            /* 由右向左載入主題分類的分組動畫 */
             document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInRight delay-3s";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInRight delay-3s";
             document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInRight delay-3s";
@@ -112,6 +117,7 @@ var PhoneProjectView = {
             document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeInRight delay-3s";
             document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeInRight delay-3s";
         }else{
+            /* 由左向右載入主題分類的分組動畫 */
             document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInLeft delay-0s";
@@ -122,12 +128,15 @@ var PhoneProjectView = {
 
     },
     methods: {
+        /* 切換到上一頁(手機版首頁介紹) */
         ChangeBeforePage:function() {
+            /* 移出上方控制欄位動畫 */
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-3s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-2s";
             document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutUp     delay-1s";
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutRight  delay-1s";       
                
+            /* 由左向右切出主題分類的分組動畫 */
             document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutRight delay-0s";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutRight delay-0s";
             document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutRight delay-0s";
@@ -137,7 +146,9 @@ var PhoneProjectView = {
             
             app.DelayRoutePush("/phoneAbout",4000);
         },
+        /* 切換到下一頁(手機版作品專欄) */
         ChangeNextPage:function(ProjectType) {
+            /* 由右向左切出主題分類的分組動畫 */
             document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutLeft delay-0s";

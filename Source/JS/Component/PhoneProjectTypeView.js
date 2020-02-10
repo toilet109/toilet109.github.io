@@ -40,19 +40,23 @@ var PhoneProjectTypeView = {
     `,
     data() {
         return {
-            IsReMount:false,
-            GroupsDataList:[]
+            IsReMount      : false , //是否有二次載入(反向載入)的情況
+            GroupsDataList : []    , //各組別的專題資料
         }
     },
     async mounted() {
         try {
+            /* 用同位異步方式與await等待app元件優先載入完成，並讀取此頁面是否發生二次載入(選擇動畫方向用) */
             this.IsReMount = await(app.ProjectTypeViewIsGoBack);
         } catch (error) {
+            /* 當路由直接指向此頁時，直接視為初次載入 */
             this.IsReMount = false;
         }
 
+        /* 綁定StudentGroups下的GroupsData List */
         this.GroupsDataList = StudentGroups.data.GroupsData;
 
+        /* 依據是否以載入，而作品形象照由對應方向載入 */
         if(!this.IsReMount){
             document.getElementsByTagName("div").PhoneProgectTypeListGroup.className           = "animated fadeInRight delay-0s";
         }else{
@@ -60,10 +64,12 @@ var PhoneProjectTypeView = {
         }
     },
     methods: {
+        /* 切換到上一頁(手機版作品一覽) */
         ChangeBeforePage:function() {
             document.getElementsByTagName("div").PhoneProgectTypeListGroup.className           = "animated fadeOutRight delay-0s";
             app.DelayRouteBack(1000);
         },
+        /* 切換到下一頁(手機版小組作品) */
         ChangeNextPage:function(ProjectID) {
             document.getElementsByTagName("div").PhoneProgectTypeListGroup.className           = "animated fadeOutLeft  delay-0s";
             

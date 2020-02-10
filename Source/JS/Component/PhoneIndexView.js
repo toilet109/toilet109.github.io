@@ -39,11 +39,13 @@ var PhoneIndexView = {
         </div>
     `,
     mounted() {
+        /* 執行載入顯示首頁元件動畫 */
         document.getElementsByTagName("div").PhoneIndexBackEnd.className    = "animated fadeIn      delay-1s";
         document.getElementsByTagName("div").PhoneIndexBackground.className = "animated fadeOut     delay-5s";
         document.getElementsByTagName("div").PhoneIndexUpPartBG.className   = "animated slideInDown delay-1s";
     },
     methods: {
+        /* 切換到下一頁(手機版首頁介紹) */
         ChangeNextPage:function() {
             app.DelayRoutePush("/phoneAbout",0);
         },
