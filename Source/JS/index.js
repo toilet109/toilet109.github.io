@@ -26,17 +26,17 @@ var app = new Vue({
             { 
                 path: `/Project`,
                 name: `作品一覽`,
-                component: IndexView
+                component: ProjectView
             },
             { 
                 path: `/Project/:ProjectType`,
                 name: `作品專欄`,
-                component: IndexView 
+                component: ProjectTypeView 
             },
             { 
                 path: `/ProjectView/:ProjectName`,
                 name: `小組作品`,
-                component: IndexView
+                component: OnlyProjectView
             },
             { 
                 path: `/phone`,

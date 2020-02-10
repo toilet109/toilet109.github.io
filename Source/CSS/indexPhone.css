@@ -9,7 +9,7 @@ body{
     overflow-x: hidden;
 }
 
-#InitView{
+#PhoneInitView{
     position: fixed;
     margin: 0px;
     background-position: center;
@@ -23,7 +23,7 @@ body{
 }
 
 
-#IndexBackEnd{
+#PhoneIndexBackEnd{
     position: fixed;
     margin: 0px;
     background-position: center;
@@ -37,7 +37,7 @@ body{
     z-index: -999;
 }
 
-#IndexBackground{
+#PhoneIndexBackground{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/Background.svg");
@@ -52,7 +52,7 @@ body{
     z-index: -998;
 }
 
-#IndexUpPartBG{
+#PhoneIndexUpPartBG{
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -62,7 +62,7 @@ body{
     z-index: -996;
 }
 
-#IndexUpPartChineseTitle,#IndexUpPartEnglishTitle{
+#PhoneIndexUpPartChineseTitle,#PhoneIndexUpPartEnglishTitle{
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -72,7 +72,7 @@ body{
     z-index: -995;
 }
 
-#IndexTitle{
+#PhoneIndexTitle{
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -83,7 +83,7 @@ body{
     z-index: -997;
 }
 
-#DownBtn{
+#PhoneDownBtn{
     text-align: center;
     position: absolute;
     margin: 0px;
@@ -93,7 +93,7 @@ body{
     z-index: 2;
 }
 
-#MenuViewBackground{
+#PhoneMenuViewBackground{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/Background.svg");
@@ -108,7 +108,7 @@ body{
     z-index: -999;
 }
 
-#MenuViewMenu{
+#PhoneMenuViewMenu{
     position: absolute;
     top: 30%;
     height: 65%;
@@ -118,7 +118,7 @@ body{
     z-index: -998;
 }
 
-#MenuViewFacebookIcon{
+#PhoneMenuViewFacebookIcon{
     position: absolute;
     margin: 0px;
     width: 100%;
@@ -128,7 +128,7 @@ body{
     z-index: -998;
 }
 
-#MenuViewTitle{
+#PhoneMenuViewTitle{
     position: absolute;
     margin: 0px;
     top: 1.5%;
@@ -136,7 +136,7 @@ body{
     z-index: -997;
 }
 
-#RightBtn{
+#PhoneRightBtn{
     text-align: center;
     position: absolute;
     margin: 0px;
@@ -147,7 +147,7 @@ body{
     z-index: 2;
 }
 
-#ProjectViewBackground{
+#PhoneProjectViewBackground{
     position: fixed;
     margin: 0px;
     background-position: center;
@@ -160,7 +160,7 @@ body{
     z-index: -996;
 }
 
-#ProjecTitleViewBackground{
+#PhoneProjecTitleViewBackground{
     position: absolute;
     margin: 0px;
     top: -1%;
@@ -169,7 +169,7 @@ body{
     z-index: -994;
 }
 
-#ProjecTitleViewTitle{
+#PhoneProjecTitleViewTitle{
     position: absolute;
     margin: 0px;
     top: 5.5%;
@@ -178,7 +178,7 @@ body{
     z-index: -993;
 }
 
-#BackBtn{
+#PhoneBackBtn{
     position: absolute;
     margin: 0px;
     text-align:right;
@@ -188,7 +188,7 @@ body{
     z-index: 2;
 }
 
-#ProjectViewProjectImageBlock{
+#PhoneProjectViewProjectImageBlock{
     position: absolute;
     display:flex;
     text-align: justify;
@@ -208,7 +208,7 @@ body{
     z-index: -995;
 }
 
-#CtlMask{
+#PhoneCtlMask{
     position: absolute;
     display:flex;
     text-align: center;
@@ -226,7 +226,7 @@ body{
 }
 
 
-#ProjectViewMetaTextBlock{
+#PhoneProjectViewMetaTextBlock{
     position: absolute;
     display:flex;
     text-align: justify;
@@ -242,7 +242,7 @@ body{
     font-size: 90%;
 }
 
-.ProjectBTN{
+.PhoneProjectBTN{
     background-color:#f2f2f2;
     vertical-align: middle;
     text-align: center;
@@ -251,7 +251,7 @@ body{
     z-index: 3;
 }
 
-.ProjectBTN:hover{
+.PhoneProjectBTN:hover{
     background-color:#cccccc;
     vertical-align: middle;
     text-align: center;
@@ -260,7 +260,7 @@ body{
     z-index: 3;
 }
 
-#ProjectViewFaceBookBTN{
+#PhoneProjectViewFaceBookBTN{
     background-color:#f2f2f2;
     width: 30%;
     padding: 2%;
@@ -268,7 +268,7 @@ body{
     z-index: 3;
 }
 
-#ProjectViewBottomBTNBlock{
+#PhoneProjectViewBottomBTNBlock{
     position: absolute;
     display:flex;
     line-height: 1.5;
@@ -280,7 +280,7 @@ body{
     z-index: 3;
 }
 
-#ProjectAboutView, #ProjectMumberView{
+#PhoneProjectAboutView, #PhoneProjectMumberView{
     position: absolute;
     text-align: justify;
     background-color:hsl(0, 0%, 95%);
@@ -297,7 +297,7 @@ body{
     font-size: 90%;
 }
 
-.ProjectAboutTextBlock{
+.PhoneProjectAboutTextBlock{
     position: absolute;
     display:flex;
     vertical-align: top;
@@ -311,7 +311,7 @@ body{
     line-height: 1.5;
 }
 
-.ProjectViewMask{
+.PhoneProjectViewMask{
     position: absolute;
     background-color:#020202c0;
     top:0%;
@@ -321,7 +321,7 @@ body{
     z-index: 4;
 }
 
-.CloseBTN{
+.PhoneCloseBTN{
     position: absolute;
     position: fixed;
     top: 2.5%;
@@ -331,21 +331,36 @@ body{
     z-index: 6;
 }
 
-.ProgectTypeBTNGroup{
+.PhoneProgectTypeBTNGroup{
     position: absolute;
     margin: 0px;
     top:20%;
+    height: 80%;
+    overflow-y:scroll;
+    z-index: -995;
 }
 
-#PackagingDesignBTN,#ThreeDimensionalModelingBTN,#GraphicDesignBTN,#PictureBooksBTN,#AlbumBTN,#AnimationBTN{
-    background-image: linear-gradient(-45deg, #be3e3e, #65a0ff);
+#PhoneProgectTypeListGroup{
+    position: absolute;
+    margin: 0px;
+    top:15%;
+    left: 2.5%;
+    right: 2.5%;
+    height: 85%;
+    overflow-y:scroll;
+    z-index: -995;
 }
 
-#PackagingDesignBTN:hover,#ThreeDimensionalModelingBTN:hover,#GraphicDesignBTN:hover,#PictureBooksBTN:hover,#AlbumBTN,#AnimationBTN{
-    background-image: linear-gradient(-45deg, #00c3ff, #6831ff);
+#PhonePackagingDesignBTN,#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
+    /*background-image: linear-gradient(-45deg, #be3e3e, #65a0ff);*/
+    border: 1px solid  #c3c3c3;
 }
 
-#CantTransform{
+#PhonePackagingDesignBTN:hover,#PhoneThreeDimensionalModelingBTN:hover,#PhoneGraphicDesignBTN:hover,#PhonePictureBooksBTN:hover,#PhoneAlbumBTN,#PhoneAnimationBTN{
+    /*background-image: linear-gradient(-45deg, #00c3ff, #6831ff);*/
+}
+
+#PhoneCantTransform{
     position: absolute;
     margin: 0px;
     top:0%;
