@@ -2,11 +2,13 @@ var app = new Vue({
     el:"#app",
     data() {
         return {
-            IsInit                  : true  , //是否正式完成初始化
-            ProjectViewIsGoBack     : false , //是否觸發返回事件(1)
-            ProjectTypeViewIsGoBack : false , //是否觸發返回事件(2)
-            Lock                    : false , //控制Vue-Router切換的自栓鎖
-            NowSelectID             : 0     , //選擇的作品索引值ID
+            IsInit                       : true  , //是否正式完成初始化
+            PhoneProjectViewIsGoBack     : false , //是否觸發返回事件(1)
+            PhoneProjectTypeViewIsGoBack : false , //是否觸發返回事件(2)
+            PhoneProjectViewIsGoBack     : false , //是否觸發返回事件手機版(1)
+            PhoneProjectTypeViewIsGoBack : false , //是否觸發返回事件手機版(2)
+            Lock                         : false , //控制Vue-Router切換的自栓鎖
+            NowSelectID                  : 0     , //選擇的作品索引值ID
         }
     },
     mounted() {
@@ -32,7 +34,7 @@ var app = new Vue({
                 component: ProjectTypeView 
             },
             { 
-                path: `/ProjectView/:ProjectName`,
+                path: `/phoneProjectView`,
                 name: `小組作品`,
                 component: OnlyProjectView
             },
@@ -95,17 +97,31 @@ var app = new Vue({
     watch: {
         '$route' (to, from) {
             /* 檢測'手機版作品專欄'是否發生是否發生返回載入 */
-            if(from.name === "手機版小組作品" && to.name === "手機版作品專欄"){
+            if(from.name === "小組作品" && to.name === "作品專欄"){
                 app.ProjectTypeViewIsGoBack = true;
             }else{
                 app.ProjectTypeViewIsGoBack = false;
             }
 
             /* 檢測'手機版作品一覽'是否發生是否發生返回載入 */
-            if(from.name === "手機版作品專欄" && to.name === "手機版作品一覽"){
+            if(from.name === "作品專欄" && to.name === "作品一覽"){
                 app.ProjectViewIsGoBack = true;
             }else{
                 app.ProjectViewIsGoBack = false;
+            }
+
+            /* 檢測'手機版作品專欄'是否發生是否發生返回載入 */
+            if(from.name === "手機版小組作品" && to.name === "手機版作品專欄"){
+                app.PhoneProjectTypeViewIsGoBack = true;
+            }else{
+                app.PhoneProjectTypeViewIsGoBack = false;
+            }
+
+            /* 檢測'手機版作品一覽'是否發生是否發生返回載入 */
+            if(from.name === "手機版作品專欄" && to.name === "手機版作品一覽"){
+                app.PhoneProjectViewIsGoBack = true;
+            }else{
+                app.PhoneProjectViewIsGoBack = false;
             }
         }
     }

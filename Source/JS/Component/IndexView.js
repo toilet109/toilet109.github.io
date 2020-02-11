@@ -2,49 +2,44 @@ var IndexView = {
     template: 
     `
     <div>
-        <!--Load BG-->
-        <div class="IndexBackground animated zoomIn delay-1s ">
-        </div>
+        <!--載入背景-->
+        <div id="IndexBackground"></div>
         
-        <!--Load Line-->
-        <div class="Liner animated zoomIn delay-2s">
-            <!--Svg Line-->
-        </div>
+        <!--載入背景線條-->
+        <div id="Liner"></div>
 
-        <div class="container-fluid animated fadeInDown delay-1s">
+        <div id="MainView" class="container-fluid">
             <!--第一列-->
             <div class="row">
                 <div class="col">
                     <br><br><br><br>
                 </div>
             </div>
+
             <!--第二列-->
             <div class="row">
                 <div class="col">
-                    <!--Load Left MainText-->
-                    <div class="float-right animated fadeInRight delay-2s">
-                        <!--Svg Title-->
+                    <!--載入左側主標題-->
+                    <div id="Title">
                         <img class="float-right" height="90%" width="90%" src="./Source/IMG/Title.svg" />
                     </div>
                 </div>
-                <div class="float-left col">
-                    <!--None-->
+                <div class="col">
+                    <!--故意空-->
                 </div>
             </div>
 
             <!--第三列-->
             <div class="row">
-                <div class="float-right col">
-                    <!--None-->
+                <div class="col">
+                    <!--故意空-->
                 </div>
-                <div class="float-left col">
-                    <!--Load Right MainText-->
-                    <div class="animated fadeInLeft delay-3s">
-                        <!--Svg Local-->
+                <div class="col">
+                    <!--載入副標題-->
+                    <div id="SubTitle1">
                         <img  height="75%" width="75%" src="./Source/IMG/SubTitle1.svg" />
                     </div>
-                    <div class="animated fadeInLeft delay-4s">
-                        <!--Svg Local-->
+                    <div id="SubTitle2">
                         <img  height="75%" width="75%" src="./Source/IMG/SubTitle2.svg" />
                     </div>
                 </div>
@@ -53,31 +48,50 @@ var IndexView = {
             <!--第四列-->
             <div class="row">
                 <br>
-                <div class="float-right col">
-                    <!--None-->
+                <div class="col">
+                    <!--故意空-->
                 </div>
-                <div class="float-left col">
-                    <div class="animated fadeInLeft delay-2s">
-                        <!--Svg EngTitle--><br>
-                        <img height="90%" width="90%" src="./Source/IMG/EnglishTitle.svg" />
+                <div class="col">
+                    <div id="EnglishTitle">
+                        <br><img height="90%" width="90%" src="./Source/IMG/EnglishTitle.svg" />
                     </div>
                 </div>
             </div>
 
         </div>
 
-
         <!--置底-->
-        <div class="DownBtn">
-            <a @click="DownPage()">
+        <div id="DownBtn">
+            <a @click="ChangeNextPage()">
                 <img height="2.5%" width="2.5%" src="./Source/IMG/DownBTN.svg" />
             </a>
         </div>
     </div>
     `,
+    mounted() {
+        /*載入首頁動畫*/
+        document.getElementsByTagName("div").IndexBackground.className  = "animated zoomIn      delay-1s";
+        document.getElementsByTagName("div").Liner.className            = "animated zoomIn      delay-2s";
+        document.getElementsByTagName("div").MainView.className         = "animated fadeInDown  delay-1s";
+        document.getElementsByTagName("div").Title.className            = "animated fadeInRight delay-2s";
+        document.getElementsByTagName("div").SubTitle1.className        = "animated fadeInLeft  delay-3s";
+        document.getElementsByTagName("div").SubTitle2.className        = "animated fadeInLeft  delay-4s";
+        document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeInLeft  delay-2s";
+        document.getElementsByTagName("div").DownBtn.className          = "animated fadeInUp    delay-5s";
+    },
     methods: {
-        DownPage:function(params) {
-            
-        }
+        /* 切換到下一頁(作品一覽) */
+        ChangeNextPage:function() {
+            /*向下滑動切換動畫*/
+            document.getElementsByTagName("div").IndexBackground.className  = "animated fadeOutUp      delay-3s";
+            document.getElementsByTagName("div").Liner.className            = "animated zoomOut      delay-2s";
+            document.getElementsByTagName("div").Title.className            = "animated fadeOutLeft     delay-1s";
+            document.getElementsByTagName("div").SubTitle1.className        = "animated fadeOutRight  delay-1s";
+            document.getElementsByTagName("div").SubTitle2.className        = "animated fadeOutRight  delay-1s";
+            document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeOutRight  delay-1s";
+            document.getElementsByTagName("div").DownBtn.className          = "animated fadeOutDown    delay-0s";
+
+            app.DelayRoutePush("/Project",5000);
+        },
     },
 };

@@ -47,7 +47,7 @@ var PhoneProjectTypeView = {
     async mounted() {
         try {
             /* 用同位異步方式與await等待app元件優先載入完成，並讀取此頁面是否發生二次載入(選擇動畫方向用) */
-            this.IsReMount = await(app.ProjectTypeViewIsGoBack);
+            this.IsReMount = await(app.PhoneProjectTypeViewIsGoBack);
         } catch (error) {
             /* 當路由直接指向此頁時，直接視為初次載入 */
             this.IsReMount = false;
