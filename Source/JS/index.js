@@ -34,7 +34,7 @@ var app = new Vue({
                 component: ProjectTypeView 
             },
             { 
-                path: `/phoneProjectView`,
+                path: `/ProjectView`,
                 name: `小組作品`,
                 component: OnlyProjectView
             },

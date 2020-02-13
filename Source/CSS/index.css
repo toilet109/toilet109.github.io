@@ -116,19 +116,52 @@ body{
 #ProjectMetaBlock{
     position: absolute;
     background-color:#cecece;
+    text-align: center;
     margin: 0px;
-    padding: 0px;
+    padding: 1%;
     width: 22.5%;
     top: 10%;
     bottom: 5%;
     left: 0%;
 }
 
+#ProjectBackground{
+    position: fixed;
+    margin: 0px;
+    background-image: url("../IMG/ProjectViewBackground.svg");
+    background-size: 55%;
+    background-position: top;
+    background-repeat:no-repeat;
+    width: 100%;
+    top:-15%;
+    height: 120%;
+    padding: 0px;
+    z-index: -999;
+}
+
+    /*
+#ProjectMainViewer{
+    position: fixed;
+    margin: 0px;
+    background: url("../IMG/StudentGroupsProjectPhoto/火柴人集體升天.png") no-repeat top center;
+    background-size: cover;
+    -webkit-mask: url("../IMG/ProjectViewMainViewer.svg") no-repeat center center;
+    mask: url("../IMG/ProjectViewMainViewer.svg"    ) no-repeat center center;
+    -webkit-mask-size: contain;
+    
+    mask-size: contain;
+    width: 100%;
+    top:-15%;
+    height: 120%;
+    padding: 0px;
+}
+*/
 #ProjectMainBlock{
     position: absolute;
-    background-color:#cecece;
+    /*background-color:#cecece;*/
+    text-align: center;
     margin: 0px;
-    padding: 0px;
+    padding: 1%;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
@@ -138,22 +171,76 @@ body{
 
 #ImagePhotoBlock{
     position: absolute;
-    background-color:#cecece;
+    vertical-align: middle;
+    text-align: center;
     margin: 0px;
-    padding: 0px;
+    padding: 1%;
     width: 22.5%;
     height:30%;
     top:10%;
     right: 0%;
 }
 
+#ImagePhotoBlock img{
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+}
+
 #AboutBlock{
     position: absolute;
     background-color:#cecece;
+    text-align: center;
     margin: 0px;
-    padding: 0px;
+    padding: 1%;
     width: 22.5%;
     top: 42.5%;
     bottom: 5%;
     right: 0%;
+}
+
+#ProjectUpBtn{
+    text-align: center;
+    position: absolute;
+    margin: 0px;
+    top: 2.5%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+}
+
+#ProjectDownBtn{
+    text-align: center;
+    position: absolute;
+    margin: 0px;
+    bottom: 2.5%;
+    left: 0%;
+    right: 0%;
+    z-index: 2;
+}
+
+#ProjectViewLeftBtn{
+    position: absolute;
+    background-size: cover;
+    fill: #de5b78;   
+    text-align: left;
+    margin: 0px;
+    left:27.5%;
+    right: 50%;
+    width: 22.5%;
+    top:45%;
+    z-index: 100;
+}
+
+#ProjectViewRightBtn{
+    position: absolute;
+    text-align: right;
+    color: aqua;
+    margin: 0px;
+    left:50%;
+    right: 27.5%;
+    width: 22.5%;
+    top:45%;
+    z-index: 101;
 }

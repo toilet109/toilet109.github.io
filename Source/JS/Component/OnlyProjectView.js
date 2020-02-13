@@ -4,31 +4,46 @@ var OnlyProjectView = {
         <div>
             <!--載入背景-->
             <div id="MainBackground"></div>
+            <div id="ProjectBackground"></div>
+            <div id="ProjectMainViewer"></div>
 
             <!--載入返回鍵-->
             <div id="UpBtn">
                 <a @click="ChangeBeforePage()">
-                    <img height="2.5%" width="2.5%" src="./Source/IMG/UpBTN.svg" />
+                    <img height="5%" width="5%" src="./Source/IMG/ProjectViewUpBTN.svg" />
                 </a>
             </div>
-        
+
+            <div id="ProjectViewLeftBtn">
+                <a @click="ChangeBeforeProject()">
+                    <img height="25%" width="25%" src="./Source/IMG/ProjectViewLeftBTN.svg" />
+                </a>
+            </div>
+            <div id="ProjectViewRightBtn">
+                <a @click="ChangeNextProject()">
+                    <img height="25%" width="25%" src="./Source/IMG/ProjectViewRightBTN.svg" />
+                </a>
+            </div>
+
             <div id="ProjectMetaBlock">
-                <div class="container">
+                <div class="container"> 
                     <p>{{ProjectMeta}}</p>
                 </div>
             </div>
 
             <div id="ProjectMainBlock">
                 <div class="container">
-                    <p>{{ProjectPhotoPath}}</p>
-                    <a onclick="StudentGroups.event.GetBeforeGroup()">上一組</a>
-                    <a onclick="StudentGroups.event.GetNextGroup()">下一組</a>
+                    <div class="row">
+                        <div class="col">
+                            <!--div><img height="75%" width="75%" v-bind:src="ImagePhotoPath" /></div-->
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div id="ImagePhotoBlock">
                 <div class="container">
-                    <p>{{ImagePhotoPath}}</p>
+                    <div><img height="75%" width="75%" v-bind:src="ImagePhotoPath" /></div>
                 </div>
             </div>
 
@@ -37,6 +52,14 @@ var OnlyProjectView = {
                     <p>{{About}}</p>
                 </div>
             </div>
+
+            <!--置底-->
+            <div id="DownBtn">
+                <a @click="ChangeNextPage()">
+                    <img height="5%" width="5%" src="./Source/IMG/ProjectViewDownBTN.svg" />
+                </a>
+            </div>
+
         </div>
     `,
     data() {
@@ -57,25 +80,29 @@ var OnlyProjectView = {
         };
         
         /* 執行載入顯示元件動畫 */
-        document.getElementsByTagName("div").UpBtn.className            = "animated fadeInDown   delay-1s";
-        document.getElementsByTagName("div").ProjectMetaBlock.className = "animated slideInLeft  delay-1s";
-        document.getElementsByTagName("div").ProjectMainBlock.className = "animated fadeInUp     delay-1s";
-        document.getElementsByTagName("div").ImagePhotoBlock.className  = "animated fadeInDown   delay-1s";
-        document.getElementsByTagName("div").AboutBlock.className       = "animated slideInRight delay-1s";
-
-        setInterval(() => {
-            this.NowSelectGroupID = StudentGroups.event.GetNowSelectID();
-        },500);
+        document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeInDown   delay-1s";
+        document.getElementsByTagName("div").UpBtn.className                = "animated fadeInDown   delay-2s";
+        document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeInRight  delay-2s";
+        document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeInLeft   delay-2s";
+        document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated slideInLeft  delay-1s";
+        document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeInUp     delay-1s";
+        document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeInDown   delay-1s";
+        document.getElementsByTagName("div").AboutBlock.className           = "animated slideInRight delay-1s";
+        document.getElementsByTagName("div").DownBtn.className              = "animated fadeInUp     delay-2s";
     },
     methods: {
         /* 切換到上一頁(手機版作品專欄) */
         ChangeBeforePage:function() {
             /* 執行收起元件動畫 */
-            document.getElementsByTagName("div").UpBtn.className            = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").ProjectMetaBlock.className = "animated slideOutLeft  delay-1s";
-            document.getElementsByTagName("div").ProjectMainBlock.className = "animated slideOutDown  delay-1s";
-            document.getElementsByTagName("div").ImagePhotoBlock.className  = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").AboutBlock.className       = "animated slideOutRight delay-1s";
+            document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-1s";
+            document.getElementsByTagName("div").UpBtn.className                = "animated fadeOutUp     delay-0s";
+            document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated slideOutLeft  delay-0s";
+            document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated slideOutRight delay-0s";
+            document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated slideOutLeft  delay-1s";
+            document.getElementsByTagName("div").ProjectMainBlock.className     = "animated slideOutDown  delay-1s";
+            document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeOutUp     delay-1s";
+            document.getElementsByTagName("div").AboutBlock.className           = "animated slideOutRight delay-1s";
+            document.getElementsByTagName("div").DownBtn.className              = "animated fadeOutDown   delay-0s";
 
             app.DelayRouteBack(3000);
         },
@@ -102,6 +129,14 @@ var OnlyProjectView = {
             setTimeout(() => {
                 this.IsProjectMumberView = NextToShow;
             },500);
+        },
+        ChangeBeforeProject:function() {
+            StudentGroups.event.GetBeforeGroup();
+            this.NowSelectGroupID = StudentGroups.event.GetNowSelectID();
+        },
+        ChangeNextProject:function() {
+            StudentGroups.event.GetNextGroup();
+            this.NowSelectGroupID = StudentGroups.event.GetNowSelectID();
         },
     },
     computed: {

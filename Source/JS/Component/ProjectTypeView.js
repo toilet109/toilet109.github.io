@@ -16,8 +16,8 @@ var ProjectTypeView = {
                 <div v-for="(item,index) in GroupsDataList" class="row">
                     <div v-for="(subitem,subindex) in item" class="col">
                         <div id="ThreeDimensionalModelingBTN">
-                            <a @click="ChangeNextPage(index)">
-                                <img height="75%" width="75%" src="./Source/IMG/PhoneMenuViewFacebookIcon.svg" />
+                            <a @click="ChangeNextPage(subitem.ID)">
+                                <img height="75%" width="75%" v-bind:src="subitem.ImagePhotoPath" />
                             </a>
                         </div>
                     </div>
@@ -54,9 +54,7 @@ var ProjectTypeView = {
         this.GroupsDataList = [];
         for (let i = 0; i < StudentGroups.data.GroupsData.length; i++) {
             if(this.$route.params.ProjectType === StudentGroups.data.GroupsData[i].Type){
-        
-                TmpArray.push(StudentGroups.data.GroupsData[i]);
-
+                TmpArray.push({ImagePhotoPath:StudentGroups.data.GroupsData[i].ImagePhotoPath,ID:i});
                 if((TmpCounter+1)%3 == 0){
                     this.GroupsDataList.push(TmpArray);
                     TmpArray   = [];
@@ -97,7 +95,9 @@ var ProjectTypeView = {
             
             StudentGroups.event.SetNowSelectID(ProjectID);
             app.NowSelectID = ProjectID;
-            app.DelayRoutePush("/phoneProjectView",2000);
+            console.log(app.NowSelectID);
+            
+            app.DelayRoutePush("/ProjectView",2000);
         }
     },
 };
