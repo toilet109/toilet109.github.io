@@ -200,7 +200,7 @@ body{
     right: 0%;
 }
 
-#ProjectUpBtn{
+#ProjectViewUpBtn{
     text-align: center;
     position: absolute;
     margin: 0px;
@@ -210,7 +210,7 @@ body{
     z-index: 1;
 }
 
-#ProjectDownBtn{
+#ProjectViewDownBtn{
     text-align: center;
     position: absolute;
     margin: 0px;
@@ -242,5 +242,189 @@ body{
     right: 27.5%;
     width: 22.5%;
     top:45%;
-    z-index: 101;
+    z-index: 100;
+}
+
+#MaskView{
+    position: absolute;
+    margin: 0px;
+    background-color:#0b2228;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+#MediaViewBlock{
+    position: absolute;
+    text-align: justify;
+    background-color:hsl(0, 0%, 95%);
+    border-radius: 0.5%;
+    width: 95%;
+    margin: 0px;
+    top:2.5%;
+    bottom: -5%;
+    left: 2.5%;
+    right: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 5;
+    line-height: 1.5;
+    font-size: 90%;
+}
+
+#WaveGroup{
+    top:120%;
+    left: 0%;
+    right: 0%;
+    width:100%;
+}
+
+#Wave1{
+    position: absolute;
+    margin: 0px;
+    width:120%;
+    top: 5%;
+    height: 10%;
+    left: -10%; 
+    right: -10%; 
+
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 3s,7s;
+    -webkit-animation-duration: 3s,7s;
+
+    animation-name: WaveMove,WaveEvent;
+    -webkit-animation-name: WaveMove,WaveEvent;
+
+    animation-delay: 0s,0s;
+    -webkit-animation-delay: 0s,0s;
+}
+
+#Wave2{
+    position: absolute;
+    margin: 0px;
+    width:120%;
+    height: 10%;
+    top: 15%;
+    left: -10%; 
+    right: -10%; 
+
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 2.5s,7s;
+    -webkit-animation-duration: 2.5s,7s;
+
+    animation-name: WaveMove,WaveEvent;
+    -webkit-animation-name: WaveMove,WaveEvent;
+
+    animation-delay: 0s,0.05s;
+    -webkit-animation-delay: 0s,0.05s;
+}
+
+#Wave3{
+    position: absolute;
+    margin: 0px;
+    width:120%;
+    height: 10%;
+    top: 40%;
+    left: -10%; 
+    right: -10%; 
+
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 2s,7s;
+    -webkit-animation-duration: 2s,7s;
+
+    animation-name: WaveMove,WaveEvent;
+    -webkit-animation-name: WaveMove,WaveEvent;
+
+    animation-delay: 0s,0.1s;
+    -webkit-animation-delay: 0s,0.1s;
+}
+
+#Wave4{
+    position: absolute;
+    margin: 0px;
+    width:120%;
+    height: 10%;
+    top: 55%;
+    left: -10%; 
+    right: -10%; 
+
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 1.5s,7s;
+    -webkit-animation-duration: 1.5s,7s;
+
+    animation-name: WaveMove,WaveEvent;
+    -webkit-animation-name: WaveMove,WaveEvent;
+
+    animation-delay: 0s,0.15s;
+    -webkit-animation-delay: 0s,0.15s;
+    
+}
+
+#Wave5{
+    position: absolute;
+    margin: 0px;
+    width:120%;
+    height: 150%;
+    top:100%;
+    left: -10%; 
+    right: -10%; 
+    background-color: #0b2228;
+
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+
+    animation-direction: 9s;
+    -webkit-animation-duration: 9s;
+
+    animation-name: WaveEvent;
+    -webkit-animation-name: WaveEvent;
+
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+
+@-webkit-keyframes WaveEvent {
+    form{
+        top:100%;
+    }
+    to{
+        top:-50%;
+    }
+}
+
+
+@keyframes WaveMove{
+    from{
+        right:   0%;
+        left : -10%;
+    }
+    to{
+        right: -10%;
+        left :   0%;
+    }
 }

@@ -8,7 +8,7 @@ var OnlyProjectView = {
             <div id="ProjectMainViewer"></div>
 
             <!--載入返回鍵-->
-            <div id="UpBtn">
+            <div id="ProjectViewUpBtn">
                 <a @click="ChangeBeforePage()">
                     <img height="5%" width="5%" src="./Source/IMG/ProjectViewUpBTN.svg" />
                 </a>
@@ -54,10 +54,38 @@ var OnlyProjectView = {
             </div>
 
             <!--置底-->
-            <div id="DownBtn">
+            <div id="ProjectViewDownBtn">
                 <a @click="ChangeNextPage()">
                     <img height="5%" width="5%" src="./Source/IMG/ProjectViewDownBTN.svg" />
                 </a>
+            </div>
+
+            <div id="MaskView"></div>
+
+            <div id="MediaViewBlock">
+                <a class="PhoneCloseBTN" >[X]</a>
+                <p><br><br></p>
+                <video id="PhoneVideoView" width="100%" height="100%" preload="none" loop="loop" controls="controls">
+                    <source v-bind:src="ProjectMoviePath" type="video/mp4">
+                    <p>錯誤！瀏覽器不支援Video播放器</p>
+                </video>
+                
+            </div>
+            
+            <div id="WaveGroup">
+                <div id="Wave1">
+                    <img width="100%" src="./Source/IMG/Wave1.svg" />
+                </div>
+                <div id="Wave2">
+                    <img width="100%" src="./Source/IMG/Wave2.svg" />
+                </div>
+                <div id="Wave3">
+                    <img width="100%" src="./Source/IMG/Wave3.svg" />
+                </div>
+                <div id="Wave4">
+                    <img width="100%" src="./Source/IMG/Wave4.svg" />
+                </div>
+                <div id="Wave5"></div>
             </div>
 
         </div>
@@ -78,31 +106,35 @@ var OnlyProjectView = {
             /* 當路由直接指向此頁時，無法獲取有效的ID值定給予初始值索引編號0 */
             this.NowSelectGroupID = 0;
         };
-        
+
+        document.getElementsByTagName("div").WaveGroup.style.display        = "none";
+        document.getElementsByTagName("div").MaskView.style.display         = "none";
+        document.getElementsByTagName("div").MediaViewBlock.style.display   = "none";
+
         /* 執行載入顯示元件動畫 */
         document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeInDown   delay-1s";
-        document.getElementsByTagName("div").UpBtn.className                = "animated fadeInDown   delay-2s";
+        document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeInDown   delay-2s";
         document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeInRight  delay-2s";
         document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeInLeft   delay-2s";
         document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated slideInLeft  delay-1s";
         document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeInUp     delay-1s";
         document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeInDown   delay-1s";
         document.getElementsByTagName("div").AboutBlock.className           = "animated slideInRight delay-1s";
-        document.getElementsByTagName("div").DownBtn.className              = "animated fadeInUp     delay-2s";
+        document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeInUp     delay-2s";
     },
     methods: {
         /* 切換到上一頁(手機版作品專欄) */
         ChangeBeforePage:function() {
             /* 執行收起元件動畫 */
             document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").UpBtn.className                = "animated fadeOutUp     delay-0s";
+            document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeOutUp     delay-0s";
             document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated slideOutLeft  delay-0s";
             document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated slideOutRight delay-0s";
             document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated slideOutLeft  delay-1s";
             document.getElementsByTagName("div").ProjectMainBlock.className     = "animated slideOutDown  delay-1s";
             document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeOutUp     delay-1s";
             document.getElementsByTagName("div").AboutBlock.className           = "animated slideOutRight delay-1s";
-            document.getElementsByTagName("div").DownBtn.className              = "animated fadeOutDown   delay-0s";
+            document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeOutDown   delay-0s";
 
             app.DelayRouteBack(3000);
         },
@@ -138,6 +170,42 @@ var OnlyProjectView = {
             StudentGroups.event.GetNextGroup();
             this.NowSelectGroupID = StudentGroups.event.GetNowSelectID();
         },
+        ChangeNextPage:function(){
+            document.getElementsByTagName("div").ProjectBackground.className    = "animated bounceIn      delay-0s";
+
+            document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated bounceOut     delay-1s";
+            document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated bounceOut     delay-1s";
+            document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated bounceOut     delay-1s";
+            document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated bounceOut     delay-1s";
+            setTimeout(() => {
+                document.getElementsByTagName("div").WaveGroup.style.display  = "";
+
+                document.getElementsByTagName("div").ProjectViewUpBtn.style.display     = "none";
+                document.getElementsByTagName("div").ProjectViewLeftBtn.style.display   = "none";
+                document.getElementsByTagName("div").ProjectViewRightBtn.style.display  = "none";
+                document.getElementsByTagName("div").ProjectViewDownBtn.style.display   = "none";
+
+                document.getElementsByTagName("div").ProjectBackground.className    = "";
+                document.getElementsByTagName("div").ProjectViewUpBtn.className     = "";
+                document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "";
+                document.getElementsByTagName("div").ProjectViewRightBtn.className  = "";
+                document.getElementsByTagName("div").ProjectViewDownBtn.className   = "";
+
+                setTimeout(() => {
+                    document.getElementsByTagName("div").MaskView.style.display   = "";
+                    document.getElementsByTagName("div").MediaViewBlock.style.display   = "";
+                    document.getElementsByTagName("div").WaveGroup.style.display  = "none";
+                    
+                    document.getElementsByTagName("div").MediaViewBlock.className   = "animated slideInUp delay-0s";
+
+                    document.getElementsByTagName("div").ProjectBackground.style.filter = "blur(5px)";
+                    document.getElementsByTagName("div").ProjectMetaBlock.style.filter  = "blur(5px)";
+                    document.getElementsByTagName("div").ImagePhotoBlock.style.filter   = "blur(5px)";
+                    document.getElementsByTagName("div").AboutBlock.style.filter        = "blur(5px)";
+                },6000);
+
+            },2000);
+        }
     },
     computed: {
         /* 載入形象照路徑 */
@@ -170,3 +238,53 @@ var OnlyProjectView = {
         }
     },
 };
+
+/*
+var WaveCtl = new Object;
+
+WaveCtl.data = {
+    Wave1:{
+        Top    :  0 ,
+        Left   : -10,
+        Right  : -10,
+        Counter:  0 ,
+
+    },
+    Wave2:{
+        Top: 0,
+    },
+    Wave3:{
+
+    },
+    Wave4:{
+
+    },
+    Wave5:{
+
+    }
+}
+
+WaveCtl.event ={
+    Init:function() {
+
+    },
+    Start:function() {
+        document.getElementsByTagName("div").Wave1.style.top    = "0%";
+        document.getElementsByTagName("div").Wave2.style.top    = "0%";
+        document.getElementsByTagName("div").Wave3.style.top    = "0%";
+        document.getElementsByTagName("div").Wave4.style.top    = "0%";
+        document.getElementsByTagName("div").Wave5.style.top    = "0%";
+    }
+
+}
+
+WaveCtl.event.Init();
+
+var RandSystem = Object;
+
+RandSystem.data ={
+    UpDownLimit:0.5,
+    UpDown:-0.5,
+
+}
+*/
