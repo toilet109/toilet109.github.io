@@ -285,33 +285,9 @@ body{
     position: absolute;
     margin: 0px;
     width:120%;
-    top: 5%;
+    /*top: 5%;*/
+    top: 100%;
     height: 10%;
-    left: -10%; 
-    right: -10%; 
-
-    -webkit-animation-iteration-count: infinite,1;
-    animation-iteration-count: infinite,1;
-
-    -webkit-animation-direction: alternate-reverse,alternate;
-    animation-direction: alternate-reverse,alternate;
-
-    animation-direction: 3s,7s;
-    -webkit-animation-duration: 3s,7s;
-
-    animation-name: WaveMove,WaveEvent;
-    -webkit-animation-name: WaveMove,WaveEvent;
-
-    animation-delay: 0s,0s;
-    -webkit-animation-delay: 0s,0s;
-}
-
-#Wave2{
-    position: absolute;
-    margin: 0px;
-    width:120%;
-    height: 10%;
-    top: 15%;
     left: -10%; 
     right: -10%; 
 
@@ -327,16 +303,17 @@ body{
     animation-name: WaveMove,WaveEvent;
     -webkit-animation-name: WaveMove,WaveEvent;
 
-    animation-delay: 0s,0.05s;
-    -webkit-animation-delay: 0s,0.05s;
+    animation-delay: 0s,0.5s;
+    -webkit-animation-delay: 0s,0.5s;
 }
 
-#Wave3{
+#Wave2{
     position: absolute;
     margin: 0px;
     width:120%;
     height: 10%;
-    top: 40%;
+    /*top: 15%;*/
+    top:100%;
     left: -10%; 
     right: -10%; 
 
@@ -352,16 +329,17 @@ body{
     animation-name: WaveMove,WaveEvent;
     -webkit-animation-name: WaveMove,WaveEvent;
 
-    animation-delay: 0s,0.1s;
-    -webkit-animation-delay: 0s,0.1s;
+    animation-delay: 0s,1s;
+    -webkit-animation-delay: 0s,1s;
 }
 
-#Wave4{
+#Wave3{
     position: absolute;
     margin: 0px;
     width:120%;
     height: 10%;
-    top: 55%;
+    /*top: 40%;*/
+    top:100%;
     left: -10%; 
     right: -10%; 
 
@@ -377,8 +355,34 @@ body{
     animation-name: WaveMove,WaveEvent;
     -webkit-animation-name: WaveMove,WaveEvent;
 
-    animation-delay: 0s,0.15s;
-    -webkit-animation-delay: 0s,0.15s;
+    animation-delay: 0s,1.5s;
+    -webkit-animation-delay: 0s,1.5s;
+}
+
+#Wave4{
+    position: absolute;
+    margin: 0px;
+    width:120%;
+    height: 10%;
+    /*top: 55%;*/
+    top:100%;
+    left: -10%; 
+    right: -10%; 
+
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 1s,7s;
+    -webkit-animation-duration: 1s,7s;
+
+    animation-name: WaveMove,WaveEvent;
+    -webkit-animation-name: WaveMove,WaveEvent;
+
+    animation-delay: 0s,2s;
+    -webkit-animation-delay: 0s,2s;
     
 }
 
@@ -404,8 +408,8 @@ body{
     animation-name: WaveEvent;
     -webkit-animation-name: WaveEvent;
 
-    animation-delay: 0.2s;
-    -webkit-animation-delay: 0.2s;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
 }
 
 @-webkit-keyframes WaveEvent {
