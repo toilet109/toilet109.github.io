@@ -13,6 +13,24 @@ var PhoneProjectView = {
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitle.svg" />
             </div>
 
+            <div id="ProjecTitleTitleButton1">
+                <a v-bind:href="WhereIs" target="Web_WhereIs">
+                    <img height="100%" width="100%" src="./Source/IMG/button-1.svg" />
+                </a>
+            </div>
+
+            <div id="ProjecTitleTitleButton2">
+                <a v-bind:href="WhichIs" target="Web_WhichIs">
+                    <img height="100%" width="100%" src="./Source/IMG/button-2.svg" />
+                </a>
+            </div>
+
+            <div id="ProjecTitleTitleButton3">
+                <a v-bind:href="WhyCall" target="Web_WhyCall">
+                    <img height="100%" width="100%" src="./Source/IMG/button-3.svg" />
+                </a>
+            </div>
+
             <div id="PhoneBackBtn">
                 <a @click="ChangeBeforePage()">
                     <img height="50%" width="50%" src="./Source/IMG/BackBTN.svg" />
@@ -89,7 +107,10 @@ var PhoneProjectView = {
     `,
     data() {
         return {
-            IsReMount: false , //是否有二次載入(反向載入)的情況
+            IsReMount: false                      , //是否有二次載入(反向載入)的情況
+            WhereIs  : StudentGroups.data.WhereIs , //'新一代設計展'連結
+            WhichIs  : StudentGroups.data.WhichIs , //'放視大賞'連結
+            WhyCall  : StudentGroups.data.WhyCall , //'聯絡資訊'連結
         }
     },
     async mounted() {
@@ -107,6 +128,9 @@ var PhoneProjectView = {
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-1s";
             document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInDown   delay-2s";
+            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeInDown   delay-2s";
+            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInDown   delay-2s";
+            document.getElementsByTagName("div").ProjecTitleTitleButton3.className           = "animated fadeInDown   delay-2s";
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInRight  delay-2s";
                 
             /* 由右向左載入主題分類的分組動畫 */
@@ -134,6 +158,9 @@ var PhoneProjectView = {
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-3s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-2s";
             document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutUp     delay-1s";
+            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeOutUp     delay-1s";
+            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutUp     delay-1s";
+            document.getElementsByTagName("div").ProjecTitleTitleButton3.className           = "animated fadeOutUp     delay-1s";
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutRight  delay-1s";       
                
             /* 由左向右切出主題分類的分組動畫 */

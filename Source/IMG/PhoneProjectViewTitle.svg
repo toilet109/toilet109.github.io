@@ -43,7 +43,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="536.72476"
+     inkscape:cx="191.72476"
      inkscape:cy="155.39295"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -101,41 +101,5 @@
         </g>
       </g>
     </g>
-    <text
-       y="287.96301"
-       x="7.4189215"
-       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.40833333px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092;"
-       id="text58">
-      <tspan
-         style="font-weight:normal;stroke-width:0.18291092;font-size:7.40833333px;"
-         x="7.4189215 14.403883 21.388845 28.373814 35.358788 42.343746"
-         y="287.96301"
-         sodipodi:role="line"
-         id="tspan56">新一代設計展</tspan>
-    </text>
-    <text
-       y="287.89157"
-       x="58.769913"
-       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.40833333px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092;"
-       id="text62">
-      <tspan
-         style="font-weight:normal;stroke-width:0.18291092;font-size:7.40833333px;"
-         sodipodi:role="line"
-         id="tspan60"
-         x="58.769913"
-         y="287.89157">放視大賞</tspan>
-    </text>
-    <text
-       y="287.85486"
-       x="96.168098"
-       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833333px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.18291092;"
-       id="text66">
-      <tspan
-         style="stroke-width:0.18291092;font-size:7.40833333px;"
-         sodipodi:role="line"
-         id="tspan64"
-         x="96.168098"
-         y="287.85486">聯絡資訊</tspan>
-    </text>
   </g>
 </svg>

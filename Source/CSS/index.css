@@ -245,17 +245,6 @@ body{
     z-index: 100;
 }
 
-#MaskView{
-    position: absolute;
-    margin: 0px;
-    background-color:#0b2228;
-    top: 0%;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    z-index: 1;
-}
-
 #MediaViewBlock{
     position: absolute;
     text-align: justify;
@@ -285,26 +274,10 @@ body{
     position: absolute;
     margin: 0px;
     width:120%;
-    /*top: 5%;*/
     top: 100%;
     height: 10%;
     left: -10%; 
     right: -10%; 
-
-    -webkit-animation-iteration-count: infinite,1;
-    animation-iteration-count: infinite,1;
-
-    -webkit-animation-direction: alternate-reverse,alternate;
-    animation-direction: alternate-reverse,alternate;
-
-    animation-direction: 2.5s,7s;
-    -webkit-animation-duration: 2.5s,7s;
-
-    animation-name: WaveMove,WaveEvent;
-    -webkit-animation-name: WaveMove,WaveEvent;
-
-    animation-delay: 0s,0.5s;
-    -webkit-animation-delay: 0s,0.5s;
 }
 
 #Wave2{
@@ -312,25 +285,9 @@ body{
     margin: 0px;
     width:120%;
     height: 10%;
-    /*top: 15%;*/
     top:100%;
     left: -10%; 
-    right: -10%; 
-
-    -webkit-animation-iteration-count: infinite,1;
-    animation-iteration-count: infinite,1;
-
-    -webkit-animation-direction: alternate-reverse,alternate;
-    animation-direction: alternate-reverse,alternate;
-
-    animation-direction: 2s,7s;
-    -webkit-animation-duration: 2s,7s;
-
-    animation-name: WaveMove,WaveEvent;
-    -webkit-animation-name: WaveMove,WaveEvent;
-
-    animation-delay: 0s,1s;
-    -webkit-animation-delay: 0s,1s;
+    right: -10%;
 }
 
 #Wave3{
@@ -338,25 +295,9 @@ body{
     margin: 0px;
     width:120%;
     height: 10%;
-    /*top: 40%;*/
     top:100%;
     left: -10%; 
     right: -10%; 
-
-    -webkit-animation-iteration-count: infinite,1;
-    animation-iteration-count: infinite,1;
-
-    -webkit-animation-direction: alternate-reverse,alternate;
-    animation-direction: alternate-reverse,alternate;
-
-    animation-direction: 1.5s,7s;
-    -webkit-animation-duration: 1.5s,7s;
-
-    animation-name: WaveMove,WaveEvent;
-    -webkit-animation-name: WaveMove,WaveEvent;
-
-    animation-delay: 0s,1.5s;
-    -webkit-animation-delay: 0s,1.5s;
 }
 
 #Wave4{
@@ -364,26 +305,9 @@ body{
     margin: 0px;
     width:120%;
     height: 10%;
-    /*top: 55%;*/
     top:100%;
     left: -10%; 
     right: -10%; 
-
-    -webkit-animation-iteration-count: infinite,1;
-    animation-iteration-count: infinite,1;
-
-    -webkit-animation-direction: alternate-reverse,alternate;
-    animation-direction: alternate-reverse,alternate;
-
-    animation-direction: 1s,7s;
-    -webkit-animation-duration: 1s,7s;
-
-    animation-name: WaveMove,WaveEvent;
-    -webkit-animation-name: WaveMove,WaveEvent;
-
-    animation-delay: 0s,2s;
-    -webkit-animation-delay: 0s,2s;
-    
 }
 
 #Wave5{
@@ -395,24 +319,215 @@ body{
     left: -10%; 
     right: -10%; 
     background-color: #0b2228;
+}
 
+.Wave1Up{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 2.5s,7s;
+    -webkit-animation-duration: 2.5s,7s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-name: WaveMove,WaveEventUp;
+    -webkit-animation-name: WaveMove,WaveEventUp;
+
+    animation-delay: 0s,0.5s;
+    -webkit-animation-delay: 0s,0.5s;
+}
+
+.Wave2Up{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 2s,7s;
+    -webkit-animation-duration: 2s,7s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveMove,WaveEventUp;
+    -webkit-animation-name: WaveMove,WaveEventUp;
+
+    animation-delay: 0s,1s;
+    -webkit-animation-delay: 0s,1s;
+}
+
+
+.Wave3Up{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-duration: 1.5s,7s;
+    -webkit-animation-duration: 1.5s,7s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveMove,WaveEventUp;
+    -webkit-animation-name: WaveMove,WaveEventUp;
+
+    animation-delay: 0s,1.75s;
+    -webkit-animation-delay: 0s,1.75s;
+}
+
+
+.Wave4Up{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-duration: 1.25s,7s;
+    -webkit-animation-duration: 1.25s,7s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveMove,WaveEventUp;
+    -webkit-animation-name: WaveMove,WaveEventUp;
+
+    animation-delay: 0s,2s;
+    -webkit-animation-delay: 0s,2s;
+    
+}
+
+.Wave5Up{
     animation-iteration-count: 1;
     -webkit-animation-iteration-count: 1;
 
     animation-direction: alternate;
     -webkit-animation-direction: alternate;
 
-    animation-direction: 9s;
+    animation-duration: 9s;
     -webkit-animation-duration: 9s;
 
-    animation-name: WaveEvent;
-    -webkit-animation-name: WaveEvent;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveEventUp;
+    -webkit-animation-name: WaveEventUp;
 
     animation-delay: 3s;
     -webkit-animation-delay: 3s;
 }
 
-@-webkit-keyframes WaveEvent {
+.Wave1Down{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 2.5s,8s;
+    -webkit-animation-duration: 2.5s,8s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-name: WaveMove,WaveEventDown;
+    -webkit-animation-name: WaveMove,WaveEventDown;
+
+    animation-delay: 0s,2.5s;
+    -webkit-animation-delay: 0s,2.5s;
+}
+
+.Wave2Down{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-direction: 2s,8s;
+    -webkit-animation-duration: 2s,8s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveMove,WaveEventDown;
+    -webkit-animation-name: WaveMove,WaveEventDown;
+
+    animation-delay: 0s,2s;
+    -webkit-animation-delay: 0s,2s;
+}
+
+
+.Wave3Down{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-duration: 1.5s,8s;
+    -webkit-animation-duration: 1.5s,8s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveMove,WaveEventDown;
+    -webkit-animation-name: WaveMove,WaveEventDown;
+
+    animation-delay: 0s,1s;
+    -webkit-animation-delay: 0s,1s;
+}
+
+
+.Wave4Down{
+    -webkit-animation-iteration-count: infinite,1;
+    animation-iteration-count: infinite,1;
+
+    -webkit-animation-direction: alternate-reverse,alternate;
+    animation-direction: alternate-reverse,alternate;
+
+    animation-duration: 1.25s,8s;
+    -webkit-animation-duration: 1.25s,8s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveMove,WaveEventDown;
+    -webkit-animation-name: WaveMove,WaveEventDown;
+
+    animation-delay: 0s,0.5s;
+    -webkit-animation-delay: 0s,0.5s;
+    
+}
+
+.Wave5Down{
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+
+    animation-duration: 6.5s;
+    -webkit-animation-duration: 6.5s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: WaveEventDownForBG;
+    -webkit-animation-name: WaveEventDownForBG;
+
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+@-webkit-keyframes WaveEventUp {
     form{
         top:100%;
     }
@@ -421,6 +536,26 @@ body{
     }
 }
 
+@-webkit-keyframes WaveEventDown {
+    form{
+        top:-50%;
+    }
+    to{
+        top:100%;
+    }
+}
+
+@-webkit-keyframes WaveEventDownForBG {
+    form{
+        top:-50%;
+    }
+    80%{
+        top:100%;
+    }
+    to{
+        top:100%;
+    }
+}
 
 @keyframes WaveMove{
     from{

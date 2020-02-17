@@ -55,15 +55,13 @@ var OnlyProjectView = {
 
             <!--置底-->
             <div id="ProjectViewDownBtn">
-                <a @click="ChangeNextPage()">
+                <a @click="ChangeMediaView()">
                     <img height="5%" width="5%" src="./Source/IMG/ProjectViewDownBTN.svg" />
                 </a>
             </div>
 
-            <div id="MaskView"></div>
-
             <div id="MediaViewBlock">
-                <a class="PhoneCloseBTN" >[X]</a>
+                <a class="PhoneCloseBTN" @click="CloseMediaView()">[X]</a>
                 <p><br><br></p>
                 <video id="PhoneVideoView" width="100%" height="100%" preload="none" loop="loop" controls="controls">
                     <source v-bind:src="ProjectMoviePath" type="video/mp4">
@@ -107,8 +105,6 @@ var OnlyProjectView = {
             this.NowSelectGroupID = 0;
         };
 
-        document.getElementsByTagName("div").WaveGroup.style.display        = "none";
-        document.getElementsByTagName("div").MaskView.style.display         = "none";
         document.getElementsByTagName("div").MediaViewBlock.style.display   = "none";
 
         /* 執行載入顯示元件動畫 */
@@ -170,7 +166,7 @@ var OnlyProjectView = {
             StudentGroups.event.GetNextGroup();
             this.NowSelectGroupID = StudentGroups.event.GetNowSelectID();
         },
-        ChangeNextPage:function(){
+        ChangeMediaView:function(){
             document.getElementsByTagName("div").ProjectBackground.className    = "animated bounceIn      delay-0s";
 
             document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated bounceOut     delay-1s";
@@ -178,7 +174,7 @@ var OnlyProjectView = {
             document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated bounceOut     delay-1s";
             document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated bounceOut     delay-1s";
             setTimeout(() => {
-                document.getElementsByTagName("div").WaveGroup.style.display  = "";
+                this.SetWaveAnimate(true);
 
                 document.getElementsByTagName("div").ProjectViewUpBtn.style.display     = "none";
                 document.getElementsByTagName("div").ProjectViewLeftBtn.style.display   = "none";
@@ -191,20 +187,76 @@ var OnlyProjectView = {
                 document.getElementsByTagName("div").ProjectViewRightBtn.className  = "";
                 document.getElementsByTagName("div").ProjectViewDownBtn.className   = "";
 
-                setTimeout(() => {
-                    document.getElementsByTagName("div").MaskView.style.display   = "";
-                    document.getElementsByTagName("div").MediaViewBlock.style.display   = "";
-                    document.getElementsByTagName("div").WaveGroup.style.display  = "none";
-                    
-                    document.getElementsByTagName("div").MediaViewBlock.className   = "animated slideInUp delay-0s";
-
-                    document.getElementsByTagName("div").ProjectBackground.style.filter = "blur(5px)";
-                    document.getElementsByTagName("div").ProjectMetaBlock.style.filter  = "blur(5px)";
-                    document.getElementsByTagName("div").ImagePhotoBlock.style.filter   = "blur(5px)";
-                    document.getElementsByTagName("div").AboutBlock.style.filter        = "blur(5px)";
-                },6000);
-
             },2000);
+
+            setTimeout(() => {
+                document.getElementsByTagName("div").MediaViewBlock.style.display   = "";
+                
+                document.getElementsByTagName("div").MediaViewBlock.className   = "animated slideInUp delay-0s";
+
+                document.getElementsByTagName("div").ProjectBackground.style.filter = "blur(5px)";
+                document.getElementsByTagName("div").ProjectMetaBlock.style.filter  = "blur(5px)";
+                document.getElementsByTagName("div").ImagePhotoBlock.style.filter   = "blur(5px)";
+                document.getElementsByTagName("div").AboutBlock.style.filter        = "blur(5px)";
+            },8000);
+        },
+
+        CloseMediaView:function(){
+            document.getElementsByTagName("div").MediaViewBlock.className       = "animated slideOutDown delay-0s";
+
+            setTimeout(() => {
+                document.getElementsByTagName("div").MediaViewBlock.style.display   = "none";
+                this.SetWaveAnimate(false);
+
+                document.getElementsByTagName("div").ProjectBackground.style.filter = "";
+                document.getElementsByTagName("div").ProjectMetaBlock.style.filter  = "";
+                document.getElementsByTagName("div").ImagePhotoBlock.style.filter   = "";
+                document.getElementsByTagName("div").AboutBlock.style.filter        = "";
+                document.getElementsByTagName("div").ProjectBackground.className    = "";
+
+            },1000);
+
+
+            setTimeout(() => {
+                document.getElementsByTagName("div").ProjectViewUpBtn.style.display     = "";
+                document.getElementsByTagName("div").ProjectViewLeftBtn.style.display   = "";
+                document.getElementsByTagName("div").ProjectViewRightBtn.style.display  = "";
+                document.getElementsByTagName("div").ProjectViewDownBtn.style.display   = "";
+
+                document.getElementsByTagName("div").ProjectBackground.className    = "animated bounceIn     delay-0s";
+                document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated bounceIn     delay-1s";
+                document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated bounceIn     delay-1s";
+                document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated bounceIn     delay-1s";
+                document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated bounceIn     delay-1s";
+            },8000);
+
+        },
+        SetWaveAnimate:function(IsUpState){
+            if(IsUpState){
+                document.getElementsByTagName("div").Wave1.className = "Wave1Up";
+                document.getElementsByTagName("div").Wave2.className = "Wave2Up";
+                document.getElementsByTagName("div").Wave3.className = "Wave3Up";
+                document.getElementsByTagName("div").Wave4.className = "Wave4Up";
+                document.getElementsByTagName("div").Wave5.className = "Wave5Up";
+
+                document.getElementsByTagName("div").Wave1.style.top = "100%";
+                document.getElementsByTagName("div").Wave2.style.top = "100%";
+                document.getElementsByTagName("div").Wave3.style.top = "100%";
+                document.getElementsByTagName("div").Wave4.style.top = "100%";
+                document.getElementsByTagName("div").Wave5.style.top = "100%";
+            }else{
+                document.getElementsByTagName("div").Wave1.className = "Wave1Down";
+                document.getElementsByTagName("div").Wave2.className = "Wave2Down";
+                document.getElementsByTagName("div").Wave3.className = "Wave3Down";
+                document.getElementsByTagName("div").Wave4.className = "Wave4Down";
+                document.getElementsByTagName("div").Wave5.className = "Wave5Down";
+                
+                document.getElementsByTagName("div").Wave1.style.top = "-50%";
+                document.getElementsByTagName("div").Wave2.style.top = "-50%";
+                document.getElementsByTagName("div").Wave3.style.top = "-50%";
+                document.getElementsByTagName("div").Wave4.style.top = "-50%";
+                document.getElementsByTagName("div").Wave5.style.top = "-50%";
+            }
         }
     },
     computed: {

@@ -178,6 +178,36 @@ body{
     z-index: -993;
 }
 
+#ProjecTitleTitleButton1{
+    position: absolute;
+    margin: 0px;
+    top: 5.5%;
+    left: 0%;
+    right: 68%;
+    width: 32%;
+    z-index: -992;
+}
+
+#ProjecTitleTitleButton2{
+    position: absolute;
+    margin: 0px;
+    top: 5.5%;
+    left: 32%;
+    right: 40%;
+    width: 28%;
+    z-index: -991;
+}
+
+#ProjecTitleTitleButton3{
+    position: absolute;
+    margin: 0px;
+    top: 5.5%;
+    left: 60%;
+    right: 12%;
+    width: 28%;
+    z-index: -990;
+}
+
 #PhoneBackBtn{
     position: absolute;
     margin: 0px;

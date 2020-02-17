@@ -12,6 +12,24 @@ var PhoneOnlyProjectView = {
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitle.svg" />
             </div>
 
+            <div id="ProjecTitleTitleButton1">
+                <a v-bind:href="WhereIs" target="Web_WhereIs">
+                    <img height="100%" width="100%" src="./Source/IMG/button-1.svg" />
+                </a>
+            </div>
+
+            <div id="ProjecTitleTitleButton2">
+                <a v-bind:href="WhichIs" target="Web_WhichIs">
+                    <img height="100%" width="100%" src="./Source/IMG/button-2.svg" />
+                </a>
+            </div>
+
+            <div id="ProjecTitleTitleButton3">
+                <a v-bind:href="WhyCall" target="Web_WhyCall">
+                    <img height="100%" width="100%" src="./Source/IMG/button-3.svg" />
+                </a>
+            </div>
+
             <div id="PhoneBackBtn">
                 <a @click="ChangeBeforePage()">
                     <img height="50%" width="50%" src="./Source/IMG/BackBTN.svg" />
@@ -89,6 +107,9 @@ var PhoneOnlyProjectView = {
         return {
             IsProjectAboutView  : false                           , //是否檢視作品說明界面
             IsProjectMumberView : false                           , //是否檢視參與成員資料界面
+            WhereIs             : StudentGroups.data.WhereIs      , //'新一代設計展'連結
+            WhichIs             : StudentGroups.data.WhichIs      , //'放視大賞'連結
+            WhyCall             : StudentGroups.data.WhyCall      , //'聯絡資訊'連結
             Link                : StudentGroups.data.FaceBookLink , //載入FB連結
             NowSelectGroupID    : 0                               , //目前選擇的作品ID(Array索引值)
         }

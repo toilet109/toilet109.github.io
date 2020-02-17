@@ -1,7 +1,10 @@
 var StudentGroups = new Object();
 
 StudentGroups.data = {
-    SelectID: 0,
+    SelectID    : 0,
+    WhereIs     :`https://www.google.com.tw/maps`,
+    WhichIs     :`https://github.com/Lian0123/109-National-Tainan-University-Visual-Art-Design/`,
+    WhyCall     :`mailto:#`,
     FaceBookLink:`https://www.facebook.com/`,
     GroupsData:[
         /*
