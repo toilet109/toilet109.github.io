@@ -132,18 +132,21 @@ body{
     position: absolute;
     margin: 0px;
     top: 1.5%;
-    right: -7.5%;
+    right:  -12.5%;
+    height: calc(100% - 75%);
     z-index: -997;
 }
 
 #PhoneRightBtn{
-    text-align: center;
+    text-align: right;
     position: absolute;
     margin: 0px;
-    top: 45%;
-    height:10%;
-    bottom: 45%;
-    right: -7.5%;
+    top:  calc(100% - 55%);
+    height: calc(100% - 90%);
+    bottom: calc(100% - 55%);
+    width: 40%;
+    left: 60%;
+    right: 0%;
     z-index: 2;
 }
 
@@ -214,7 +217,7 @@ body{
     text-align:right;
     right: 5%;
     left: 55%;
-    top: 12%;
+    top: 12.5%;
     z-index: 2;
 }
 
@@ -361,7 +364,7 @@ body{
     z-index: 6;
 }
 
-.PhoneProgectTypeBTNGroup{
+.PhoneProjectTypeBTNGroup{
     position: absolute;
     margin: 0px;
     top:20%;
@@ -379,6 +382,12 @@ body{
     height: 85%;
     overflow-y:scroll;
     z-index: -995;
+}
+
+.PhoneNoneBlock{
+    background-color: #be3e3e;
+    height: 10%;
+    width: 100%;
 }
 
 #PhonePackagingDesignBTN,#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{

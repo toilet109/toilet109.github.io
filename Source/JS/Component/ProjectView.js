@@ -12,7 +12,7 @@ var ProjectView = {
                 </a>
             </div>
 
-            <div class="ProgectTypeBTNGroup container-fluid">
+            <div class="ProjectTypeBTNGroup container-fluid">
                 <div class="row">
                     <div class="col">
                         <div id="PackagingDesignBTN">
@@ -38,7 +38,9 @@ var ProjectView = {
                 </div>
 
                 <div class="row">
-                    <br>
+                    <div class="col">
+                        <br>
+                    </div>
                 </div>
 
                 <div class="row">

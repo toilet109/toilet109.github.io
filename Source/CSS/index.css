@@ -23,7 +23,7 @@ body{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/Background.svg");
-    background-size: 55%;
+    background-size: calc(100%-45%);
     background-position: top;
     background-repeat:no-repeat;
     width: 100%;
@@ -77,7 +77,7 @@ body{
 }
 
 
-.ProgectTypeBTNGroup{
+.ProjectTypeBTNGroup{
     position: absolute;
     margin: 0px;
     top:15%;
@@ -106,8 +106,21 @@ body{
     overflow-y:scroll;
     z-index: -995;
     -ms-overflow-style: none;
-    overflow: -moz-hidden-unscrollable;
+    scrollbar-width: none; /* Firefox 64 */
+
 }
+
+#ProgectTypeListGroup .row .col{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ProgectTypeListGroup .row .col .a{
+    display:flex;
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 #ProgectTypeListGroup::-webkit-scrollbar {
     display: none;
@@ -129,7 +142,7 @@ body{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/ProjectViewBackground.svg");
-    background-size: 55%;
+    background-size: calc(100%-45%);
     background-position: top;
     background-repeat:no-repeat;
     width: 100%;

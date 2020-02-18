@@ -37,7 +37,7 @@ var PhoneProjectView = {
                 </a>
             </div>
 
-            <div class="PhoneProgectTypeBTNGroup container-fluid">
+            <div class="PhoneProjectTypeBTNGroup container-fluid">
                 <div class="row">
                     <div class="col">
                         <div id="PhonePackagingDesignBTN">
@@ -56,7 +56,9 @@ var PhoneProjectView = {
                 </div>
 
                 <div class="row">
-                    <br>
+                    <div class="col">
+                        <br>
+                    </div>
                 </div>
 
                 <div class="row">
@@ -77,7 +79,9 @@ var PhoneProjectView = {
                 </div>
 
                 <div class="row">
-                    <br>
+                    <div class="col">
+                        <br>
+                    </div>
                 </div>
 
                 <div class="row">

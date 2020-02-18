@@ -19,11 +19,14 @@ var ProjectTypeView = {
                             <a @click="ChangeNextPage(subitem.ID)">
                                 <img height="75%" width="75%" v-bind:src="subitem.ImagePhotoPath" />
                             </a>
+                            <br>
                         </div>
                     </div>
 
                     <div class="row">
-                        <br>
+                        <div class="col">
+                            <br>
+                        </div>
                     </div>
                 </div>
             </div>
