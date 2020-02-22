@@ -40,9 +40,9 @@ var PhoneProjectTypeView = {
                 <div v-for="(item,index) in GroupsDataList" v-if="item.Type === $route.params.ProjectType">
                     <div class="row">
                         <div class="col">
-                            <div id="PhoneThreeDimensionalModelingBTN">
+                            <div class="PhoneListBTN">
                                 <a @click="ChangeNextPage(index)">
-                                <img height="100%" width="100%" src="./Source/IMG/PhoneMenuViewFacebookIcon.svg" />
+                                    <img height="100%" width="100%" v-bind:src="item.ImagePhotoPath" />
                                 </a>
                             </div>
                         </div>

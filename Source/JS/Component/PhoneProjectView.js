@@ -131,10 +131,10 @@ var PhoneProjectView = {
             /* 載入上方控制欄位動畫 */
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-1s";
-            document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInDown   delay-2s";
-            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeInDown   delay-2s";
-            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInDown   delay-2s";
-            document.getElementsByTagName("div").ProjecTitleTitleButton3.className           = "animated fadeInDown   delay-2s";
+            document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInDown   delay-1500ms";
+            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeInDown   delay-1500ms";
+            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInDown   delay-1500ms";
+            document.getElementsByTagName("div").ProjecTitleTitleButton3.className           = "animated fadeInDown   delay-1500ms";
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInRight  delay-2s";
                 
             /* 由右向左載入主題分類的分組動畫 */

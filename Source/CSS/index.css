@@ -110,9 +110,16 @@ body{
 
 }
 
+#ProgectTypeListGroup .row {
+    padding-top: calc(100% - 99.5%);
+    padding-bottom: calc(100% - 99.5%);
+    margin: 0;
+}
 #ProgectTypeListGroup .row .col{
     text-align: center;
     vertical-align: middle;
+    padding-left: calc(100% - 99.5%);
+    padding-right: calc(100% - 99.5%);
 }
 
 #ProgectTypeListGroup .row .col .a{
@@ -121,6 +128,12 @@ body{
     vertical-align: middle;
 }
 
+#ProgectTypeListGroup .row .col .a :hover{
+    display:flex;
+    text-align: center;
+    vertical-align: middle;
+    
+}
 
 #ProgectTypeListGroup::-webkit-scrollbar {
     display: none;
@@ -129,13 +142,14 @@ body{
 #ProjectMetaBlock{
     position: absolute;
     background-color:#cecece;
-    text-align: center;
+    text-align: justify;
     margin: 0px;
     padding: 1%;
     width: 22.5%;
     top: 10%;
     bottom: 5%;
     left: 0%;
+    overflow-y:scroll;
 }
 
 #ProjectBackground{
@@ -195,22 +209,20 @@ body{
 }
 
 #ImagePhotoBlock img{
-    top: 0%;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
+    padding: 0%;
 }
 
 #AboutBlock{
     position: absolute;
     background-color:#cecece;
-    text-align: center;
+    text-align: justify;
     margin: 0px;
     padding: 1%;
     width: 22.5%;
     top: 42.5%;
     bottom: 5%;
     right: 0%;
+    overflow-y:scroll;
 }
 
 #ProjectViewUpBtn{

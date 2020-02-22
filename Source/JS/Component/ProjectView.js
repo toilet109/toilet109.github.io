@@ -92,7 +92,7 @@ var ProjectView = {
         /*載入分類主題動畫*/
         if(!this.IsReMount){
             document.getElementsByTagName("div").MainBackground.className               = "animated fadeInUp   delay-0s";
-            document.getElementsByTagName("div").UpBtn.className                        = "animated fadeInDown delay-3s";
+            document.getElementsByTagName("div").UpBtn.className                        = "animated fadeInDown delay-1500ms";
             document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeInUp   delay-1s";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeInUp   delay-1s";
             document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeInUp   delay-1s";
@@ -112,7 +112,7 @@ var ProjectView = {
     methods: {
         /* 切換到上一頁(首頁) */
         ChangeBeforePage:function() {
-            document.getElementsByTagName("div").MainBackground.className               = "animated fadeOutDown delay-3s";
+            document.getElementsByTagName("div").MainBackground.className               = "animated fadeOutDown delay-2s";
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeOutUp   delay-0s";
             document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeOutDown delay-1s";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeOutDown delay-1s";
@@ -121,7 +121,7 @@ var ProjectView = {
             document.getElementsByTagName("div").AlbumBTN.className                     = "animated fadeOutDown delay-1s";
             document.getElementsByTagName("div").AnimationBTN.className                 = "animated fadeOutDown delay-1s";
             
-            app.DelayRoutePush("/",4000);
+            app.DelayRoutePush("/",3500);
         },
         /* 切換到下一頁(作品專欄) */
         ChangeNextPage:function(ProjectType) {
@@ -133,7 +133,7 @@ var ProjectView = {
             document.getElementsByTagName("div").AlbumBTN.className                     = "animated fadeOutUp delay-1s";
             document.getElementsByTagName("div").AnimationBTN.className                 = "animated fadeOutUp delay-1s";
             
-            app.DelayRoutePush("/Project/"+ProjectType,4000);
+            app.DelayRoutePush("/Project/"+ProjectType,2000);
         }
     },
 };

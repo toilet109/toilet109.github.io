@@ -35,7 +35,7 @@ var OnlyProjectView = {
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <!--div><img height="75%" width="75%" v-bind:src="ImagePhotoPath" /></div-->
+                            <!--div><img height="100%" width="100%" v-bind:src="ImagePhotoPath" /></div-->
                         </div>
                     </div>
                 </div>
@@ -124,12 +124,12 @@ var OnlyProjectView = {
             /* 執行收起元件動畫 */
             document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-1s";
             document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeOutUp     delay-0s";
-            document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated slideOutLeft  delay-0s";
-            document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated slideOutRight delay-0s";
-            document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated slideOutLeft  delay-1s";
-            document.getElementsByTagName("div").ProjectMainBlock.className     = "animated slideOutDown  delay-1s";
+            document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeOutLeft   delay-0s";
+            document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeOutRight  delay-0s";
+            document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated fadeOutLeft   delay-1s";
+            document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeOutDown   delay-1s";
             document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").AboutBlock.className           = "animated slideOutRight delay-1s";
+            document.getElementsByTagName("div").AboutBlock.className           = "animated fadeOutRight  delay-1s";
             document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeOutDown   delay-0s";
 
             app.DelayRouteBack(3000);

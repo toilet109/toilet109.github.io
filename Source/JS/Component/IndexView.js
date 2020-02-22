@@ -74,10 +74,10 @@ var IndexView = {
         document.getElementsByTagName("div").Liner.className            = "animated zoomIn      delay-2s";
         document.getElementsByTagName("div").MainView.className         = "animated fadeInDown  delay-1s";
         document.getElementsByTagName("div").Title.className            = "animated fadeInRight delay-2s";
-        document.getElementsByTagName("div").SubTitle1.className        = "animated fadeInLeft  delay-3s";
-        document.getElementsByTagName("div").SubTitle2.className        = "animated fadeInLeft  delay-4s";
+        document.getElementsByTagName("div").SubTitle1.className        = "animated fadeInLeft  delay-2500ms";
+        document.getElementsByTagName("div").SubTitle2.className        = "animated fadeInLeft  delay-3s";
         document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeInLeft  delay-2s";
-        document.getElementsByTagName("div").DownBtn.className          = "animated fadeInUp    delay-5s";
+        document.getElementsByTagName("div").DownBtn.className          = "animated fadeInUp    delay-3500ms";
     },
     methods: {
         /* 切換到下一頁(作品一覽) */
@@ -91,7 +91,7 @@ var IndexView = {
             document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeOutRight  delay-1s";
             document.getElementsByTagName("div").DownBtn.className          = "animated fadeOutDown    delay-0s";
 
-            app.DelayRoutePush("/Project",5000);
+            app.DelayRoutePush("/Project",4000);
         },
     },
 };

@@ -36,7 +36,7 @@ var PhoneAboutView = {
         document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeInDown delay-2s";
         document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeInLeft delay-2s";
         document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeInUp   delay-2s";
-        document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInRight delay-3s";
+        document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInRight delay-2500ms";
     },
     methods: {
         /* 切換到上一頁(手機版首頁) */

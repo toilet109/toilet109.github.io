@@ -60,7 +60,7 @@ var PhoneOnlyProjectView = {
             </div>          
 
             <div id="PhoneProjectViewProjectImageBlock">
-                <img width="100%" height="100%" v-bind:src="ProjectPhotoPath" />
+                <img width="100%" height="100%" v-bind:src="ImagePhotoPath" />
             </div>
 
             <div id="PhoneProjectViewMetaTextBlock">
@@ -82,23 +82,37 @@ var PhoneOnlyProjectView = {
             <div v-if="IsProjectAboutView" id="PhoneProjectAboutView" class="animated slideInUp">
                 <a class="PhoneCloseBTN" @click="SetProjectAboutView(false)">[X]</a>
                 <p><br><br></p>
-                <video id="PhoneVideoView" width="100%" height="30%" preload="none" loop="loop" controls="controls">
-                    <source v-bind:src="ProjectMoviePath" type="video/mp4">
-                    <p>錯誤！瀏覽器不支援Video播放器</p>
-                </video>
-                
-                <div class="PhoneProjectAboutTextBlock">
-                    <br><p>{{ProjectMeta}}</p>
+
+                <div id="PhoneMumberTitle">
+
+                    <h3>作品介紹<hr></h3>
+                    <p>{{ProjectMeta}}<br><br></p>
+
+                    <h3>作品影音<hr></h3>
+                    <div v-for="(item,index) in ProjectMoviePath">
+                        <video id="PhoneVideoView" width="100%" height="30%" preload="none" loop="loop" controls="controls">
+                            <source v-bind:src="item" type="video/mp4">
+                            <p>錯誤！瀏覽器不支援Video播放器</p>
+                        </video>
+                        <br><br>
+                    </div>
+
+                    <div v-for="(item,index) in ProjectPhotoPath">
+                        <img width="100%" height="30%" v-bind:src="item" />
+                        <br><br>
+                    </div>
+                    
                 </div>
             </div>
 
             <div v-if="IsProjectMumberView" id="PhoneProjectMumberView" class="animated slideInUp">
                 <a class="PhoneCloseBTN" @click="SetProjectMumberView(false)">[X]</a>
                 <p><br><br></p>
-                <img width="100%" height="30%" v-bind:src="ImagePhotoPath" />
-                    
-                <div class="PhoneProjectAboutTextBlock">
-                    <br><p>{{About}}</p>
+                
+                <div id="PhoneMumberTitle">
+                    <h3>製作成員<hr></h3>
+                    <img width="100%" height="30%" v-bind:src="ImagePhotoPath" />
+                    <br><br><p>{{About}}</p>
                 </div>
             </div>
         </div>
@@ -112,6 +126,8 @@ var PhoneOnlyProjectView = {
             WhyCall             : StudentGroups.data.WhyCall      , //'聯絡資訊'連結
             Link                : StudentGroups.data.FaceBookLink , //載入FB連結
             NowSelectGroupID    : 0                               , //目前選擇的作品ID(Array索引值)
+            ProjectMovieList    : []                              , //作品影片列表
+            ProjectPhotoList    : []                              , //作品照片列表
         }
     },
     async mounted() {
@@ -122,7 +138,7 @@ var PhoneOnlyProjectView = {
             /* 當路由直接指向此頁時，無法獲取有效的ID值定給予初始值索引編號0 */
             this.NowSelectGroupID = 0;
         };
-        
+
         /* 執行載入顯示元件動畫 */
         document.getElementsByTagName("div").PhoneProjectViewProjectImageBlock.className = "animated fadeInUp    delay-1s";
         document.getElementsByTagName("div").PhoneCtlMask.className                      = "animated fadeInUp    delay-1s";

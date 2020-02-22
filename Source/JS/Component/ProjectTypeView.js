@@ -17,7 +17,7 @@ var ProjectTypeView = {
                     <div v-for="(subitem,subindex) in item" class="col">
                         <div id="ThreeDimensionalModelingBTN">
                             <a @click="ChangeNextPage(subitem.ID)">
-                                <img height="75%" width="75%" v-bind:src="subitem.ImagePhotoPath" />
+                                <img height="100%" width="100%" v-bind:src="subitem.ImagePhotoPath" />
                             </a>
                             <br>
                         </div>
@@ -73,12 +73,12 @@ var ProjectTypeView = {
             this.GroupsDataList.push(TmpArray);
         }
         
-        console.log(this.GroupsDataList);
+        document.getElementsByTagName("div").UpBtn.className                              = "animated fadeInDown  delay-1s";
         
 
         /* 依據是否以載入，而作品形象照由對應方向載入 */
         if(!this.IsReMount){
-            document.getElementsByTagName("div").ProgectTypeListGroup.className           = "animated fadeInUp delay-0s";
+            document.getElementsByTagName("div").ProgectTypeListGroup.className           = "animated fadeInUp    delay-0s";
         }else{
             document.getElementsByTagName("div").ProgectTypeListGroup.className           = "animated fadeInDown  delay-0s";
         }
