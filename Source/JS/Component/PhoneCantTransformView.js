@@ -2,7 +2,8 @@ var PhoneCantTransformView = {
     template: 
     `
         <div>
-            <div id="PhoneCantTransform" @click="ChangeHomePage()">
+            <div id="PhoneCantTransformViewBackground" @click="ChangeHomePage()"></div>
+            <div id="PhoneCantTransform">
                 <h2>網頁不支援手機橫向導覽<br>按任意一處以重新載入</h2>
             </div>
         </div>
@@ -13,10 +14,22 @@ var PhoneCantTransformView = {
     },
     methods: {
         /* 點擊畫面，若手機是垂直時則將文字以動畫退出並回到首頁 */
-        ChangeHomePage:function() {
-            if(window.orientation === 90){
+        ChangeHomePage:function() {         
+            /* 當離開手機橫向後切換頁面 */   
+            if(window.orientation === 0){
                 document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-1s";
-                app.DelayRoutePush("/",2000);
+
+                if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
+                    app.DelayRoutePush("/phone",2000);
+                }else{
+                    app.DelayRoutePush("/",2000);
+                }
+            /* 還是橫向但按了一下 */   
+            }else{
+                document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-0s";
+                setTimeout(() => {
+                    document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeInUp       delay-0s";
+                },1000);
             }
         }
     },

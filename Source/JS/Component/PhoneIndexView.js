@@ -38,7 +38,7 @@ var PhoneIndexView = {
             </div>
         </div>
     `,
-    mounted() {
+    mounted() {        
         /* 執行載入顯示首頁元件動畫 */
         document.getElementsByTagName("div").PhoneIndexBackEnd.className                                           = "animated fadeIn        delay-1s";
         document.getElementsByTagName("div").PhoneIndexBackground.className                                        = "animated fadeOut       delay-5s";

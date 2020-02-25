@@ -75,7 +75,8 @@ var ProjectTypeView = {
         
         document.getElementsByTagName("div").UpBtn.className                              = "animated fadeInDown  delay-1s";
         
-
+        console.log(this.IsReMount);
+        
         /* 依據是否以載入，而作品形象照由對應方向載入 */
         if(!this.IsReMount){
             document.getElementsByTagName("div").ProgectTypeListGroup.className           = "animated fadeInUp    delay-0s";

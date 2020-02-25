@@ -69,7 +69,7 @@ var IndexView = {
     </div>
     `,
     mounted() {
-        /*載入首頁動畫*/
+        /* 載入首頁動畫 */
         document.getElementsByTagName("div").IndexBackground.className  = "animated zoomIn      delay-1s";
         document.getElementsByTagName("div").Liner.className            = "animated zoomIn      delay-2s";
         document.getElementsByTagName("div").MainView.className         = "animated fadeInDown  delay-1s";

@@ -2,11 +2,9 @@ var app = new Vue({
     el:"#app",
     data() {
         return {
-            IsInit                       : true  , //是否正式完成初始化
-            PhoneProjectViewIsGoBack     : false , //是否觸發返回事件(1)
-            PhoneProjectTypeViewIsGoBack : false , //是否觸發返回事件(2)
-            PhoneProjectViewIsGoBack     : false , //是否觸發返回事件手機版(1)
-            PhoneProjectTypeViewIsGoBack : false , //是否觸發返回事件手機版(2)
+            IsInit                       : false , //是否正式完成初始化
+            ProjectViewIsGoBack          : false , //是否觸發返回事件(1)
+            ProjectTypeViewIsGoBack      : false , //是否觸發返回事件(2)
             Lock                         : false , //控制Vue-Router切換的自栓鎖
             NowSelectID                  : 0     , //選擇的作品索引值ID
         }
@@ -14,6 +12,11 @@ var app = new Vue({
     mounted() {
         /* 避免初始化時Vue元件外洩破壞美觀的保護遮罩擋住，在Vue元件已完成載入並render後自動將其顯示設定關閉 */
         document.getElementsByTagName("div").InitView.style.display = "none"; 
+        
+        setInterval(() => {
+            this.ChangeView();
+        },500);
+        
     },
     /* Vue路由(核心) */
     router: new VueRouter({
@@ -92,51 +95,53 @@ var app = new Vue({
                     this.IsLock  = false;
                 },TimeOut);
             }
+        },
+        ChangeView:function(){
+            if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
+                if(window.orientation === 90){
+                    app.DelayRoutePush("/phoneCantTransform",1000);
+                }else{
+                    if (this.$route.path === "/") {
+                        this.$router.push("/phone");
+                    }else if(this.$route.path === "/Project") {
+                        this.$router.push("/phoneProject");
+                    }else if(RegExp(/^\/Project\/((?:[^\/]+?))(?:\/(?=$))?$/i).test(this.$route.path)) {
+                        this.$router.push("/phoneProject/"+ this.$route.params.ProjectType);
+                    }else if(this.$route.path === "/ProjectView") {
+                        this.$router.push("/phoneProjectView");
+                    }
+                }
+            }else{
+                if (this.$route.path === "/phone") {
+                    this.$router.push("/");
+                }else if(this.$route.path === "/phoneAbout") {
+                    this.$router.push("/");
+                }else if(this.$route.path === "/phoneProject") {
+                    this.$router.push("/Project");
+                }else if(RegExp(/^\/phoneProject\/((?:[^\/]+?))(?:\/(?=$))?$/i).test(this.$route.path)) {
+                    this.$router.push("/Project/"+ this.$route.params.ProjectType);
+                }else if(this.$route.path === "/phoneProjectView") {
+                    this.$router.push("/ProjectView");
+                }
+            }
         }
     },
     watch: {
         '$route' (to, from) {
-            /* 檢測'手機版作品專欄'是否發生是否發生返回載入 */
-            if(from.name === "小組作品" && to.name === "作品專欄"){
+            /* 檢測'作品專欄'是否發生是否發生返回載入 */
+            if((from.name === "小組作品" && to.name === "作品專欄")||(from.name === "手機版小組作品" && to.name === "手機版作品專欄")){
                 app.ProjectTypeViewIsGoBack = true;
             }else{
                 app.ProjectTypeViewIsGoBack = false;
             }
 
-            /* 檢測'手機版作品一覽'是否發生是否發生返回載入 */
-            if(from.name === "作品專欄" && to.name === "作品一覽"){
+            /* 檢測'作品一覽'是否發生是否發生返回載入 */
+            if((from.name === "作品專欄" && to.name === "作品一覽")||(from.name === "手機版作品專欄" && to.name === "手機版作品一覽")){
                 app.ProjectViewIsGoBack = true;
             }else{
                 app.ProjectViewIsGoBack = false;
             }
 
-            /* 檢測'手機版作品專欄'是否發生是否發生返回載入 */
-            if(from.name === "手機版小組作品" && to.name === "手機版作品專欄"){
-                app.PhoneProjectTypeViewIsGoBack = true;
-            }else{
-                app.PhoneProjectTypeViewIsGoBack = false;
-            }
-
-            /* 檢測'手機版作品一覽'是否發生是否發生返回載入 */
-            if(from.name === "手機版作品專欄" && to.name === "手機版作品一覽"){
-                app.PhoneProjectViewIsGoBack = true;
-            }else{
-                app.PhoneProjectViewIsGoBack = false;
-            }
         }
     }
 });
-
-/* 當網頁在根目錄路徑下初始化時檢測其是否為手機檢視，並給予對應界面 */
-if(app.IsInit && app.$route.path === "/"){
-    app.IsInit = false;
-    if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
-        app.$router.push("/phone");
-    }else{
-        app.$router.push("/");
-    }
-}
-/*
-if(window.orientation === 90){
-    app.$router.push("/CantTransform");
-}*/

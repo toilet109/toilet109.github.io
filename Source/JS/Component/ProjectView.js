@@ -88,7 +88,7 @@ var ProjectView = {
             /* 當路由直接指向此頁時，直接視為初次載入 */
             this.IsReMount = false;
         }
-
+        
         /*載入分類主題動畫*/
         if(!this.IsReMount){
             document.getElementsByTagName("div").MainBackground.className               = "animated fadeInUp   delay-0s";
