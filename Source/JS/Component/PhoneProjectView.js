@@ -136,7 +136,14 @@ var PhoneProjectView = {
             document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInDown   delay-1500ms";
             document.getElementsByTagName("div").ProjecTitleTitleButton3.className           = "animated fadeInDown   delay-1500ms";
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInRight  delay-2s";
-                
+            
+            /* 載入上方連結欄提示動畫 */
+            setTimeout(() => { 
+                document.getElementsByTagName("div").ProjecTitleTitleButton1.className       = "animated pulse        delay-500ms";
+                document.getElementsByTagName("div").ProjecTitleTitleButton2.className       = "animated pulse        delay-1s";
+                document.getElementsByTagName("div").ProjecTitleTitleButton3.className       = "animated pulse        delay-1500ms";
+            },3000);
+           
             /* 由右向左載入主題分類的分組動畫 */
             document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInRight delay-3s";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInRight delay-3s";

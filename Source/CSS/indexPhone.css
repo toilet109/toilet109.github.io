@@ -5,8 +5,10 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-y: scroll;
+    overflow-y:scroll;
     overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 #PhoneInitView{
@@ -274,6 +276,9 @@ body{
     line-height: 1.5;
     font-size: 90%;
     overflow-y:scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .PhoneProjectBTN{
@@ -330,6 +335,9 @@ body{
     line-height: 1.5;
     font-size: 90%;
     overflow-y:scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 #PhoneAboutTitle h3, #PhoneWhoTitle h3{ 
@@ -361,8 +369,11 @@ body{
     margin: 0px;
     top:20%;
     height: 80%;
-    overflow-y:scroll;
     z-index: -995;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 #PhoneProgectTypeListGroup{
@@ -372,8 +383,11 @@ body{
     left: 2.5%;
     right: 2.5%;
     height: 85%;
-    overflow-y:scroll;
     z-index: -995;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .PhoneNoneBlock{

@@ -61,13 +61,20 @@ var OnlyProjectView = {
             </div>
 
             <div id="MediaViewBlock">
-                <a class="PhoneCloseBTN" @click="CloseMediaView()">[X]</a>
-                <p><br><br></p>
-                <video id="PhoneVideoView" width="100%" height="100%" preload="none" loop="loop" controls="controls">
-                    <source v-bind:src="ProjectMoviePath" type="video/mp4">
-                    <p>錯誤！瀏覽器不支援Video播放器</p>
-                </video>
+                <p class="CloseBTN"><br><a @click="CloseMediaView()">[關閉視窗]</a><br></p>
                 
+                <div v-for="(item,index) in ProjectMoviePath">
+                    <video id="PhoneVideoView" width="100%" height="100%" preload="none" loop="loop" controls="controls">
+                        <source v-bind:src="item" type="video/mp4">
+                        <p>錯誤！瀏覽器不支援Video播放器</p>
+                    </video>
+                    <br><br>
+                </div>
+
+                <div v-for="(item,index) in ProjectPhotoPath">
+                    <img width="100%" height="100%" v-bind:src="item" />
+                    <br><br>
+                </div>
             </div>
             
             <div id="WaveGroup">
@@ -173,6 +180,7 @@ var OnlyProjectView = {
             document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated bounceOut     delay-1s";
             document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated bounceOut     delay-1s";
             document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated bounceOut     delay-1s";
+            
             setTimeout(() => {
                 this.SetWaveAnimate(true);
 
@@ -192,7 +200,7 @@ var OnlyProjectView = {
             setTimeout(() => {
                 document.getElementsByTagName("div").MediaViewBlock.style.display   = "";
                 
-                document.getElementsByTagName("div").MediaViewBlock.className   = "animated slideInUp delay-0s";
+                document.getElementsByTagName("div").MediaViewBlock.className   = "animated slideInDown delay-0s";
 
                 document.getElementsByTagName("div").ProjectBackground.style.filter = "blur(5px)";
                 document.getElementsByTagName("div").ProjectMetaBlock.style.filter  = "blur(5px)";
@@ -202,7 +210,7 @@ var OnlyProjectView = {
         },
 
         CloseMediaView:function(){
-            document.getElementsByTagName("div").MediaViewBlock.className       = "animated slideOutDown delay-0s";
+            document.getElementsByTagName("div").MediaViewBlock.className       = "animated slideOutUp delay-0s";
 
             setTimeout(() => {
                 document.getElementsByTagName("div").MediaViewBlock.style.display   = "none";
@@ -240,10 +248,10 @@ var OnlyProjectView = {
                 document.getElementsByTagName("div").Wave5.className = "Wave5Up";
 
                 document.getElementsByTagName("div").Wave1.style.top = "100%";
-                document.getElementsByTagName("div").Wave2.style.top = "100%";
-                document.getElementsByTagName("div").Wave3.style.top = "100%";
-                document.getElementsByTagName("div").Wave4.style.top = "100%";
-                document.getElementsByTagName("div").Wave5.style.top = "100%";
+                document.getElementsByTagName("div").Wave2.style.top = "120%";
+                document.getElementsByTagName("div").Wave3.style.top = "140%";
+                document.getElementsByTagName("div").Wave4.style.top = "160%";
+                document.getElementsByTagName("div").Wave5.style.top = "180%";
             }else{
                 document.getElementsByTagName("div").Wave1.className = "Wave1Down";
                 document.getElementsByTagName("div").Wave2.className = "Wave2Down";
@@ -251,11 +259,11 @@ var OnlyProjectView = {
                 document.getElementsByTagName("div").Wave4.className = "Wave4Down";
                 document.getElementsByTagName("div").Wave5.className = "Wave5Down";
                 
-                document.getElementsByTagName("div").Wave1.style.top = "-50%";
-                document.getElementsByTagName("div").Wave2.style.top = "-50%";
-                document.getElementsByTagName("div").Wave3.style.top = "-50%";
-                document.getElementsByTagName("div").Wave4.style.top = "-50%";
-                document.getElementsByTagName("div").Wave5.style.top = "-50%";
+                document.getElementsByTagName("div").Wave1.style.top = "-125%";
+                document.getElementsByTagName("div").Wave2.style.top = "-105%";
+                document.getElementsByTagName("div").Wave3.style.top = "-85%";
+                document.getElementsByTagName("div").Wave4.style.top = "-65%";
+                document.getElementsByTagName("div").Wave5.style.top = "-45%";
             }
         }
     },
