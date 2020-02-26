@@ -228,7 +228,6 @@ body{
     display:flex;
     text-align: justify;
     background-color:#be3e3e;
-    /*background-image: url("../IMG/PhoneMenuViewFacebookIcon.svg");*/
     background-position: center;
     background-repeat:no-repeat;
     height: 45%;
@@ -260,6 +259,37 @@ body{
     font-size: 90%;
 }
 
+#PhoneCtlMaskLeft{
+    position: absolute;
+    display:flex;
+    text-align: center;
+    height: 30%;
+    width: 30%;
+    margin: 0px;
+    bottom: 12.5%;
+    left: 0%;
+    right: 70%;
+    padding: 5%;
+    z-index: 5;
+    line-height: 1.5;
+    font-size: 90%;
+}
+
+#PhoneCtlMaskRight{
+    position: absolute;
+    display:flex;
+    text-align: center;
+    height: 30%;
+    width: 30%;
+    margin: 0px;
+    bottom: 12.5%;
+    left: 70%;
+    right: 0%;
+    padding: 5%;
+    z-index: 5;
+    line-height: 1.5;
+    font-size: 90%;
+}
 
 #PhoneProjectViewMetaTextBlock{
     position: absolute;
@@ -331,7 +361,7 @@ body{
     right: 1.5%;
     padding-left: 5%;
     padding-right: 5%;
-    z-index: 5;
+    z-index: 6;
     line-height: 1.5;
     font-size: 90%;
     overflow-y:scroll;
@@ -361,7 +391,7 @@ body{
     right: 3.5%;
     padding-right: 2.5%;
     padding-top: 1.5%;
-    z-index: 6;
+    z-index: 7;
 }
 
 .PhoneProjectTypeBTNGroup{

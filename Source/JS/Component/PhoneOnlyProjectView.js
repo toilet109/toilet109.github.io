@@ -59,6 +59,9 @@ var PhoneOnlyProjectView = {
                 </div>
             </div>          
 
+            <div id="PhoneCtlMaskLeft"></div>
+            <div id="PhoneCtlMaskRight"></div>
+
             <div id="PhoneProjectViewProjectImageBlock">
                 <img width="100%" height="100%" v-bind:src="ImagePhotoPath" />
             </div>
@@ -66,6 +69,7 @@ var PhoneOnlyProjectView = {
             <div id="PhoneProjectViewMetaTextBlock">
                 <p>{{ProjectMeta}}</p>
             </div>
+            
 
             <div id="PhoneProjectViewBottomBTNBlock">
                 <div @click="SetProjectAboutView(true)" class="PhoneProjectBTN">作品介紹</div>
@@ -191,17 +195,27 @@ var PhoneOnlyProjectView = {
         /* 初始化化動監控事件 */
         SetSwipe:function() {
             /* 當左右滑動時更新索引ID */
-            $("#PhoneProjectViewMetaTextBlock").swipe( {
+            $("#PhoneCtlMaskLeft").swipe( {
                 swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
                     if(direction == "right"){
-                        StudentGroups.event.GetNextGroup();
-                    }else if(direction == "left"){
                         StudentGroups.event.GetBeforeGroup();
+                    }else if(direction == "left"){
+                        StudentGroups.event.GetNextGroup();
                     }
                 },
                 threshold:0
             });
                 
+            $("#PhoneCtlMaskRight").swipe( {
+                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    if(direction == "right"){
+                        StudentGroups.event.GetBeforeGroup();
+                    }else if(direction == "left"){
+                        StudentGroups.event.GetNextGroup();
+                    }
+                },
+                threshold:0
+            });
         },
         /* 提示用界面點擊關閉功能 */
         CloseCtlMask:function() {
