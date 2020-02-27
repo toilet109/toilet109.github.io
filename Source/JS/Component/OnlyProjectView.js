@@ -77,6 +77,19 @@ var OnlyProjectView = {
                 </div>
             </div>
             
+
+            <div id="MediaViewLeftBtn">
+                <a @click="ChangeBeforeMedia()">
+                    <img height="25%" width="25%" src="./Source/IMG/ProjectViewLeftBTN.svg" />
+                </a>
+            </div>
+
+            <div id="MediaViewRightBtn">
+                <a @click="ChangeNextMedia()">
+                    <img height="25%" width="25%" src="./Source/IMG/ProjectViewRightBTN.svg" />
+                </a>
+            </div>
+
             <div id="WaveGroup">
                 <div id="Wave1">
                     <img width="100%" src="./Source/IMG/Wave1.svg" />
@@ -112,7 +125,9 @@ var OnlyProjectView = {
             this.NowSelectGroupID = 0;
         };
 
-        document.getElementsByTagName("div").MediaViewBlock.style.display   = "none";
+        document.getElementsByTagName("div").MediaViewBlock.style.display    = "none";
+        document.getElementsByTagName("div").MediaViewLeftBtn.style.display  = "none";
+        document.getElementsByTagName("div").MediaViewRightBtn.style.display = "none";
 
         /* 執行載入顯示元件動畫 */
         document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeInDown   delay-1s";
@@ -198,9 +213,13 @@ var OnlyProjectView = {
             },2000);
 
             setTimeout(() => {
-                document.getElementsByTagName("div").MediaViewBlock.style.display   = "";
-                
-                document.getElementsByTagName("div").MediaViewBlock.className   = "animated slideInDown delay-0s";
+                document.getElementsByTagName("div").MediaViewBlock.style.display       = "";
+                document.getElementsByTagName("div").MediaViewLeftBtn.style.display     = "";
+                document.getElementsByTagName("div").MediaViewRightBtn.style.display    = "";
+
+                document.getElementsByTagName("div").MediaViewBlock.className      = "animated slideInDown delay-0s";
+                document.getElementsByTagName("div").MediaViewLeftBtn.className    = "animated bounceIn    delay-1s";
+                document.getElementsByTagName("div").MediaViewRightBtn.className   = "animated bounceIn    delay-1s";
 
                 document.getElementsByTagName("div").ProjectBackground.style.filter = "blur(5px)";
                 document.getElementsByTagName("div").ProjectMetaBlock.style.filter  = "blur(5px)";
@@ -211,9 +230,14 @@ var OnlyProjectView = {
 
         CloseMediaView:function(){
             document.getElementsByTagName("div").MediaViewBlock.className       = "animated slideOutUp delay-0s";
+            document.getElementsByTagName("div").MediaViewLeftBtn.className     = "animated bounceOut  delay-0s";
+            document.getElementsByTagName("div").MediaViewRightBtn.className    = "animated bounceOut  delay-0s";
 
             setTimeout(() => {
-                document.getElementsByTagName("div").MediaViewBlock.style.display   = "none";
+                document.getElementsByTagName("div").MediaViewBlock.style.display       = "none";
+                document.getElementsByTagName("div").MediaViewLeftBtn.style.display     = "none";
+                document.getElementsByTagName("div").MediaViewRightBtn.style.display    = "none";
+                
                 this.SetWaveAnimate(false);
 
                 document.getElementsByTagName("div").ProjectBackground.style.filter = "";
@@ -237,6 +261,16 @@ var OnlyProjectView = {
                 document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated bounceIn     delay-1s";
                 document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated bounceIn     delay-1s";
             },8000);
+
+        },
+        ChangeBeforeMedia:function(){
+            // [0] change css width + masks
+            // [1] Make value
+            // Get index now & all 
+            // compuingt area(Movie/Image)
+            // V-computed Re
+        },
+        ChangeNextMedia:function(){
 
         },
         SetWaveAnimate:function(IsUpState){
@@ -298,53 +332,3 @@ var OnlyProjectView = {
         }
     },
 };
-
-/*
-var WaveCtl = new Object;
-
-WaveCtl.data = {
-    Wave1:{
-        Top    :  0 ,
-        Left   : -10,
-        Right  : -10,
-        Counter:  0 ,
-
-    },
-    Wave2:{
-        Top: 0,
-    },
-    Wave3:{
-
-    },
-    Wave4:{
-
-    },
-    Wave5:{
-
-    }
-}
-
-WaveCtl.event ={
-    Init:function() {
-
-    },
-    Start:function() {
-        document.getElementsByTagName("div").Wave1.style.top    = "0%";
-        document.getElementsByTagName("div").Wave2.style.top    = "0%";
-        document.getElementsByTagName("div").Wave3.style.top    = "0%";
-        document.getElementsByTagName("div").Wave4.style.top    = "0%";
-        document.getElementsByTagName("div").Wave5.style.top    = "0%";
-    }
-
-}
-
-WaveCtl.event.Init();
-
-var RandSystem = Object;
-
-RandSystem.data ={
-    UpDownLimit:0.5,
-    UpDown:-0.5,
-
-}
-*/

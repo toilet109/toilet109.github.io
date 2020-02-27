@@ -293,6 +293,31 @@ body::-webkit-scrollbar {
     z-index: 100;
 }
 
+#MediaViewLeftBtn{
+    position: absolute;
+    background-size: cover;
+    fill: #de5b78;   
+    text-align: left;
+    margin: 0px;
+    left:27.5%;
+    right: 50%;
+    width: 22.5%;
+    top:45%;
+    z-index: 100;
+}
+
+#MediaViewRightBtn{
+    position: absolute;
+    text-align: right;
+    color: aqua;
+    margin: 0px;
+    left:50%;
+    right: 27.5%;
+    width: 22.5%;
+    top:45%;
+    z-index: 100;
+}
+
 #MediaViewBlock{
     position: absolute;
     text-align: justify;
