@@ -49,7 +49,9 @@ var PhoneProjectTypeView = {
                     </div>
 
                     <div class="row">
-                        <br>
+                        <div class="col">
+                            <br>
+                        </div>
                     </div>
                 </div>
             </div>

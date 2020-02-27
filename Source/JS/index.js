@@ -98,7 +98,7 @@ var app = new Vue({
         },
         ChangeView:function(){
             if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
-                if(window.orientation === 90){
+                if(window.orientation === 90 || window.orientation === -90){
                     location.assign("./index.html#/phoneCantTransform");
                 }else{
                     if (this.$route.path === "/") {
