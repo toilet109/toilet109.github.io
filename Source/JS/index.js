@@ -3,6 +3,7 @@ var app = new Vue({
     data() {
         return {
             IsInit                       : false , //是否正式完成初始化
+            IsLockView                   : false , //是否完全鎖定控制
             ProjectViewIsGoBack          : false , //是否觸發返回事件(1)
             ProjectTypeViewIsGoBack      : false , //是否觸發返回事件(2)
             Lock                         : false , //控制Vue-Router切換的自栓鎖
@@ -98,8 +99,12 @@ var app = new Vue({
         },
         ChangeView:function(){
             if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
-                if(window.orientation === 90 || window.orientation === -90){
-                    location.assign("./index.html#/phoneCantTransform");
+                if(window.orientation === 90 || window.orientation === -90 || (screen.mozOrientation !== undefined && screen.availWidth > screen.availHeight)){
+                    if(document.getElementsByTagName('video')[0] === undefined || document.getElementsByTagName('video')[0].paused){
+                        if(!this.IsLockView){
+                            this.$router.push("/phoneCantTransform");
+                        }
+                    }
                 }else{
                     if (this.$route.path === "/") {
                         this.$router.push("/phone");

@@ -87,7 +87,7 @@ var PhoneOnlyProjectView = {
                 <a class="PhoneCloseBTN" @click="SetProjectAboutView(false)">[X]</a>
                 <p><br><br></p>
 
-                <div id="PhoneMumberTitle">
+                <div id="PhoneAboutTitle">
 
                     <h3>作品介紹<hr></h3>
                     <p>{{ProjectMeta}}<br><br></p>
@@ -175,6 +175,8 @@ var PhoneOnlyProjectView = {
                 document.getElementsByTagName("div").PhoneProjectAboutView.className = "animated fadeOutDown";
             }
 
+            app.IsLockView = NextToShow;
+
             /* 等待動畫跑完後執行關閉視窗檢視 */
             setTimeout(() => {
                 this.IsProjectAboutView = NextToShow;
@@ -186,6 +188,8 @@ var PhoneOnlyProjectView = {
             if(!NextToShow){
                 document.getElementsByTagName("div").PhoneProjectMumberView.className = "animated fadeOutDown";
             }
+
+            app.IsLockView = NextToShow;
         
             /* 等待動畫跑完後執行關閉視窗檢視 */
             setTimeout(() => {

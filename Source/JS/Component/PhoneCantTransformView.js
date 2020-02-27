@@ -16,14 +16,9 @@ var PhoneCantTransformView = {
         /* 點擊畫面，若手機是垂直時則將文字以動畫退出並回到首頁 */
         ChangeHomePage:function() {         
             /* 當離開手機橫向後切換頁面 */   
-            if(window.orientation === 0){
+            if(window.orientation === 0 || window.orientation === 180 || window.orientation === undefined || (screen.mozOrientation == undefined && screen.availWidth > screen.availHeight)){
                 document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-1s";
-
-                if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
-                    app.DelayRoutePush("/phone",2000);
-                }else{
-                    app.DelayRoutePush("/",2000);
-                }
+                app.DelayRouteBack();
             /* 還是橫向但按了一下 */   
             }else{
                 document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-0s";
