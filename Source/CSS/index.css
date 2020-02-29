@@ -284,57 +284,86 @@ body::-webkit-scrollbar {
 #ProjectViewRightBtn{
     position: absolute;
     text-align: right;
-    color: aqua;
     margin: 0px;
     left:50%;
     right: 27.5%;
     width: 22.5%;
     top:45%;
     z-index: 100;
+}
+
+#MediaViewUpBtn{
+    position: absolute;
+    background-size: cover;
+    fill: #de5b78;   
+    text-align: center;
+    margin: 0px;
+    top: 2.5%;
+    left: 0%;
+    right: 0%;
+    z-index: 998;
 }
 
 #MediaViewLeftBtn{
     position: absolute;
     background-size: cover;
-    fill: #de5b78;   
     text-align: left;
+    color:rgb(141, 255, 246); 
     margin: 0px;
-    left:27.5%;
-    right: 50%;
-    width: 22.5%;
-    top:45%;
-    z-index: 100;
+    right: 17.5%;
+    width: 15%;
+    top:85%;
+    z-index: 998;
 }
 
 #MediaViewRightBtn{
     position: absolute;
+    background-size: cover;
     text-align: right;
-    color: aqua;
+    color:rgb(141, 255, 246);  
     margin: 0px;
-    left:50%;
-    right: 27.5%;
+    right: 2.5%;
+    width: 30%;
+    top:85%;
+    z-index: 997;
+}
+
+#CloseMaskViewBtn{
+    position: absolute;
+    background-size: cover;  
+    color:rgb(255, 230, 1);  
+    margin: 0px;
+    top:85%;
+    left:2.5%;
     width: 22.5%;
-    top:45%;
-    z-index: 100;
+    z-index: 998;
+}
+
+#MediaViewLeftBtn h5:hover{
+    color:rgb(255, 255, 255);   
+}
+
+#MediaViewRightBtn h5:hover{
+    color:rgb(255, 255, 255);   
+}
+
+#CloseMaskViewBtn h5:hover{
+    color:rgb(255, 255, 255);   
 }
 
 #MediaViewBlock{
     position: absolute;
-    text-align: justify;
-    background-color:hsl(0, 0%, 95%);
-    clip-path: ellipse(40% 80% at 50% 30%);
-    border-radius: 0.5%;
-    width: calc(100%-50%);;
+    text-align: justify;/*
+    -webkit-mask:cross( url("../IMG/Background.svg")) no-repeat center center;
+    mask:cross(url("../IMG/Background.svg")) no-repeat center center;
+    border-radius: 0.5%;*/
+    width: 100%;
     margin: 0px;
-    top:2.5%;
-    bottom: -5%;
-    left: 25%;
-    right: 25%;
-    padding-left: 5%;
-    padding-right: 5%;
+    top:0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
     z-index: 5;
-    line-height: 1.5;
-    font-size: 90%;
     overflow-y:scroll;
     overflow-x: hidden;
     scrollbar-width: none;
@@ -741,4 +770,32 @@ body::-webkit-scrollbar {
         right: -10%;
         left :   0%;
     }
+}
+
+.mask-image {
+    position: fixed;
+    margin: 0px;
+    background-image: url("../IMG/ProjectViewMainViewer.svg");
+    background-size: calc(100%-45%);
+    background-position: top;
+    background-repeat:no-repeat;
+    width: 100%;
+    top:-15%;
+    height: 120%;
+    padding: 0px;
+    z-index: 997;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+    mask-position: top;
+    -webkit-mask-image: -webkit-cross-fade(url("../IMG/ProjectViewMainViewer.svg"),url("../IMG/ProjectViewMainViewer.svg"),100%);
+    mask-image: url(#my-svg-mask);
+    -webkit-mask-size: calc(100%-45%);
+    mask-size: calc(100%-45%);
+    mask-mode: alpha;
+}
+
+.mask-image img{
+    text-align: center;
+    vertical-align: middle;
 }

@@ -62,7 +62,7 @@ var IndexView = {
 
         <!--置底-->
         <div id="DownBtn">
-            <a @click="ChangeNextPage()">
+            <a href="javascript:void(0);" @click="ChangeNextPage()">
                 <img height="2.5%" width="2.5%" src="./Source/IMG/DownBTN.svg" />
             </a>
         </div>

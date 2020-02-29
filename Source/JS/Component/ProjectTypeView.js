@@ -7,7 +7,7 @@ var ProjectTypeView = {
 
             <!--載入返回鍵-->
             <div id="UpBtn">
-                <a @click="ChangeBeforePage()">
+                <a href="javascript:void(0);" @click="ChangeBeforePage()">
                     <img height="2.5%" width="2.5%" src="./Source/IMG/UpBTN.svg" />
                 </a>
             </div>
@@ -16,7 +16,7 @@ var ProjectTypeView = {
                 <div v-for="(item,index) in GroupsDataList" class="row">
                     <div v-for="(subitem,subindex) in item" class="col">
                         <div id="ThreeDimensionalModelingBTN">
-                            <a @click="ChangeNextPage(subitem.ID)">
+                            <a href="javascript:void(0);" @click="ChangeNextPage(subitem.ID)">
                                 <img height="100%" width="100%" v-bind:src="subitem.ImagePhotoPath" />
                             </a>
                             <br>

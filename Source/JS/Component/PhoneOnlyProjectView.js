@@ -40,7 +40,7 @@ var PhoneOnlyProjectView = {
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col">
-                            <h2><br>左右滑動以切換作品</h2>
+                            <h2><br>兩側滑動以切換作品</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -94,7 +94,7 @@ var PhoneOnlyProjectView = {
 
                     <h3>作品影音<hr></h3>
                     <div v-for="(item,index) in ProjectMoviePath">
-                        <video id="PhoneVideoView" width="100%" height="30%" preload="none" loop="loop" controls="controls">
+                        <video id="PhoneVideoView" width="100%" height="30%" loop="loop" controls="controls">
                             <source v-bind:src="item" type="video/mp4">
                             <p>錯誤！瀏覽器不支援Video播放器</p>
                         </video>

@@ -7,7 +7,7 @@ var ProjectView = {
 
             <!--載入返回鍵-->
             <div id="UpBtn">
-                <a @click="ChangeBeforePage()">
+                <a href="javascript:void(0);" @click="ChangeBeforePage()">
                     <img height="2.5%" width="2.5%" src="./Source/IMG/UpBTN.svg" />
                 </a>
             </div>
@@ -16,21 +16,21 @@ var ProjectView = {
                 <div class="row">
                     <div class="col">
                         <div id="PackagingDesignBTN">
-                            <a @click="ChangeNextPage('PackagingDesign')">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('PackagingDesign')">
                                 <img height="100%" width="100%" src="./Source/IMG/PackagingDesign.svg" />
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="ThreeDimensionalModelingBTN">
-                            <a @click="ChangeNextPage('ThreeDimensionalModeling')">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('ThreeDimensionalModeling')">
                                 <img height="100%" width="100%" src="./Source/IMG/ThreeDimensionalModeling.svg" />
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="GraphicDesignBTN">
-                            <a @click="ChangeNextPage('GraphicDesign')">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('GraphicDesign')">
                                 <img height="100%" width="100%" src="./Source/IMG/GraphicDesign.svg" />
                             </a>
                         </div>
@@ -46,21 +46,21 @@ var ProjectView = {
                 <div class="row">
                     <div class="col">
                         <div id="PictureBooksBTN">
-                            <a @click="ChangeNextPage('PictureBooks')">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('PictureBooks')">
                                 <img height="100%" width="100%" src="./Source/IMG/PictureBooks.svg" />
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="AlbumBTN">
-                            <a @click="ChangeNextPage('Album')">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('Album')">
                                 <img height="100%" width="100%" src="./Source/IMG/Album.svg" />
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="AnimationBTN">
-                            <a @click="ChangeNextPage('Animation')">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('Animation')">
                                 <img height="100%" width="100%" src="./Source/IMG/Animation.svg" />
                             </a>
                         </div>
