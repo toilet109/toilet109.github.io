@@ -19,6 +19,7 @@ var OnlyProjectView = {
                     <img height="25%" width="25%" src="./Source/IMG/ProjectViewLeftBTN.svg" />
                 </a>
             </div>
+            
             <div id="ProjectViewRightBtn">
                 <a href="javascript:void(0);" @click="ChangeNextProject()">
                     <img height="25%" width="25%" src="./Source/IMG/ProjectViewRightBTN.svg" />
@@ -128,9 +129,8 @@ var OnlyProjectView = {
     `,
     data() {
         return {
-            IsProjectAboutView  : false                           , //是否檢視作品說明界面
-            IsProjectMumberView : false                           , //是否檢視參與成員資料界面
-            MaskIsView         : true                            , //遮罩顯示控制
+            LockAnimateLR       : true                           , //是否檢視作品說明界面
+            MaskIsView          : true                            , //遮罩顯示控制
             Link                : StudentGroups.data.FaceBookLink , //載入FB連結
             NowSelectGroupID    : 0                               , //目前選擇的作品ID(Array索引值)
             MediaIndexSum       : 1                               , //計算影音資料總數
@@ -162,10 +162,30 @@ var OnlyProjectView = {
         document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeInDown   delay-1s";
         document.getElementsByTagName("div").AboutBlock.className           = "animated slideInRight delay-1s";
         document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeInUp     delay-2s";
+
+        setTimeout(() => {
+            this.LockAnimateLR = false;
+        },3000);
+
+        /* 固定每4s更新搖動一次 */
+        setInterval(() => {
+            if(!this.LockAnimateLR){
+                document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "";
+                document.getElementsByTagName("div").ProjectViewRightBtn.className  = "";
+                
+                setTimeout(() => {
+                    document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated heartBeat delay-0s";
+                    document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated heartBeat delay-0s";
+                },1000);
+            }
+            
+        },3000);
     },
     methods: {
         /* 切換到上一頁(手機版作品專欄) */
         ChangeBeforePage:function() {
+            this.LockAnimateLR = true;
+
             /* 執行收起元件動畫 */
             document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-1s";
             document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeOutUp     delay-0s";
@@ -179,30 +199,6 @@ var OnlyProjectView = {
 
             app.DelayRouteBack(3000);
         },
-        /* 設定是否要檢視作品說明界面 */
-        SetProjectAboutView:function(NextToShow) {
-            /* 載入偽浮動視窗移出的動畫(預設以綁定移入) */
-            if(!NextToShow){
-                document.getElementsByTagName("div").ProjectAboutView.className = "animated fadeOutDown";
-            }
-
-            /* 等待動畫跑完後執行關閉視窗檢視 */
-            setTimeout(() => {
-                this.IsProjectAboutView = NextToShow;
-            },500);
-        },
-        /* 設定是否要檢視參與成員資料界面 */
-        SetProjectMumberView:function(NextToShow) {
-            /* 載入偽浮動視窗移出的動畫(預設以綁定移入) */
-            if(!NextToShow){
-                document.getElementsByTagName("div").ProjectMumberView.className = "animated fadeOutDown";
-            }
-        
-            /* 等待動畫跑完後執行關閉視窗檢視 */
-            setTimeout(() => {
-                this.IsProjectMumberView = NextToShow;
-            },500);
-        },
         ChangeBeforeProject:function() {
             StudentGroups.event.GetBeforeGroup();
             this.NowSelectGroupID = StudentGroups.event.GetNowSelectID();
@@ -212,8 +208,9 @@ var OnlyProjectView = {
             this.NowSelectGroupID = StudentGroups.event.GetNowSelectID();
         },
         ChangeMediaView:function(){
-            this.MediaIndexSum = StudentGroups.data.GroupsData[this.NowSelectGroupID].ProjectMoviePath.length + StudentGroups.data.GroupsData[this.NowSelectGroupID].ProjectPhotoPath.length;
-            this.NowMediaIndex = 0;
+            this.MediaIndexSum      = StudentGroups.data.GroupsData[this.NowSelectGroupID].ProjectMoviePath.length + StudentGroups.data.GroupsData[this.NowSelectGroupID].ProjectPhotoPath.length;
+            this.NowMediaIndex      = 0;
+            this.LockAnimateLR      = true;
 
             document.getElementsByTagName("div").ProjectBackground.className    = "animated bounceIn      delay-0s";
 
@@ -294,23 +291,17 @@ var OnlyProjectView = {
                 document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated bounceIn     delay-1s";
                 document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated bounceIn     delay-1s";
                 document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated bounceIn     delay-1s";
+
+                this.LockAnimateLR = false;
             },8000);
 
         },
-        ChangeBeforeMedia:function(){
-            // [1] Make value
-            // Get index now & all 
-            // compuingt area(Movie/Image)
-            // V-computed Re
-            
+        ChangeBeforeMedia:function(){            
             if(this.NowMediaIndex == 0){
                 this.NowMediaIndex = this.MediaIndexSum-1;
             }else{
                 this.NowMediaIndex -=1;
-            }
-            console.log(this.NowMediaIndex);
-            console.log(this.MediaIndexSum);
-            
+            }            
         },
         ChangeNextMedia:function(){
             if(this.NowMediaIndex == this.MediaIndexSum-1){
@@ -318,8 +309,6 @@ var OnlyProjectView = {
             }else{
                 this.NowMediaIndex +=1;
             }
-            console.log(this.NowMediaIndex);
-            console.log(this.MediaIndexSum);
         },
         CtrlMaskObject:function(){
             if(this.MaskIsView){

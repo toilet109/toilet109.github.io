@@ -1,4 +1,4 @@
-var PhoneCantTransformView = {
+const PhoneCantTransformView = {
     template: 
     `
         <div>

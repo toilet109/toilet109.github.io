@@ -1,4 +1,4 @@
-var PhoneIndexView = {
+const PhoneIndexView = {
     template: 
     `
         <div>

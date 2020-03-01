@@ -1,4 +1,4 @@
-var IndexView = {
+const IndexView = {
     template: 
     `
     <div>

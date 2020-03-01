@@ -1,4 +1,4 @@
-var PhoneProjectTypeView = {
+const PhoneProjectTypeView = {
     template: 
     `
         <div>

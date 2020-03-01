@@ -1,4 +1,4 @@
-var ProjectTypeView = {
+const ProjectTypeView = {
     template: 
     `
         <div>
