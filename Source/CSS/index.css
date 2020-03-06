@@ -1,17 +1,66 @@
-/*
-body{
-    position: fixed;
-    background-image: url("../IMG/Background.svg");
-    background-size: 50%;
-    background-position: top;
-    background-repeat:no-repeat;
-    width: 100%;
-    ￼height: 100%;
-    margin: 0px;
-    padding: 0px;
+* {
+    font-family: "Taipei Sans TC Beta Regular";
 }
-*/
-
+  
+@font-face {
+    font-family: "Taipei Sans TC Beta Light";
+    src: url("./TaipeiSansTCBeta-Light.ttf");
+}
+  
+@font-face {
+    font-family: "Taipei Sans TC Beta";
+    src: local("TaipeiSansTCBeta-Bold"),
+         url("./TaipeiSansTCBeta-Bold.ttf"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text88")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text92")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text106") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text110") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text90")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text94")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text120") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text124") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text130") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text32")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text36")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text98")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text102") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text136") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text140") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text144") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text148") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text84")  format("svg");
+}
+  
+  
+@font-face {
+    font-family: "Taipei Sans TC Beta Bold";
+    src: local("TaipeiSansTCBeta-Bold"),
+         url("./TaipeiSansTCBeta-Bold.ttf"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text88")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text92")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text106") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text110") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text90")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text94")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text120") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text124") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text130") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text32")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text36")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text98")  format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text102") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text136") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text140") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text144") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text148") format("svg"),
+         url("./TaipeiSansTCBeta-Bold.ttf#text84")  format("svg");
+}
+  
+@font-face {
+    font-family: "Taipei Sans TC Beta Regular";
+    src: url("./TaipeiSansTCBeta-Regular.ttf");
+}
+  
 body{
     position: fixed;
     width: 100%;
@@ -219,8 +268,8 @@ body::-webkit-scrollbar {
     margin: 0px;
     padding: 1%;
     width: 22.5%;
-    height:30%;
-    top:10%;
+    height:35%;
+    top:5%;
     right: 0%;
 }
 
