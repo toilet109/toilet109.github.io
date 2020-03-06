@@ -62,6 +62,8 @@ const PhoneOnlyProjectView = {
             <div id="PhoneCtlMaskLeft"></div>
             <div id="PhoneCtlMaskRight"></div>
 
+            <div id="PhoneProjectViewProjectImageBackgroundBlock"></div>
+
             <div id="PhoneProjectViewProjectImageBlock">
                 <img width="100%" height="100%" v-bind:src="ImagePhotoPath" />
             </div>
@@ -94,7 +96,7 @@ const PhoneOnlyProjectView = {
 
                     <h3>作品影音<hr></h3>
                     <div v-for="(item,index) in ProjectMoviePath">
-                        <video id="PhoneVideoView" width="100%" height="30%" loop="loop" controls="controls">
+                        <video id="PhoneVideoView" width="100%" height="100%" loop="loop" controls="controls">
                             <source v-bind:src="item" type="video/mp4">
                             <p>錯誤！瀏覽器不支援Video播放器</p>
                         </video>
@@ -102,7 +104,7 @@ const PhoneOnlyProjectView = {
                     </div>
 
                     <div v-for="(item,index) in ProjectPhotoPath">
-                        <img width="100%" height="30%" v-bind:src="item" />
+                        <img width="100%" height="100%" v-bind:src="item" />
                         <br><br>
                     </div>
                     
@@ -115,7 +117,7 @@ const PhoneOnlyProjectView = {
                 
                 <div id="PhoneMumberTitle">
                     <h3>製作成員<hr></h3>
-                    <img width="100%" height="30%" v-bind:src="ImagePhotoPath" />
+                    <img width="100%" height="100%" v-bind:src="ImagePhotoPath" />
                     <br><br><p>{{About}}</p>
                 </div>
             </div>

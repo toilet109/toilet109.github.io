@@ -170,32 +170,39 @@ var OnlyProjectView = {
         /* 固定每4s更新搖動一次 */
         setInterval(() => {
             if(!this.LockAnimateLR){
-                document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "";
-                document.getElementsByTagName("div").ProjectViewRightBtn.className  = "";
-                
+                /* 清除暫存與重置動畫 */
+                try{
+                    document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "";
+                    document.getElementsByTagName("div").ProjectViewRightBtn.className  = "";
+                }catch(err){
+                    //Not Doing
+                }
+
                 setTimeout(() => {
                     document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated heartBeat delay-0s";
                     document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated heartBeat delay-0s";
                 },1000);
             }
             
-        },3000);
+        },2000);
     },
     methods: {
         /* 切換到上一頁(手機版作品專欄) */
         ChangeBeforePage:function() {
             this.LockAnimateLR = true;
-
-            /* 執行收起元件動畫 */
-            document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeOutUp     delay-0s";
-            document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeOutLeft   delay-0s";
-            document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeOutRight  delay-0s";
-            document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated fadeOutLeft   delay-1s";
-            document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeOutDown   delay-1s";
-            document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").AboutBlock.className           = "animated fadeOutRight  delay-1s";
-            document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeOutDown   delay-0s";
+            
+            setTimeout(() => {
+                /* 執行收起元件動畫 */
+                document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-1s";
+                document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeOutUp     delay-0s";
+                document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeOutLeft   delay-0s";
+                document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeOutRight  delay-0s";
+                document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated fadeOutLeft   delay-1s";
+                document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeOutDown   delay-1s";
+                document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeOutUp     delay-1s";
+                document.getElementsByTagName("div").AboutBlock.className           = "animated fadeOutRight  delay-1s";
+                document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeOutDown   delay-0s";
+            },1000);
 
             app.DelayRouteBack(3000);
         },
