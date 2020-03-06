@@ -74,8 +74,8 @@ const PhoneOnlyProjectView = {
             
 
             <div id="PhoneProjectViewBottomBTNBlock">
-                <div @click="SetProjectAboutView(true)" class="PhoneProjectBTN">作品介紹</div>
-                <div @click="SetProjectMumberView(true)" class="PhoneProjectBTN">製作成員</div>
+                <div @click="SetProjectAboutView(true)"  class="PhoneProjectBTN"><a>作品介紹</a></div>
+                <div @click="SetProjectMumberView(true)" class="PhoneProjectBTN"><a>製作成員</a></div>
                 <div id="PhoneProjectViewFaceBookBTN">
                     <a v-bind:href="Link" target="Web_FB">
                          <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewFacebookIcon.svg" />
