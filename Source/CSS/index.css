@@ -311,8 +311,8 @@ body::-webkit-scrollbar {
     color:rgb(141, 255, 246); 
     margin: 0px;
     right: 17.5%;
-    width: 15%;
-    top:85%;
+    width: 30%;
+    bottom:7.5%;
     z-index: 998;
 }
 
@@ -324,7 +324,7 @@ body::-webkit-scrollbar {
     margin: 0px;
     right: 2.5%;
     width: 30%;
-    top:85%;
+    bottom:7.5%;
     z-index: 997;
 }
 
@@ -333,9 +333,9 @@ body::-webkit-scrollbar {
     background-size: cover;  
     color:rgb(255, 230, 1);  
     margin: 0px;
-    top:85%;
+    bottom:7.5%;
     left:2.5%;
-    width: 22.5%;
+    width: 30%;
     z-index: 998;
 }
 

@@ -107,22 +107,22 @@ var OnlyProjectView = {
 
             <div id="MediaViewLeftBtn">
                 <a href="javascript:void(0);" @click="ChangeBeforeMedia()">
-                    <h5>[上個影音]</h5>
+                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskLeftBTN.svg" /></h5>
                 </a>
             </div>
 
             <div id="MediaViewRightBtn">
                 <a href="javascript:void(0);" @click="ChangeNextMedia()">
-                    <h5>[下個影音]</h5>
+                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskRightBTN.svg" /></h5>
                 </a>
             </div>
 
             <div id="CloseMaskViewBtn">
                 <a v-if="MaskIsView" href="javascript:void(0);" @click="CtrlMaskObject()">
-                    <h5>[關閉遮罩]</h5>
+                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskUnSetBTN.svg" /></h5>
                 </a>
                 <a v-else href="javascript:void(0);" @click="CtrlMaskObject()">
-                    <h5>[開啟遮罩]</h5>
+                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskSetBTN.svg" /></h5>
                 </a>
             </div>
         </div>
