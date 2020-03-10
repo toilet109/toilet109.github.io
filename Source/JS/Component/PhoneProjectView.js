@@ -41,14 +41,14 @@ const PhoneProjectView = {
                     <div class="col">
                         <div id="PhonePackagingDesignBTN">
                             <a @click="ChangeNextPage('PackagingDesign')">
-                                <img height="100%" width="100%" src="./Source/IMG/PackagingDesign.svg" />
+                                <img height="100%" width="100%" src="./Source/IMG/PackagingDesign.png" />
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="PhoneThreeDimensionalModelingBTN">
                             <a @click="ChangeNextPage('ThreeDimensionalModeling')">
-                                <img height="100%" width="100%" src="./Source/IMG/ThreeDimensionalModeling.svg" />
+                                <img height="100%" width="100%" src="./Source/IMG/ThreeDimensionalModeling.png" />
                             </a>
                         </div>
                     </div>
@@ -64,14 +64,14 @@ const PhoneProjectView = {
                     <div class="col">
                         <div id="PhoneGraphicDesignBTN">
                             <a @click="ChangeNextPage('GraphicDesign')">
-                                <img height="100%" width="100%" src="./Source/IMG/GraphicDesign.svg" />
+                                <img height="100%" width="100%" src="./Source/IMG/GraphicDesign.png" />
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="PhonePictureBooksBTN">
                             <a @click="ChangeNextPage('PictureBooks')">
-                                <img height="100%" width="100%" src="./Source/IMG/PictureBooks.svg" />
+                                <img height="100%" width="100%" src="./Source/IMG/PictureBooks.png" />
                             </a>
                         </div>
                     </div>
@@ -87,14 +87,14 @@ const PhoneProjectView = {
                     <div class="col">
                         <div id="PhoneAlbumBTN">
                             <a @click="ChangeNextPage('Album')">
-                                <img height="100%" width="100%" src="./Source/IMG/Album.svg" />
+                                <img height="100%" width="100%" src="./Source/IMG/Album.png" />
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="PhoneAnimationBTN">
                             <a @click="ChangeNextPage('Animation')">
-                                <img height="100%" width="100%" src="./Source/IMG/Animation.svg" />
+                                <img height="100%" width="100%" src="./Source/IMG/Animation.png" />
                             </a>
                         </div>
                     </div>
