@@ -15,13 +15,13 @@
    viewBox="0 0 80 30"
    xml:space="preserve"
    id="svg30"
-   sodipodi:docname="LeftBTN.svg"
+   sodipodi:docname="BackBTN.svg"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
    width="80"
    height="30"><metadata
    id="metadata36"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
    id="defs34">
 	
 
@@ -42,7 +42,7 @@
    id="namedview32"
    showgrid="false"
    inkscape:zoom="1.6456954"
-   inkscape:cx="81.685314"
+   inkscape:cx="-35.89416"
    inkscape:cy="69.38183"
    inkscape:window-x="0"
    inkscape:window-y="25"
@@ -142,9 +142,10 @@
    style="fill:none" /><text
    class="st6 st8 st9"
    id="text24"
-   style="font-size:20.96489906px;font-family:TaipeiSansTCBeta-Bold;fill:#5e5e5e"
+   style="font-size:20.96489906px;font-family:'文泉驛等寬微米黑';fill:#5e5e5e;-inkscape-font-specification:'文泉驛等寬微米黑';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;"
    x="4.7405658"
    y="22.741693">back</text>
+
 
 <g
    id="標題"

@@ -8,32 +8,32 @@ const PhoneIndexView = {
 
             <div id="PhoneIndexUpPartBG">
                 <div>
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneUpPartBG.svg" />
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneUpPartBG.png" />
                 </div>
             </div>
 
             <div id="PhoneIndexUpPartChineseTitle">
                 <div>
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneTitle.svg" />
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneTitle.png" />
                 </div>
             </div>
 
             <div id="PhoneIndexUpPartEnglishTitle">
                 <div>
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneEnglishTitle.svg" />
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneEnglishTitle.png" />
                 </div>
             </div>
 
             <div id="PhoneIndexTitle">
                 <div>
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneGridTitle.svg" />
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneGridTitle.png" />
                 </div>
             </div>
 
             <!--置底-->
             <div id="PhoneDownBtn">
                 <a @click="ChangeNextPage()">
-                    <img height="10%" width="10%" src="./Source/IMG/DownBTN.svg" />
+                    <img height="10%" width="10%" src="./Source/IMG/DownBTN.png" />
                 </a>
             </div>
         </div>

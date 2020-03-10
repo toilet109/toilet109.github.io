@@ -21,7 +21,7 @@ const IndexView = {
                 <div class="col">
                     <!--載入左側主標題-->
                     <div id="Title">
-                        <img class="float-right" height="90%" width="90%" src="./Source/IMG/Title.svg" />
+                        <img class="float-right" height="90%" width="90%" src="./Source/IMG/Title.png" />
                     </div>
                 </div>
                 <div class="col">
@@ -37,10 +37,10 @@ const IndexView = {
                 <div class="col">
                     <!--載入副標題-->
                     <div id="SubTitle1">
-                        <img  height="75%" width="75%" src="./Source/IMG/SubTitle1.svg" />
+                        <img  height="75%" width="75%" src="./Source/IMG/SubTitle1.png" />
                     </div>
                     <div id="SubTitle2">
-                        <img  height="75%" width="75%" src="./Source/IMG/SubTitle2.svg" />
+                        <img  height="75%" width="75%" src="./Source/IMG/SubTitle2.png" />
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ const IndexView = {
                 </div>
                 <div class="col">
                     <div id="EnglishTitle">
-                        <br><img height="90%" width="90%" src="./Source/IMG/EnglishTitle.svg" />
+                        <br><img height="90%" width="90%" src="./Source/IMG/EnglishTitle.png" />
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ const IndexView = {
         <!--置底-->
         <div id="DownBtn">
             <a href="javascript:void(0);" @click="ChangeNextPage()">
-                <img height="2.5%" width="2.5%" src="./Source/IMG/DownBTN.svg" />
+                <img height="2.5%" width="2.5%" src="./Source/IMG/DownBTN.png" />
             </a>
         </div>
     </div>

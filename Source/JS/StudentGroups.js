@@ -76,7 +76,7 @@ StudentGroups.data = {
             我界人作育個，上事照公里其上小本減現要士能基王展法！
             
             後足長可西所用不日人一開劇理電議體細樣科飛以，對未實又國如領很選治觀客人！不養遠研量。了的語一服趣，笑裝國轉政都多城機名環這試？`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_2.png`, //形象照路徑
+            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
             MumberName       : [   //組員名稱
                 `test002-組員1`,
                 `test002-組員2`,

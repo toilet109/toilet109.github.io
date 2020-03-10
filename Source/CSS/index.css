@@ -60,7 +60,11 @@
     font-family: "Taipei Sans TC Beta Regular";
     src: url("./TaipeiSansTCBeta-Regular.ttf");
 }
-  
+
+svg {
+    font-family: "Taipei Sans TC Beta";
+}
+
 body{
     position: fixed;
     width: 100%;

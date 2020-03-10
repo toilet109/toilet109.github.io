@@ -14,25 +14,25 @@ const PhoneProjectView = {
 
             <div id="ProjecTitleTitleButton1">
                 <a v-bind:href="WhereIs" target="Web_WhereIs">
-                    <img height="100%" width="100%" src="./Source/IMG/button-1.svg" />
+                    <img height="100%" width="100%" src="./Source/IMG/button-1.png" />
                 </a>
             </div>
 
             <div id="ProjecTitleTitleButton2">
                 <a v-bind:href="WhichIs" target="Web_WhichIs">
-                    <img height="100%" width="100%" src="./Source/IMG/button-2.svg" />
+                    <img height="100%" width="100%" src="./Source/IMG/button-2.png" />
                 </a>
             </div>
 
             <div id="ProjecTitleTitleButton3">
                 <a v-bind:href="WhyCall" target="Web_WhyCall">
-                    <img height="100%" width="100%" src="./Source/IMG/button-3.svg" />
+                    <img height="100%" width="100%" src="./Source/IMG/button-3.png" />
                 </a>
             </div>
 
             <div id="PhoneBackBtn">
                 <a @click="ChangeBeforePage()">
-                    <img height="50%" width="50%" src="./Source/IMG/BackBTN.svg" />
+                    <img height="50%" width="50%" src="./Source/IMG/BackBTN.png" />
                 </a>
             </div>
 
