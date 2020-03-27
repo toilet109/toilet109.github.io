@@ -40,7 +40,9 @@ const IndexView = {
                         <br>
                     </div>
                     <div id="SubTitle2">
-                        <img  height="75%" width="75%" src="./Source/IMG/SubTitle2.png" />
+                        <a v-bind:href="WhichIs" target="Web_WhichIs">
+                            <img  height="75%" width="75%" src="./Source/IMG/SubTitle2.png" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -68,6 +70,11 @@ const IndexView = {
         </div>
     </div>
     `,
+    data() {
+        return {
+            WhichIs        : StudentGroups.data.WhichIs , //'放視大賞'連結
+        }
+    },
     mounted() {
         /* 載入首頁動畫 */
         document.getElementsByTagName("div").IndexBackground.className  = "animated zoomIn      delay-1s";
