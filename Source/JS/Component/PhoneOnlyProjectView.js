@@ -12,27 +12,28 @@ const PhoneOnlyProjectView = {
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitle.svg" />
             </div>
 
-            <div id="ProjecTitleTitleButton1">
-                <a v-bind:href="WhereIs" target="Web_WhereIs">
-                    <img height="100%" width="100%" src="./Source/IMG/button-1.png" />
-                </a>
-            </div>
-
-            <div id="ProjecTitleTitleButton2">
-                <a v-bind:href="WhichIs" target="Web_WhichIs">
-                    <img height="100%" width="100%" src="./Source/IMG/button-2.png" />
-                </a>
-            </div>
-
-            <div id="ProjecTitleTitleButton3">
-                <a v-bind:href="WhyCall" target="Web_WhyCall">
-                    <img height="100%" width="100%" src="./Source/IMG/button-3.png" />
-                </a>
+            <div id="ProjecTitleTitleGroups" class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <a v-bind:href="WhichIs" target="Web_WhichIs">
+                            <div id="ProjecTitleTitleButton1">
+                                <img height="100%" width="100%" src="./Source/IMG/button-1.png" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a v-bind:href="WhyCall" target="Web_WhyCall">
+                            <div id="ProjecTitleTitleButton2">
+                                <img height="100%" width="100%" src="./Source/IMG/button-2.png" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div id="PhoneBackBtn">
                 <a @click="ChangeBeforePage()">
-                    <img height="50%" width="50%" src="./Source/IMG/BackBTN.png" />
+                    <img height="50%" width="50%" src="./Source/IMG/PhoneBack.png" />
                 </a>
             </div>
 
@@ -59,8 +60,7 @@ const PhoneOnlyProjectView = {
                 </div>
             </div>          
 
-            <div id="PhoneCtlMaskLeft"></div>
-            <div id="PhoneCtlMaskRight"></div>
+            <div id="PhoneCtlMaskBlock"></div>
 
             <div id="PhoneProjectViewProjectImageBackgroundBlock"></div>
 
@@ -73,9 +73,14 @@ const PhoneOnlyProjectView = {
             </div>
             
 
+            <div id="PhoneProjectViewBottomBTNMaskBlock">
+                <div @click="SetProjectAboutView(true)"  class="PhoneProjectBTNMask"><br></div>
+                <div @click="SetProjectMumberView(true)" class="PhoneProjectBTNMask"><br></div>
+            </div>
+
             <div id="PhoneProjectViewBottomBTNBlock">
-                <div @click="SetProjectAboutView(true)"  class="PhoneProjectBTN"><a>作品介紹</a></div>
-                <div @click="SetProjectMumberView(true)" class="PhoneProjectBTN"><a>製作成員</a></div>
+                <div class="PhoneProjectBTN"><a>作品介紹</a></div>
+                <div class="PhoneProjectBTN"><a>製作成員</a></div>
                 <div id="PhoneProjectViewFaceBookBTN">
                     <a v-bind:href="Link" target="Web_FB">
                          <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewFacebookIcon.svg" />
@@ -127,7 +132,6 @@ const PhoneOnlyProjectView = {
         return {
             IsProjectAboutView  : false                           , //是否檢視作品說明界面
             IsProjectMumberView : false                           , //是否檢視參與成員資料界面
-            WhereIs             : StudentGroups.data.WhereIs      , //'新一代設計展'連結
             WhichIs             : StudentGroups.data.WhichIs      , //'放視大賞'連結
             WhyCall             : StudentGroups.data.WhyCall      , //'聯絡資訊'連結
             Link                : StudentGroups.data.FaceBookLink , //載入FB連結
@@ -163,12 +167,16 @@ const PhoneOnlyProjectView = {
         /* 切換到上一頁(手機版作品專欄) */
         ChangeBeforePage:function() {
             /* 執行收起元件動畫 */
-            document.getElementsByTagName("div").PhoneProjectViewProjectImageBlock.className = "animated fadeOutDown   delay-1s";
-            document.getElementsByTagName("div").PhoneCtlMask.className                      = "animated fadeOutDown   delay-1s";
-            document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.className     = "animated fadeOutDown   delay-1s";
-            document.getElementsByTagName("div").PhoneProjectViewBottomBTNBlock.className    = "animated fadeOutDown   delay-2s";
+            document.getElementsByTagName("div").PhoneBackBtn.className                      = "RollBackBTN";
+
+            setTimeout(() => {
+                document.getElementsByTagName("div").PhoneProjectViewProjectImageBlock.className = "animated fadeOutDown   delay-1s";
+                document.getElementsByTagName("div").PhoneCtlMask.className                      = "animated fadeOutDown   delay-1s";
+                document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.className     = "animated fadeOutDown   delay-1s";
+                document.getElementsByTagName("div").PhoneProjectViewBottomBTNBlock.className    = "animated fadeOutDown   delay-2s";
+            },750);
                 
-            app.DelayRouteBack(3000);
+            app.DelayRouteBack(4000);
         },
         /* 設定是否要檢視作品說明界面 */
         SetProjectAboutView:function(NextToShow) {
@@ -201,23 +209,16 @@ const PhoneOnlyProjectView = {
         /* 初始化化動監控事件 */
         SetSwipe:function() {
             /* 當左右滑動時更新索引ID */
-            $("#PhoneCtlMaskLeft").swipe( {
+            $("#PhoneCtlMaskBlock").swipe( {
                 swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
                     if(direction == "right"){
                         StudentGroups.event.GetBeforeGroup();
                     }else if(direction == "left"){
                         StudentGroups.event.GetNextGroup();
-                    }
-                },
-                threshold:0
-            });
-                
-            $("#PhoneCtlMaskRight").swipe( {
-                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                    if(direction == "right"){
-                        StudentGroups.event.GetBeforeGroup();
-                    }else if(direction == "left"){
-                        StudentGroups.event.GetNextGroup();
+                    }else if(direction == "up"){
+                        document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.scrollTop += distance;
+                    }else if(direction == "down"){
+                        document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.scrollTop += -distance;
                     }
                 },
                 threshold:0

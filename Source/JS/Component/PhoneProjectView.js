@@ -12,27 +12,28 @@ const PhoneProjectView = {
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitle.svg" />
             </div>
 
-            <div id="ProjecTitleTitleButton1">
-                <a v-bind:href="WhereIs" target="Web_WhereIs">
-                    <img height="100%" width="100%" src="./Source/IMG/button-1.png" />
-                </a>
-            </div>
-
-            <div id="ProjecTitleTitleButton2">
-                <a v-bind:href="WhichIs" target="Web_WhichIs">
-                    <img height="100%" width="100%" src="./Source/IMG/button-2.png" />
-                </a>
-            </div>
-
-            <div id="ProjecTitleTitleButton3">
-                <a v-bind:href="WhyCall" target="Web_WhyCall">
-                    <img height="100%" width="100%" src="./Source/IMG/button-3.png" />
-                </a>
+            <div id="ProjecTitleTitleGroups" class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <a v-bind:href="WhichIs" target="Web_WhichIs">
+                            <div id="ProjecTitleTitleButton1">
+                                <img height="100%" width="100%" src="./Source/IMG/button-1.png" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a v-bind:href="WhyCall" target="Web_WhyCall">
+                            <div id="ProjecTitleTitleButton2">
+                                <img height="100%" width="100%" src="./Source/IMG/button-2.png" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div id="PhoneBackBtn">
                 <a @click="ChangeBeforePage()">
-                    <img height="50%" width="50%" src="./Source/IMG/BackBTN.png" />
+                    <img height="50%" width="50%" src="./Source/IMG/PhoneBack.png" />
                 </a>
             </div>
 
@@ -111,7 +112,6 @@ const PhoneProjectView = {
     data() {
         return {
             IsReMount: false                      , //是否有二次載入(反向載入)的情況
-            WhereIs  : StudentGroups.data.WhereIs , //'新一代設計展'連結
             WhichIs  : StudentGroups.data.WhichIs , //'放視大賞'連結
             WhyCall  : StudentGroups.data.WhyCall , //'聯絡資訊'連結
         }
@@ -129,18 +129,16 @@ const PhoneProjectView = {
         if(!this.IsReMount){
             /* 載入上方控制欄位動畫 */
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
-            document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-1s";
-            document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInDown   delay-1500ms";
-            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeInDown   delay-1500ms";
-            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInDown   delay-1500ms";
-            document.getElementsByTagName("div").ProjecTitleTitleButton3.className           = "animated fadeInDown   delay-1500ms";
-            document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInRight  delay-2s";
+            document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInRight  delay-500ms";
+            document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInRight  delay-1500ms";
+            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeInRight  delay-1500ms";
+            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInRight  delay-1500ms";
+            document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInLeft   delay-2s";
             
             /* 載入上方連結欄提示動畫 */
             setTimeout(() => { 
                 document.getElementsByTagName("div").ProjecTitleTitleButton1.className       = "animated pulse        delay-500ms";
                 document.getElementsByTagName("div").ProjecTitleTitleButton2.className       = "animated pulse        delay-1s";
-                document.getElementsByTagName("div").ProjecTitleTitleButton3.className       = "animated pulse        delay-1500ms";
             },3000);
            
             /* 由右向左載入主題分類的分組動畫 */
@@ -164,24 +162,27 @@ const PhoneProjectView = {
     methods: {
         /* 切換到上一頁(手機版首頁介紹) */
         ChangeBeforePage:function() {
-            /* 移出上方控制欄位動畫 */
-            document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-3s";
-            document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-2s";
-            document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").ProjecTitleTitleButton3.className           = "animated fadeOutUp     delay-1s";
-            document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutRight  delay-1s";       
-               
-            /* 由左向右切出主題分類的分組動畫 */
-            document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutRight delay-0s";
-            document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutRight delay-0s";
-            document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutRight delay-0s";
-            document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeOutRight delay-0s";
-            document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeOutRight delay-0s";
-            document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeOutRight delay-0s";
-            
-            app.DelayRoutePush("/phoneAbout",4000);
+            document.getElementsByTagName("div").PhoneBackBtn.className                          = "RollBackBTN";
+
+            setTimeout(() => { 
+                /* 移出上方控制欄位動畫 */
+                document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-3s";
+                document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutRight  delay-2s";
+                document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutRight  delay-1s";
+                document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeOutRight  delay-1s";
+                document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutRight  delay-1s";
+                document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutLeft  delay-1s";       
+                
+                /* 由左向右切出主題分類的分組動畫 */
+                document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutRight delay-0s";
+                document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutRight delay-0s";
+                document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutRight delay-0s";
+                document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeOutRight delay-0s";
+                document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeOutRight delay-0s";
+                document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeOutRight delay-0s";
+            },1500);
+
+            app.DelayRoutePush("/phoneAbout",6000);
         },
         /* 切換到下一頁(手機版作品專欄) */
         ChangeNextPage:function(ProjectType) {

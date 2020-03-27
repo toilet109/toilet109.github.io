@@ -2,9 +2,8 @@ var StudentGroups = new Object();
 
 StudentGroups.data = {
     SelectID    : 0,
-    WhereIs     :`https://www.google.com.tw/maps`,
-    WhichIs     :`https://github.com/Lian0123/109-National-Tainan-University-Visual-Art-Design/`,
-    WhyCall     :`mailto:#`,
+    WhichIs     :`https://dcaward-vgw.org.tw/`, //'放視大賞'連結
+    WhyCall     :`mailto:#`, //聯絡方式
     FaceBookLink:`https://www.facebook.com/`,
     GroupsData:[
         /*

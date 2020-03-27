@@ -168,7 +168,7 @@ body{
 #PhoneProjecTitleViewBackground{
     position: absolute;
     margin: 0px;
-    top: -1%;
+    top: -4.5%;
     left: -2.5%;
     right: -2.5%;
     z-index: -994;
@@ -177,30 +177,35 @@ body{
 #PhoneProjecTitleViewTitle{
     position: absolute;
     margin: 0px;
-    top: 5.5%;
-    left: 0%;
-    right: 0%;
+    top: 2.5%;
+    left: 20%;
+    right: -20%;
     z-index: -993;
 }
 
-#ProjecTitleTitleButton1{
+#ProjecTitleTitleGroups{
     position: absolute;
     margin: 0px;
-    top: 5.5%;
-    left: 0%;
-    right: 68%;
-    width: 32%;
+    top: 2.5%;
+    left: 20%;
+    right: -20%;
+    width: 70%;
+}
+
+#ProjecTitleTitleGroups .col{
+    text-align: center;
+}
+
+#ProjecTitleTitleButton1{
+    padding-left: 0%;
+    padding-right: 0%;
     z-index: -992;
 }
 
 #ProjecTitleTitleButton2{
-    position: absolute;
-    margin: 0px;
-    top: 5.5%;
-    left: 32%;
-    right: 40%;
-    width: 28%;
-    z-index: -991;
+    padding-left: 0%;
+    padding-right: 0%;
+    z-index: -992;
 }
 
 #ProjecTitleTitleButton3{
@@ -216,10 +221,9 @@ body{
 #PhoneBackBtn{
     position: absolute;
     margin: 0px;
-    text-align:right;
-    right: 5%;
-    left: 55%;
-    top: 12.5%;
+    left: 2.5%;
+    right: 57.5%;
+    top: 0.5%;
     z-index: 2;
 }
 
@@ -270,7 +274,23 @@ body{
     left: 0%;
     right: 0%;
     padding: 5%;
-    z-index: 4;
+    z-index: 6;
+    line-height: 1.5;
+    font-size: 90%;
+}
+
+#PhoneCtlMaskBlock{
+    position: absolute;
+    display:flex;
+    text-align: center;
+    color: #f2f2f2;
+    height: 30%;
+    margin: 0px;
+    bottom: 12.5%;
+    left: 0%;
+    right: 0%;
+    padding: 5%;
+    z-index: 5;
     line-height: 1.5;
     font-size: 90%;
 }
@@ -317,7 +337,7 @@ body{
     bottom: 12.5%;
     left: 0%;
     right: 0%;
-    padding: 5%;
+    padding: 4%;
     z-index: 3;
     line-height: 1.5;
     font-size: 90%;
@@ -325,6 +345,15 @@ body{
     overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
+}
+
+.PhoneProjectBTNMask{
+    background-color:#f2f2f200;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4%;
+    width: 35%;
+    z-index: 3;
 }
 
 .PhoneProjectBTN{
@@ -363,6 +392,18 @@ body{
     left: 0%;
     right: 0%;
     z-index: 3;
+}
+
+#PhoneProjectViewBottomBTNMaskBlock{
+    position: absolute;
+    display:flex;
+    line-height: 1.5;
+    height: 7.5%;
+    margin: 0px;
+    bottom: 2.5%;
+    left: 0%;
+    right: 0%;
+    z-index: 4;
 }
 
 #PhoneProjectAboutView, #PhoneProjectMumberView{
@@ -482,3 +523,40 @@ body{
     vertical-align: middle;
     text-align: center;
 }
+
+  
+.RollBackBTN{
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;
+
+    animation-duration: 1.25s;
+    -webkit-animation-duration: 1.25s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: RollBackBTNEvent;
+    -webkit-animation-name: RollBackBTNEvent;
+
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    
+}
+
+  
+@-webkit-keyframes RollBackBTNEvent {
+    0% {
+        -moz-transform:rotate(-15deg);
+        -webkit-transform:rotate(-15deg);
+        -ms-transform:rotate(-15deg);
+    }
+    100% {
+        -moz-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+    }
+}
+  

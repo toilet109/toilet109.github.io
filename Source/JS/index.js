@@ -8,6 +8,7 @@ var app = new Vue({
             ProjectTypeViewIsGoBack      : false , //是否觸發返回事件(2)
             Lock                         : false , //控制Vue-Router切換的自栓鎖
             NowSelectID                  : 0     , //選擇的作品索引值ID
+            ViewType                     : `pc`  , //畫面種類
         }
     },
     mounted() {
@@ -97,9 +98,15 @@ var app = new Vue({
                 },TimeOut);
             }
         },
+        ViewTypeChangePush:function(PushRoute){
+            //1.退格
+            this.DelayRouteBack(0);
+            //2.切換
+            this.DelayRoutePush(PushRoute,1000);
+        },
         ChangeView:function(){
             if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
-                if(window.orientation === 90 || window.orientation === -90 || (screen.mozOrientation !== undefined && screen.availWidth > screen.availHeight)){
+                if(window.orientation === 90 || window.orientation === -90 || (screen.mozOrientation !== undefined && window.outerWidth > window.outerHeight)){
                     if(document.getElementsByTagName('video')[0] === undefined || document.getElementsByTagName('video')[0].paused){
                         if(!this.IsLockView){
                             this.$router.push("/phoneCantTransform");
@@ -107,26 +114,26 @@ var app = new Vue({
                     }
                 }else{
                     if (this.$route.path === "/") {
-                        this.$router.push("/phone");
+                        this.$router.replace("/phone");
                     }else if(this.$route.path === "/Project") {
-                        this.$router.push("/phoneProject");
+                        this.$router.replace("/phoneProject");
                     }else if(RegExp(/^\/Project\/((?:[^\/]+?))(?:\/(?=$))?$/i).test(this.$route.path)) {
-                        this.$router.push("/phoneProject/"+ this.$route.params.ProjectType);
+                        this.$router.replace("/phoneProject/"+ this.$route.params.ProjectType);
                     }else if(this.$route.path === "/ProjectView") {
-                        this.$router.push("/phoneProjectView");
+                        this.$router.replace("/phoneProjectView");
                     }
                 }
             }else{
                 if (this.$route.path === "/phone") {
-                    this.$router.push("/");
+                    this.$router.replace("/");
                 }else if(this.$route.path === "/phoneAbout") {
-                    this.$router.push("/");
+                    this.$router.replace("/");
                 }else if(this.$route.path === "/phoneProject") {
-                    this.$router.push("/Project");
+                    this.$router.replace("/Project");
                 }else if(RegExp(/^\/phoneProject\/((?:[^\/]+?))(?:\/(?=$))?$/i).test(this.$route.path)) {
-                    this.$router.push("/Project/"+ this.$route.params.ProjectType);
+                    this.$router.replace("/Project/"+ this.$route.params.ProjectType);
                 }else if(this.$route.path === "/phoneProjectView") {
-                    this.$router.push("/ProjectView");
+                    this.$router.replace("/ProjectView");
                 }
             }
         }

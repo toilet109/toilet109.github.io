@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.12374369"
-     inkscape:cx="-413.90598"
-     inkscape:cy="1186.7091"
+     inkscape:zoom="0.35000001"
+     inkscape:cx="422.9099"
+     inkscape:cy="471.63759"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -74,11 +74,11 @@
        style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.51388931px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
        id="text92"
        x="73.29081"
-       y="274.11136">
+       y="276.75723">
       <tspan
          style="stroke-width:0.35277775"
          x="73.29081 93.968918 104.15717 120.71301 142.06139 161.8681 172.39145 179.99911 201.48148 216.09355 230.16939 237.77704 262.51019 270.11786 294.04672 313.48477 330.04065 340.22885 360.23666 381.71906"
-         y="274.11136"
+         y="276.75723"
          sodipodi:role="line"
          id="tspan90">Visual Art &amp; Design</tspan>
     </text>

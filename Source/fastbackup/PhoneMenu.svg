@@ -66,14 +66,6 @@
          id="path78"
          inkscape:connector-curvature="0" />
     </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath52-4">
-      <path
-         d="M 15,1053 H 729 V 946 H 15 Z"
-         id="path50-9"
-         inkscape:connector-curvature="0" />
-    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -82,9 +74,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497474"
-     inkscape:cx="-522.89313"
-     inkscape:cy="243.5162"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="587.7515"
+     inkscape:cy="518.82499"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -101,7 +93,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -111,45 +103,93 @@
      id="layer1"
      transform="translate(0,-97)">
     <g
-       id="g46"
-       transform="matrix(0.2734693,0,0,-0.2734693,-1.8229942,428.22175)">
+       transform="matrix(0.2734693,0,0,-0.2734693,-1.8229942,394.88404)"
+       id="g38">
       <g
-         id="g48" />
-      <g
-         id="g58">
+         id="g40"
+         clip-path="url(#clipPath44)">
         <g
-           clip-path="url(#clipPath52)"
-           id="g56"
-           style="opacity:0.52999902">
-          <path
-             d="m 15,946 h 714 v 107 H 15 Z"
-             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path54"
-             inkscape:connector-curvature="0" />
+           id="g46">
+          <g
+             id="g48" />
+          <g
+             id="g58">
+            <g
+               clip-path="url(#clipPath52)"
+               id="g56"
+               style="opacity:0.52999902">
+              <path
+                 d="m 15,946 h 714 v 107 H 15 Z"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path54"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="g60">
+          <g
+             id="g62" />
+          <g
+             id="g72">
+            <g
+               clip-path="url(#clipPath66)"
+               id="g70"
+               style="opacity:0.52999902">
+              <path
+                 d="M 15,379 H 729 V 486 H 15 Z"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path68"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="g74">
+          <g
+             id="g76" />
+          <g
+             id="g86">
+            <g
+               clip-path="url(#clipPath80)"
+               id="g84"
+               style="opacity:0.52999902">
+              <path
+                 d="M 15,758 H 729 V 865 H 15 Z"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path82"
+                 inkscape:connector-curvature="0" />
+            </g>
+          </g>
         </g>
       </g>
     </g>
+    <text
+       y="179.08682"
+       x="49.86269"
+       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.77105141px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text90">
+      <tspan
+         style="stroke-width:0.2734693"
+         x="49.86269 66.633751 83.4048 100.17584 116.9469 133.71797"
+         y="179.08682"
+         sodipodi:role="line"
+         id="tspan88">新一代設計展</tspan>
+    </text>
+    <text
+       y="178.43881"
+       x="9.2335548"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.40815735px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text94">
+      <tspan
+         style="stroke-width:0.2734693"
+         x="9.2335548 25.641716"
+         y="178.43881"
+         sodipodi:role="line"
+         id="tspan92">臺北</tspan>
+    </text>
     <g
-       id="g60"
-       transform="matrix(0.2734693,0,0,-0.2734693,-1.8229942,366.30886)">
-      <g
-         id="g62" />
-      <g
-         id="g72">
-        <g
-           clip-path="url(#clipPath66)"
-           id="g70"
-           style="opacity:0.52999902">
-          <path
-             d="M 15,379 H 729 V 486 H 15 Z"
-             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path68"
-             inkscape:connector-curvature="0" />
-        </g>
-      </g>
-    </g>
-    <g
-       transform="matrix(0.2734693,0,0,-0.2734693,-1.8229942,373.18807)"
+       transform="matrix(0.2734693,0,0,-0.2734693,-1.8229942,394.88404)"
        id="g96">
       <g
          id="g98"
@@ -175,72 +215,46 @@
       </g>
     </g>
     <text
-       y="207.89792"
+       y="229.59346"
        x="48.620327"
        style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.63257217px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#040000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
        id="text120">
       <tspan
          style="stroke-width:0.2734693"
          x="48.620327 64.252899 79.885468 95.518044"
-         y="207.89792"
+         y="229.59346"
          sodipodi:role="line"
          id="tspan118">放視大賞</tspan>
     </text>
     <text
-       y="208.50084"
+       y="230.19638"
        x="10.368813"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.44275665px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
        id="text124">
       <tspan
          style="stroke-width:0.2734693"
          x="10.368813 25.811573"
-         y="208.50084"
+         y="230.19638"
          sodipodi:role="line"
          id="tspan122">高雄</tspan>
     </text>
     <text
-       y="161.06786"
+       y="127.7308"
        x="12.663932"
        style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.40815735px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
        id="text130">
       <tspan
          style="stroke-width:0.2734693"
+         x="12.663932 29.072083 32.747509 49.15567 52.831097 69.239265"
+         y="127.7308"
          sodipodi:role="line"
-         id="tspan128"
-         x="12.663932"
-         y="161.06786">作品 資訊</tspan>
-    </text>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4609"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
-         id="flowRegion4611"><rect
-           id="rect4613"
-           width="2.0203052"
-           height="105.05586"
-           x="46.467018"
-           y="115.46879" /></flowRegion><flowPara
-         id="flowPara4615"></flowPara></flowRoot>    <text
-       y="254.21075"
-       x="12.663928"
-       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.40815735px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
-       id="text130-1">
+         id="tspan126">作 品 資訊</tspan>
       <tspan
          style="stroke-width:0.2734693"
+         x="12.663932 29.072083 45.480244 61.888401"
+         y="280.86816"
          sodipodi:role="line"
-         id="tspan128-1"
-         x="12.663928"
-         y="254.21075">聯絡資訊</tspan>
+         id="tspan128">聯絡資訊</tspan>
     </text>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot4680"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
-         id="flowRegion4682"><rect
-           id="rect4684"
-           width="1131.3708"
-           height="197.9899"
-           x="-96.974648"
-           y="147.79367" /></flowRegion><flowPara
-         id="flowPara4686"></flowPara></flowRoot>  </g>
+  </g>
 </svg>

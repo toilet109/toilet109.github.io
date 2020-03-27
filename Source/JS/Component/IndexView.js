@@ -12,7 +12,7 @@ const IndexView = {
             <!--第一列-->
             <div class="row">
                 <div class="col">
-                    <br><br><br><br>
+                    <br><br><br><br><br><br>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ const IndexView = {
                 <div class="col">
                     <!--載入副標題-->
                     <div id="SubTitle1">
-                        <img  height="75%" width="75%" src="./Source/IMG/SubTitle1.png" />
+                        <br>
                     </div>
                     <div id="SubTitle2">
                         <img  height="75%" width="75%" src="./Source/IMG/SubTitle2.png" />
