@@ -86,9 +86,9 @@ var OnlyProjectView = {
                     </defs>
                 </svg>
                 
-                <div id="MaskObject" class="mask-image">
+                <div id="MaskObject">
                     <div v-if="TestMediaIsVideo">
-                        <video id="PhoneVideoView" width="100%" height="100%" muted autoplay="autoplay" loop="loop" controls="controls">
+                        <video id="TestMediaIsVideo" width="100%" height="100%" muted autoplay="autoplay" loop="loop" controls="controls">
                             <source v-bind:src="ProjectMoviePath" type="video/mp4">
                             <p>錯誤！瀏覽器不支援Video播放器</p>
                         </video>
@@ -104,33 +104,41 @@ var OnlyProjectView = {
                     <img height="5%" width="5%" src="./Source/IMG/ProjectViewUpBTN.svg" />
                 </a>
             </div>
-
-            <div id="MediaViewLeftBtn">
-                <a href="javascript:void(0);" @click="ChangeBeforeMedia()">
-                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskLeftBTN.svg" /></h5>
-                </a>
-            </div>
-
-            <div id="MediaViewRightBtn">
-                <a href="javascript:void(0);" @click="ChangeNextMedia()">
-                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskRightBTN.svg" /></h5>
-                </a>
-            </div>
-
-            <div id="CloseMaskViewBtn">
-                <a v-if="MaskIsView" href="javascript:void(0);" @click="CtrlMaskObject()">
-                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskUnSetBTN.svg" /></h5>
-                </a>
-                <a v-else href="javascript:void(0);" @click="CtrlMaskObject()">
-                    <h5><img height="25%" width="25%" src="./Source/IMG/MaskSetBTN.svg" /></h5>
-                </a>
+            
+            <div id="CtrlCroupView" class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div id="CloseMaskViewBtn">
+                            <a v-if="MaskIsView" href="javascript:void(0);" @click="CtrlMaskObject()">
+                                <h5><img height="20%" width="20%" src="./Source/IMG/MaskUnSetBTN.svg" /></h5>
+                            </a>
+                            <a v-else href="javascript:void(0);" @click="CtrlMaskObject()">
+                                <h5><img height="20%" width="20%" src="./Source/IMG/MaskSetBTN.svg" /></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="MediaViewLeftBtn">
+                            <a href="javascript:void(0);" @click="ChangeBeforeMedia()">
+                                <h5><img height="20%" width="20%" src="./Source/IMG/MaskLeftBTN.svg" /></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="MediaViewRightBtn">
+                            <a href="javascript:void(0);" @click="ChangeNextMedia()">
+                                <h5><img height="20%" width="20%" src="./Source/IMG/MaskRightBTN.svg" /></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     `,
     data() {
         return {
-            LockAnimateLR       : true                           , //是否檢視作品說明界面
-            MaskIsView          : true                            , //遮罩顯示控制
+            LockAnimateLR       : true                            , //是否檢視作品說明界面
+            MaskIsView          : false                           , //遮罩顯示控制
             Link                : StudentGroups.data.FaceBookLink , //載入FB連結
             NowSelectGroupID    : 0                               , //目前選擇的作品ID(Array索引值)
             MediaIndexSum       : 1                               , //計算影音資料總數
@@ -148,9 +156,7 @@ var OnlyProjectView = {
 
         document.getElementsByTagName("div").MediaViewBlock.style.display    = "none";
         document.getElementsByTagName("div").MediaViewUpBtn.style.display    = "none";
-        document.getElementsByTagName("div").MediaViewLeftBtn.style.display  = "none";
-        document.getElementsByTagName("div").MediaViewRightBtn.style.display = "none";
-        document.getElementsByTagName("div").CloseMaskViewBtn.style.display  = "none";
+        document.getElementsByTagName("div").CtrlCroupView.style.display     = "none";
 
         /* 執行載入顯示元件動畫 */
         document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeInDown   delay-1s";
@@ -245,15 +251,11 @@ var OnlyProjectView = {
             setTimeout(() => {
                 document.getElementsByTagName("div").MediaViewBlock.style.display       = "";
                 document.getElementsByTagName("div").MediaViewUpBtn.style.display       = "";
-                document.getElementsByTagName("div").MediaViewLeftBtn.style.display     = "";
-                document.getElementsByTagName("div").MediaViewRightBtn.style.display    = "";
-                document.getElementsByTagName("div").CloseMaskViewBtn.style.display     = "";
+                document.getElementsByTagName("div").CtrlCroupView.style.display        = "";
 
                 document.getElementsByTagName("div").MediaViewBlock.className      = "animated slideInDown delay-0s";
                 document.getElementsByTagName("div").MediaViewUpBtn.className      = "animated fadeInDown  delay-1s";
-                document.getElementsByTagName("div").MediaViewLeftBtn.className    = "animated fadeInUp    delay-1s";
-                document.getElementsByTagName("div").MediaViewRightBtn.className   = "animated fadeInUp    delay-1s";
-                document.getElementsByTagName("div").CloseMaskViewBtn.className    = "animated fadeInUp    delay-1s";
+                document.getElementsByTagName("div").CtrlCroupView.className       = "animated fadeInUp    delay-1s";
 
                 document.getElementsByTagName("div").ProjectBackground.style.filter = "blur(5px)";
                 document.getElementsByTagName("div").ProjectMetaBlock.style.filter  = "blur(5px)";
@@ -265,16 +267,12 @@ var OnlyProjectView = {
         CloseMediaView:function(){
             document.getElementsByTagName("div").MediaViewBlock.className       = "animated slideOutUp  delay-0s";
             document.getElementsByTagName("div").MediaViewUpBtn.className       = "animated fadeOutUp   delay-0s";
-            document.getElementsByTagName("div").MediaViewLeftBtn.className     = "animated fadeOutDown delay-0s";
-            document.getElementsByTagName("div").MediaViewRightBtn.className    = "animated fadeOutDown delay-0s";
-            document.getElementsByTagName("div").CloseMaskViewBtn.className     = "animated fadeOutDown delay-0s";
+            document.getElementsByTagName("div").CtrlCroupView.className        = "animated fadeOutDown delay-0s";
 
             setTimeout(() => {
                 document.getElementsByTagName("div").MediaViewBlock.style.display       = "none";
                 document.getElementsByTagName("div").MediaViewUpBtn.style.display       = "none";
-                document.getElementsByTagName("div").MediaViewLeftBtn.style.display     = "none";
-                document.getElementsByTagName("div").MediaViewRightBtn.style.display    = "none";
-                document.getElementsByTagName("div").CloseMaskViewBtn.style.display     = "none";
+                document.getElementsByTagName("div").CtrlCroupView.style.display        = "none";
                 
                 this.SetWaveAnimate(false);
 

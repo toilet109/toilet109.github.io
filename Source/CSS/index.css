@@ -357,39 +357,21 @@ body::-webkit-scrollbar {
     z-index: 998;
 }
 
-#MediaViewLeftBtn{
+#CtrlCroupView{
     position: absolute;
-    background-size: cover;
-    text-align: left;
-    color:rgb(141, 255, 246); 
+    vertical-align: middle;
+    text-align: center;
+    background-color: #00000066;
     margin: 0px;
-    right: 17.5%;
-    width: 30%;
-    bottom:7.5%;
-    z-index: 998;
-}
-
-#MediaViewRightBtn{
-    position: absolute;
-    background-size: cover;
-    text-align: right;
-    color:rgb(141, 255, 246);  
-    margin: 0px;
-    right: 2.5%;
-    width: 30%;
-    bottom:7.5%;
-    z-index: 997;
-}
-
-#CloseMaskViewBtn{
-    position: absolute;
-    background-size: cover;  
-    color:rgb(255, 230, 1);  
-    margin: 0px;
-    bottom:7.5%;
     left:2.5%;
-    width: 30%;
+    width:95%;
+    right:2.5%;
+    bottom:7.5%;
     z-index: 998;
+}
+
+#MediaViewLeftBtn,#MediaViewRightBtn,#CloseMaskViewBtn{
+    text-align: center;
 }
 
 #MediaViewLeftBtn h5:hover{

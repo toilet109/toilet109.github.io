@@ -8,8 +8,22 @@ const PhoneAboutView = {
                 <img @click="ChangeBeforePage()" height="75%" width="75%" src="./Source/IMG/PhoneGridTitle.svg" />
             </div>
 
-            <div id="PhoneMenuViewMenu">
-                <img  @click="ChangeNextPage()" height="100%" width="100%" src="./Source/IMG/PhoneMenu.svg" />
+            <div id="PhoneSubTitle1">
+                <a href="javascript:void(0);" @click="ChangeNextPage()">
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneSubTitle1.png" />
+                </a>
+            </div>
+
+            <div id="PhoneSubTitle2">
+                <a v-bind:href="WhichIs" target="Web_WhichIs">
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneSubTitle2.png" />
+                
+            </div>
+
+            <div id="PhoneSubTitle3">
+                <a v-bind:href="WhyCall" target="Web_WhyCall">
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneSubTitle3.png" />
+                </a>
             </div>
 
             <div id="PhoneMenuViewFacebookIcon">
@@ -27,14 +41,18 @@ const PhoneAboutView = {
     `,
     data() {
         return {
-            Link : StudentGroups.data.FaceBookLink , //載入FB連結
+            Link           : StudentGroups.data.FaceBookLink , //載入FB連結
+            WhichIs        : StudentGroups.data.WhichIs , //'放視大賞'連結
+            WhyCall        : StudentGroups.data.WhyCall , //'聯絡資訊'連結
         }
     },
     mounted() {
         /* 執行載入顯示說明的元件動畫 */
         document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeInLeft delay-1s";
         document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeInDown delay-2s";
-        document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeInLeft delay-2s";
+        document.getElementsByTagName("div").PhoneSubTitle1.className            = "animated fadeInLeft delay-2s";
+        document.getElementsByTagName("div").PhoneSubTitle2.className            = "animated fadeInLeft delay-2s";
+        document.getElementsByTagName("div").PhoneSubTitle3.className            = "animated fadeInLeft delay-2s";
         document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeInUp   delay-2s";
         document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInRight delay-2500ms";
     },
@@ -44,7 +62,9 @@ const PhoneAboutView = {
             /* 元件皆向下滑動的動畫 */
             document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutDown delay-2s";
             document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutDown delay-1s";
-            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutDown delay-1s";
+            document.getElementsByTagName("div").PhoneSubTitle1.className            = "animated fadeOutDown delay-1s";
+            document.getElementsByTagName("div").PhoneSubTitle2.className            = "animated fadeOutDown delay-1s";
+            document.getElementsByTagName("div").PhoneSubTitle3.className            = "animated fadeOutDown delay-1s";
             document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown delay-1s";
             document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutDown delay-1s";
             
@@ -55,7 +75,9 @@ const PhoneAboutView = {
             /* 元件收起並將界面向右切換移動的動畫 */
             document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutLeft  delay-2s";
             document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutUp    delay-1s";
-            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutLeft  delay-1s";
+            document.getElementsByTagName("div").PhoneSubTitle1.className            = "animated fadeOutLeft  delay-1s";
+            document.getElementsByTagName("div").PhoneSubTitle2.className            = "animated fadeOutLeft  delay-1s";
+            document.getElementsByTagName("div").PhoneSubTitle3.className            = "animated fadeOutLeft  delay-1s";
             document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown  delay-1s";
             document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutRight delay-1s";
             

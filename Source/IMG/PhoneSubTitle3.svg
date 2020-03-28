@@ -10,20 +10,23 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="250mm"
-   height="30mm"
-   viewBox="0 0 250 30"
+   height="40mm"
+   viewBox="0 0 250 40"
    version="1.1"
    id="svg4928"
+   sodipodi:docname="PhoneSubTitle3.svg"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="SubTitle1.svg">
+   inkscape:export-filename="/home/lian/git/109-National-Tainan-University-Visual-Art-Design/Source/IMG/PhoneSubTitle2.png"
+   inkscape:export-xdpi="86.709999"
+   inkscape:export-ydpi="86.709999">
   <defs
      id="defs4922">
     <clipPath
        clipPathUnits="userSpaceOnUse"
-       id="clipPath112">
+       id="clipPath52">
       <path
-         d="m 963,619 h 678 V 547 H 963 Z"
-         id="path110"
+         d="M 15,1053 H 729 V 946 H 15 Z"
+         id="path50"
          inkscape:connector-curvature="0" />
     </clipPath>
   </defs>
@@ -34,9 +37,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="93.796619"
-     inkscape:cy="291.53779"
+     inkscape:zoom="1.4"
+     inkscape:cx="165.14706"
+     inkscape:cy="33.709938"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -61,49 +64,37 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-267)">
+     transform="translate(0,-257)">
     <g
-       id="g106"
-       transform="matrix(0.35277777,0,0,-0.35277777,-335.79247,488.23958)">
+       id="g46"
+       transform="matrix(0.27346931,0,0,-0.27346931,7.210492,550.12043)">
       <g
-         id="g108" />
+         id="g48" />
       <g
-         id="g118">
+         id="g58">
         <g
-           clip-path="url(#clipPath112)"
-           id="g116"
+           clip-path="url(#clipPath52)"
+           id="g56"
            style="opacity:0.52999902">
           <path
-             d="M 1641,547 H 963 v 72 h 678 z"
+             d="m 15,946 h 714 v 107 H 15 Z"
              style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             id="path114"
+             id="path54"
              inkscape:connector-curvature="0" />
         </g>
       </g>
     </g>
     <text
-       y="285.4444"
-       x="22.669729"
-       style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15.16944408px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text136">
+       y="282.8898"
+       x="20.620935"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.40815735px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.2734693"
+       id="text130-1">
       <tspan
-         style="stroke-width:0.35277775"
-         x="22.669729 37.839169 53.00861 68.178062 83.347504 98.516945"
-         y="285.4444"
+         style="stroke-width:0.2734693"
          sodipodi:role="line"
-         id="tspan134">新一代設計展</tspan>
-    </text>
-    <text
-       y="285.4444"
-       x="140.87007"
-       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.16944408px;font-family:'Taipei Sans TC Beta';-inkscape-font-specification:TaipeiSansTCBeta-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.35277775"
-       id="text140">
-      <tspan
-         style="stroke-width:0.35277775"
-         x="140.87007 156.03951 171.20894 186.3784 201.54784 216.71727 231.88673 247.05617"
-         y="285.4444"
-         sodipodi:role="line"
-         id="tspan138">台北南港展覽館</tspan>
+         id="tspan128-1"
+         x="20.620935"
+         y="282.8898">聯絡資訊</tspan>
     </text>
   </g>
 </svg>

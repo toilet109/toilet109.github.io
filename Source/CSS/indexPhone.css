@@ -120,6 +120,28 @@ body{
     z-index: -998;
 }
 
+#PhoneSubTitle1{
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    z-index: -998;
+}
+
+#PhoneSubTitle2{
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    z-index: -998;
+}
+
+#PhoneSubTitle3{
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    z-index: -998;
+}
+
+
 #PhoneMenuViewFacebookIcon{
     position: absolute;
     margin: 0px;
@@ -134,8 +156,7 @@ body{
     position: absolute;
     margin: 0px;
     top: 1.5%;
-    right:  -12.5%;
-    height: calc(100% - 75%);
+    right:  -7.5%;
     z-index: -997;
 }
 
