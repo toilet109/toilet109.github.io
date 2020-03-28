@@ -15,18 +15,14 @@ const PhoneProjectView = {
             <div id="ProjecTitleTitleGroups" class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <a v-bind:href="WhichIs" target="Web_WhichIs">
-                            <div id="ProjecTitleTitleButton1">
-                                <img height="100%" width="100%" src="./Source/IMG/button-1.png" />
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
                         <a v-bind:href="WhyCall" target="Web_WhyCall">
                             <div id="ProjecTitleTitleButton2">
                                 <img height="100%" width="100%" src="./Source/IMG/button-2.png" />
                             </div>
                         </a>
+                    </div>
+                    <div class="col">
+                        <br>
                     </div>
                 </div>
             </div>
@@ -131,13 +127,11 @@ const PhoneProjectView = {
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-500ms";
             document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInRight  delay-1500ms";
-            document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeInRight  delay-1500ms";
             document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInRight  delay-1500ms";
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInLeft   delay-2s";
             
             /* 載入上方連結欄提示動畫 */
             setTimeout(() => { 
-                document.getElementsByTagName("div").ProjecTitleTitleButton1.className       = "animated pulse        delay-500ms";
                 document.getElementsByTagName("div").ProjecTitleTitleButton2.className       = "animated pulse        delay-1s";
             },3000);
            
@@ -169,7 +163,6 @@ const PhoneProjectView = {
                 document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-3s";
                 document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-2s";
                 document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutRight  delay-1s";
-                document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeOutRight  delay-1s";
                 document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutRight  delay-1s";
                 document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutLeft   delay-1s";       
                 

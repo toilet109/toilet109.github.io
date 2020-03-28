@@ -15,18 +15,14 @@ const PhoneOnlyProjectView = {
             <div id="ProjecTitleTitleGroups" class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <a v-bind:href="WhichIs" target="Web_WhichIs">
-                            <div id="ProjecTitleTitleButton1">
-                                <img height="100%" width="100%" src="./Source/IMG/button-1.png" />
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
                         <a v-bind:href="WhyCall" target="Web_WhyCall">
                             <div id="ProjecTitleTitleButton2">
                                 <img height="100%" width="100%" src="./Source/IMG/button-2.png" />
                             </div>
                         </a>
+                    </div>
+                    <div class="col">
+                        <br>
                     </div>
                 </div>
             </div>
