@@ -129,7 +129,7 @@ const PhoneProjectView = {
         if(!this.IsReMount){
             /* 載入上方控制欄位動畫 */
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
-            document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInRight  delay-500ms";
+            document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-500ms";
             document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInRight  delay-1500ms";
             document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeInRight  delay-1500ms";
             document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInRight  delay-1500ms";
@@ -167,11 +167,11 @@ const PhoneProjectView = {
             setTimeout(() => { 
                 /* 移出上方控制欄位動畫 */
                 document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-3s";
-                document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutRight  delay-2s";
+                document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-2s";
                 document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutRight  delay-1s";
                 document.getElementsByTagName("div").ProjecTitleTitleButton1.className           = "animated fadeOutRight  delay-1s";
                 document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutRight  delay-1s";
-                document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutLeft  delay-1s";       
+                document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutLeft   delay-1s";       
                 
                 /* 由左向右切出主題分類的分組動畫 */
                 document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutRight delay-0s";
