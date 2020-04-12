@@ -73,10 +73,8 @@ const ProjectTypeView = {
             this.GroupsDataList.push(TmpArray);
         }
         
-        document.getElementsByTagName("div").UpBtn.className                              = "animated fadeInDown  delay-1s";
-        
-        console.log(this.IsReMount);
-        
+        document.getElementsByTagName("div").UpBtn.className                              = "animated fadeInDown  delay-500ms";
+                
         /* 依據是否以載入，而作品形象照由對應方向載入 */
         if(!this.IsReMount){
             document.getElementsByTagName("div").ProgectTypeListGroup.className           = "animated fadeInUp    delay-0s";
@@ -89,19 +87,17 @@ const ProjectTypeView = {
         /* 切換到上一頁(作品一覽) */
         ChangeBeforePage:function() {
             document.getElementsByTagName("div").UpBtn.className                    = "animated fadeOutUp delay-0s";
-            document.getElementsByTagName("div").ProgectTypeListGroup.className     = "animated fadeOutDown delay-1s";
-            app.DelayRoutePush("/Project",2000);
+            document.getElementsByTagName("div").ProgectTypeListGroup.className     = "animated fadeOutDown delay-500ms";
+            app.DelayRoutePush("/Project",1000);
         },
         /* 切換到下一頁(小組作品) */
         ChangeNextPage:function(ProjectID) {
             document.getElementsByTagName("div").UpBtn.className                    = "animated fadeOutUp  delay-0s";
-            document.getElementsByTagName("div").ProgectTypeListGroup.className     = "animated fadeOutUp delay-1s";
+            document.getElementsByTagName("div").ProgectTypeListGroup.className     = "animated fadeOutUp  delay-500ms";
             
             StudentGroups.event.SetNowSelectID(ProjectID);
             app.NowSelectID = ProjectID;
-            console.log(app.NowSelectID);
-            
-            app.DelayRoutePush("/ProjectView",2000);
+            app.DelayRoutePush("/ProjectView",1000);
         }
     },
 };

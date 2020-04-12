@@ -75,28 +75,28 @@ const IndexView = {
     },
     mounted() {
         /* 載入首頁動畫 */
-        document.getElementsByTagName("div").IndexBackground.className  = "animated zoomIn      delay-1s";
-        document.getElementsByTagName("div").Liner.className            = "animated zoomIn      delay-2s";
-        document.getElementsByTagName("div").MainView.className         = "animated fadeInDown  delay-1s";
-        document.getElementsByTagName("div").Title.className            = "animated fadeInRight delay-2s";
-        document.getElementsByTagName("div").SubTitle1.className        = "animated fadeInLeft  delay-2s";
-        document.getElementsByTagName("div").SubTitle2.className        = "animated fadeInLeft  delay-2s";
-        document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeInLeft  delay-2s";
-        document.getElementsByTagName("div").DownBtn.className          = "animated fadeInUp    delay-2500ms";
+        document.getElementsByTagName("div").IndexBackground.className  = "animated zoomIn      delay-500ms";
+        document.getElementsByTagName("div").Liner.className            = "animated zoomIn      delay-1s";
+        document.getElementsByTagName("div").MainView.className         = "animated fadeInDown  delay-500ms";
+        document.getElementsByTagName("div").Title.className            = "animated fadeInRight delay-1500ms";
+        document.getElementsByTagName("div").SubTitle1.className        = "animated fadeInLeft  delay-1500ms";
+        document.getElementsByTagName("div").SubTitle2.className        = "animated fadeInLeft  delay-1500ms";
+        document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeInLeft  delay-1500ms";
+        document.getElementsByTagName("div").DownBtn.className          = "animated fadeInUp    delay-2000ms";
     },
     methods: {
         /* 切換到下一頁(作品一覽) */
         ChangeNextPage:function() {
             /*向下滑動切換動畫*/
-            document.getElementsByTagName("div").IndexBackground.className  = "animated fadeOutUp      delay-3s";
-            document.getElementsByTagName("div").Liner.className            = "animated zoomOut      delay-2s";
-            document.getElementsByTagName("div").Title.className            = "animated fadeOutLeft     delay-1s";
-            document.getElementsByTagName("div").SubTitle1.className        = "animated fadeOutRight  delay-1s";
-            document.getElementsByTagName("div").SubTitle2.className        = "animated fadeOutRight  delay-1s";
-            document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeOutRight  delay-1s";
+            document.getElementsByTagName("div").IndexBackground.className  = "animated fadeOutUp      delay-1500ms";
+            document.getElementsByTagName("div").Liner.className            = "animated zoomOut        delay-1s";
+            document.getElementsByTagName("div").Title.className            = "animated fadeOutLeft    delay-500ms";
+            document.getElementsByTagName("div").SubTitle1.className        = "animated fadeOutRight   delay-500ms";
+            document.getElementsByTagName("div").SubTitle2.className        = "animated fadeOutRight   delay-500ms";
+            document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeOutRight   delay-500ms";
             document.getElementsByTagName("div").DownBtn.className          = "animated fadeOutDown    delay-0s";
 
-            app.DelayRoutePush("/Project",4000);
+            app.DelayRoutePush("/Project",2000);
         },
     },
 };

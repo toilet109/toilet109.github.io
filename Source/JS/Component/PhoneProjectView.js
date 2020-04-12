@@ -126,22 +126,22 @@ const PhoneProjectView = {
             /* 載入上方控制欄位動畫 */
             document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-500ms";
-            document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInRight  delay-1500ms";
-            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInRight  delay-1500ms";
-            document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInLeft   delay-2s";
+            document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInRight  delay-1s";
+            document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInRight  delay-1s";
+            document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeInLeft   delay-1s";
             
             /* 載入上方連結欄提示動畫 */
             setTimeout(() => { 
-                document.getElementsByTagName("div").ProjecTitleTitleButton2.className       = "animated pulse        delay-1s";
-            },3000);
+                document.getElementsByTagName("div").ProjecTitleTitleButton2.className       = "animated pulse        delay-500ms";
+            },1500);
            
             /* 由右向左載入主題分類的分組動畫 */
-            document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInRight delay-3s";
-            document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInRight delay-3s";
-            document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInRight delay-3s";
-            document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeInRight delay-3s";
-            document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeInRight delay-3s";
-            document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeInRight delay-3s";
+            document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInRight delay-1500ms";
+            document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInRight delay-1500ms";
+            document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInRight delay-1500ms";
+            document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeInRight delay-1500ms";
+            document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeInRight delay-1500ms";
+            document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeInRight delay-1500ms";
         }else{
             /* 由左向右載入主題分類的分組動畫 */
             document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInLeft delay-0s";
@@ -160,11 +160,11 @@ const PhoneProjectView = {
 
             setTimeout(() => { 
                 /* 移出上方控制欄位動畫 */
-                document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-3s";
-                document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-2s";
-                document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutRight  delay-1s";
-                document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutRight  delay-1s";
-                document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutLeft   delay-1s";       
+                document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-2s";
+                document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-1s";
+                document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutRight  delay-500ms";
+                document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutRight  delay-500ms";
+                document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutLeft   delay-500ms";       
                 
                 /* 由左向右切出主題分類的分組動畫 */
                 document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutRight delay-0s";
@@ -173,9 +173,9 @@ const PhoneProjectView = {
                 document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeOutRight delay-0s";
-            },1500);
+            },1000);
 
-            app.DelayRoutePush("/phoneAbout",6000);
+            app.DelayRoutePush("/phoneAbout",3500);
         },
         /* 切換到下一頁(手機版作品專欄) */
         ChangeNextPage:function(ProjectType) {
@@ -187,7 +187,7 @@ const PhoneProjectView = {
             document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeOutLeft delay-0s"; 
             
-            app.DelayRoutePush("/phoneProject/"+ProjectType,1000);
+            app.DelayRoutePush("/phoneProject/"+ProjectType,500);
         }
     },
 };

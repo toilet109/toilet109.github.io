@@ -17,14 +17,14 @@ const PhoneCantTransformView = {
         ChangeHomePage:function() {         
             /* 當離開手機橫向後切換頁面 */   
             if(window.orientation === 0 || window.orientation === 180 || window.orientation === undefined || (window.orientation === undefined && screen.mozOrientation == undefined && window.outerWidth > window.outerHeight)){
-                document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-1s";
+                document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-500ms";
                 app.DelayRouteBack();
             /* 還是橫向但按了一下 */   
             }else{
                 document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeOutDown    delay-0s";
                 setTimeout(() => {
                     document.getElementsByTagName("div").PhoneCantTransform.className = "animated fadeInUp       delay-0s";
-                },1000);
+                },500);
             }
         }
     },

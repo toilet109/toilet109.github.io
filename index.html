@@ -23,6 +23,8 @@
         <script src="./Source/JS/popper.min.js"></script>
         <script src="./Source/JS/bootstrap.min.js"></script>
         <script src="./Source/JS/vue.js"></script>
+        <script>Vue.config.devtools=false</script>
+        <script>Vue.config.productionTip=false</script>
         <script src="./Source/JS/httpVueLoader.js"></script>
         <script src="./Source/JS/vue-router.js"></script>
 
@@ -30,7 +32,7 @@
     </head>
     <body>
         <div id="app">
-            <div id="InitView" class="InitView animated fadeOut delay-1s"></div>
+            <div id="InitView" class="InitView animated fadeOut delay-500ms"></div>
             <router-view></router-view>
         </div>
     </body>

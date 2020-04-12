@@ -146,9 +146,9 @@ const PhoneOnlyProjectView = {
         };
 
         /* 執行載入顯示元件動畫 */
-        document.getElementsByTagName("div").PhoneProjectViewProjectImageBlock.className = "animated fadeInUp    delay-1s";
-        document.getElementsByTagName("div").PhoneCtlMask.className                      = "animated fadeInUp    delay-1s";
-        document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.className     = "animated fadeInUp    delay-1s";
+        document.getElementsByTagName("div").PhoneProjectViewProjectImageBlock.className = "animated fadeInUp    delay-500ms";
+        document.getElementsByTagName("div").PhoneCtlMask.className                      = "animated fadeInUp    delay-500ms";
+        document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.className     = "animated fadeInUp    delay-500ms";
         document.getElementsByTagName("div").PhoneProjectViewBottomBTNBlock.className    = "animated fadeInUp    delay-0s";
 
         /* 初始化化動監控事件 */
@@ -166,13 +166,13 @@ const PhoneOnlyProjectView = {
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "RollBackBTN";
 
             setTimeout(() => {
-                document.getElementsByTagName("div").PhoneProjectViewProjectImageBlock.className = "animated fadeOutDown   delay-1s";
-                document.getElementsByTagName("div").PhoneCtlMask.className                      = "animated fadeOutDown   delay-1s";
-                document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.className     = "animated fadeOutDown   delay-1s";
-                document.getElementsByTagName("div").PhoneProjectViewBottomBTNBlock.className    = "animated fadeOutDown   delay-2s";
-            },750);
+                document.getElementsByTagName("div").PhoneProjectViewProjectImageBlock.className = "animated fadeOutDown   delay-500ms";
+                document.getElementsByTagName("div").PhoneCtlMask.className                      = "animated fadeOutDown   delay-500ms";
+                document.getElementsByTagName("div").PhoneProjectViewMetaTextBlock.className     = "animated fadeOutDown   delay-500ms";
+                document.getElementsByTagName("div").PhoneProjectViewBottomBTNBlock.className    = "animated fadeOutDown   delay-1s";
+            },500);
                 
-            app.DelayRouteBack(4000);
+            app.DelayRouteBack(2000);
         },
         /* 設定是否要檢視作品說明界面 */
         SetProjectAboutView:function(NextToShow) {

@@ -159,19 +159,19 @@ var OnlyProjectView = {
         document.getElementsByTagName("div").CtrlCroupView.style.display     = "none";
 
         /* 執行載入顯示元件動畫 */
-        document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeInDown   delay-1s";
-        document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeInDown   delay-2s";
-        document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeInRight  delay-2s";
-        document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeInLeft   delay-2s";
-        document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated slideInLeft  delay-1s";
-        document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeInUp     delay-1s";
-        document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeInDown   delay-1s";
-        document.getElementsByTagName("div").AboutBlock.className           = "animated slideInRight delay-1s";
-        document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeInUp     delay-2s";
+        document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeInDown   delay-500ms";
+        document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeInDown   delay-1s";
+        document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeInRight  delay-1s";
+        document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeInLeft   delay-1s";
+        document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated slideInLeft  delay-500ms";
+        document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeInUp     delay-500ms";
+        document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeInDown   delay-500ms";
+        document.getElementsByTagName("div").AboutBlock.className           = "animated slideInRight delay-500ms";
+        document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeInUp     delay-1s";
 
         setTimeout(() => {
             this.LockAnimateLR = false;
-        },3000);
+        },1500);
 
         /* 固定每4s更新搖動一次 */
         setInterval(() => {
@@ -187,10 +187,10 @@ var OnlyProjectView = {
                 setTimeout(() => {
                     document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated heartBeat delay-0s";
                     document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated heartBeat delay-0s";
-                },1000);
+                },500);
             }
             
-        },2000);
+        },1000);
     },
     methods: {
         /* 切換到上一頁(手機版作品專欄) */
@@ -199,18 +199,18 @@ var OnlyProjectView = {
             
             setTimeout(() => {
                 /* 執行收起元件動畫 */
-                document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-1s";
+                document.getElementsByTagName("div").ProjectBackground.className    = "animated fadeOutUp     delay-500ms";
                 document.getElementsByTagName("div").ProjectViewUpBtn.className     = "animated fadeOutUp     delay-0s";
                 document.getElementsByTagName("div").ProjectViewLeftBtn.className   = "animated fadeOutLeft   delay-0s";
                 document.getElementsByTagName("div").ProjectViewRightBtn.className  = "animated fadeOutRight  delay-0s";
-                document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated fadeOutLeft   delay-1s";
-                document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeOutDown   delay-1s";
-                document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeOutUp     delay-1s";
-                document.getElementsByTagName("div").AboutBlock.className           = "animated fadeOutRight  delay-1s";
+                document.getElementsByTagName("div").ProjectMetaBlock.className     = "animated fadeOutLeft   delay-500ms";
+                document.getElementsByTagName("div").ProjectMainBlock.className     = "animated fadeOutDown   delay-500ms";
+                document.getElementsByTagName("div").ImagePhotoBlock.className      = "animated fadeOutUp     delay-500ms";
+                document.getElementsByTagName("div").AboutBlock.className           = "animated fadeOutRight  delay-500ms";
                 document.getElementsByTagName("div").ProjectViewDownBtn.className   = "animated fadeOutDown   delay-0s";
             },1000);
 
-            app.DelayRouteBack(3000);
+            app.DelayRouteBack(2000);
         },
         ChangeBeforeProject:function() {
             StudentGroups.event.GetBeforeGroup();

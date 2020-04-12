@@ -36,34 +36,34 @@ const PhoneAboutView = {
     },
     mounted() {
         /* 執行載入顯示說明的元件動畫 */
-        document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeInLeft delay-1s";
-        document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeInDown delay-2s";
-        document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeInLeft delay-2s";
-        document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeInUp   delay-2s";
-        document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInRight delay-2500ms";
+        document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeInLeft delay-500ms";
+        document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeInDown delay-1s";
+        document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeInLeft delay-1s";
+        document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeInUp   delay-1s";
+        document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInRight delay-1500ms";
     },
     methods: {
         /* 切換到上一頁(手機版首頁) */
         ChangeBeforePage:function() {
             /* 元件皆向下滑動的動畫 */
-            document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutDown delay-2s";
-            document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutDown delay-1s";
-            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutDown delay-1s";
-            document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown delay-1s";
-            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutDown delay-1s";
+            document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutDown delay-1s";
+            document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutDown delay-500ms";
+            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutDown delay-500ms";
+            document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown delay-500ms";
+            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutDown delay-500ms";
             
-            app.DelayRoutePush("/phone",3000);
+            app.DelayRoutePush("/phone",2000);
         },
         /* 切換到下一頁(手機版作品一覽) */
         ChangeNextPage:function() {
             /* 元件收起並將界面向右切換移動的動畫 */
-            document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutLeft  delay-2s";
-            document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutUp    delay-1s";
-            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutLeft  delay-1s";
-            document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown  delay-1s";
-            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutRight delay-1s";
+            document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutLeft  delay-1s";
+            document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutUp    delay-500ms";
+            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutLeft  delay-500ms";
+            document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown  delay-500ms";
+            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutRight delay-500ms";
             
-            app.DelayRoutePush("/phoneProject",3000);
+            app.DelayRoutePush("/phoneProject",1500);
         },
     },
 };

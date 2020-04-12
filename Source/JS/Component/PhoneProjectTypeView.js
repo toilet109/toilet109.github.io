@@ -89,9 +89,9 @@ const PhoneProjectTypeView = {
 
             setTimeout(() => {
                 document.getElementsByTagName("div").PhoneProgectTypeListGroup.className           = "animated fadeOutRight delay-0s";
-            },750);
+            },500);
 
-            app.DelayRoutePush("/phoneProject",1750);
+            app.DelayRoutePush("/phoneProject",1000);
         },
         /* 切換到下一頁(手機版小組作品) */
         ChangeNextPage:function(ProjectID) {
@@ -99,7 +99,7 @@ const PhoneProjectTypeView = {
             
             StudentGroups.event.SetNowSelectID(ProjectID);
             app.NowSelectID = ProjectID;
-            app.DelayRoutePush("/phoneProjectView",1000);
+            app.DelayRoutePush("/phoneProjectView",500);
         }
     },
 };
