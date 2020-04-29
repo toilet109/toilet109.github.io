@@ -99,7 +99,7 @@ body::-webkit-scrollbar {
 #MainBackground{
     position: fixed;
     margin: 0px;
-    background-image: url("../IMG/MainBackground.png");
+    background-image: url("../IMG/PhoneMenuViewBackground.svg");
     background-size: 30%;
     background-position: top;
     width: 100%;

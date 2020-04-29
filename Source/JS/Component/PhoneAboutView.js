@@ -2,16 +2,12 @@ const PhoneAboutView = {
     template: 
     `
         <div>
+            <div id="PhoneMenuViewBackEnd"></div>
             <div id="PhoneMenuViewBackground"></div>
+            <div id="PhoneCtlViewMaskBlock"></div>
 
             <div id="PhoneMenuViewTitle">
-                <img @click="ChangeBeforePage()" height="75%" width="75%" src="./Source/IMG/PhoneGridTitle.svg" />
-            </div>
-
-            <div id="PhoneMenuViewMenu">
-                <a href="javascript:void(0);" @click="ChangeNextPage()">
-                    <img height="100%" width="100%" src="./Source/IMG/PhoneMenu.svg" />
-                </a>
+                <img @click="ChangeBeforePage()" height="80%" width="80%" src="./Source/IMG/PhoneGridTitle.svg" />
             </div>
 
             <div id="PhoneMenuViewFacebookIcon">
@@ -22,46 +18,77 @@ const PhoneAboutView = {
 
             <div id="PhoneRightBtn">
                 <a @click="ChangeNextPage()">
-                    <img height="50%" width="50%" src="./Source/IMG/RightBTN.svg" />
+                    <img height="45%" width="45%" src="./Source/IMG/ProjectInfo.svg" />
                 </a>
             </div>
         </div>
     `,
     data() {
         return {
+            Lock           : false                      , //是否鎖定
+            IsReMount      : false                      , //是否有二次載入(反向載入)的情況
             Link           : StudentGroups.data.FaceBookLink , //載入FB連結
             WhichIs        : StudentGroups.data.WhichIs , //'放視大賞'連結
             WhyCall        : StudentGroups.data.WhyCall , //'聯絡資訊'連結
         }
     },
-    mounted() {
+    async mounted() {
+        try {
+            /* 用同位異步方式與await等待app元件優先載入完成，並讀取此頁面是否發生二次載入(選擇動畫方向用) */
+            this.IsReMount = await(app.AboutViewIsGoBack);
+        } catch (error) {
+            /* 當路由直接指向此頁時，直接視為初次載入 */
+            this.IsReMount = false;
+        }
+
         /* 執行載入顯示說明的元件動畫 */
+        if(!this.IsReMount){
+            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInRight delay-1500ms";
+        }else{
+            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInLeft delay-1500ms";
+        }
+
         document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeInLeft delay-500ms";
         document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeInDown delay-1s";
-        document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeInLeft delay-1s";
         document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeInUp   delay-1s";
-        document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeInRight delay-1500ms";
+
+        /* 初始化化動監控事件 */
+        this.SetSwipe(event);
     },
     methods: {
+        /* 初始化化動監控事件 */
+        SetSwipe:function(event) {
+            /* 當左右滑動時更新索引ID */
+            $("#PhoneCtlViewMaskBlock").swipe( {
+                swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    PhoneAboutView.methods.ChangeBeforePage();
+                },
+                swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    PhoneAboutView.methods.ChangeNextPage();
+                },
+                threshold:0
+            });
+        },
         /* 切換到上一頁(手機版首頁) */
         ChangeBeforePage:function() {
+            document.getElementsByTagName("div").PhoneCtlViewMaskBlock.style.display = `none`;
             /* 元件皆向下滑動的動畫 */
+            document.getElementsByTagName("div").PhoneMenuViewBackEnd.className      = "animated fadeOut     delay-1500ms";
             document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutDown delay-1s";
             document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutDown delay-500ms";
-            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutDown delay-500ms";
             
-            app.DelayRoutePush("/phone",2000);
+            app.DelayRoutePush("/phone",2500);
         },
         /* 切換到下一頁(手機版作品一覽) */
         ChangeNextPage:function() {
+            document.getElementsByTagName("div").PhoneCtlViewMaskBlock.style.display = `none`;
             /* 元件收起並將界面向右切換移動的動畫 */
             document.getElementsByTagName("div").PhoneMenuViewBackground.className   = "animated fadeOutLeft  delay-1s";
             document.getElementsByTagName("div").PhoneMenuViewTitle.className        = "animated fadeOutUp    delay-500ms";
-            document.getElementsByTagName("div").PhoneMenuViewMenu.className         = "animated fadeOutLeft  delay-500ms";
             document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown  delay-500ms";
-            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutRight delay-500ms";
+            document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutLeft  delay-500ms";
             
             app.DelayRoutePush("/phoneProject",1500);
         },

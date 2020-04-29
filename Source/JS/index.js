@@ -4,6 +4,7 @@ var app = new Vue({
         return {
             IsInit                       : false , //是否正式完成初始化
             IsLockView                   : false , //是否完全鎖定控制
+            AboutViewIsGoBack            : false , //是否觸發返回事件(0)
             ProjectViewIsGoBack          : false , //是否觸發返回事件(1)
             ProjectTypeViewIsGoBack      : false , //是否觸發返回事件(2)
             Lock                         : false , //控制Vue-Router切換的自栓鎖
@@ -140,6 +141,13 @@ var app = new Vue({
     },
     watch: {
         '$route' (to, from) {
+            /* 檢測'手機版首頁介紹'是否發生是否發生返回載入 */
+            if((from.name === "手機版作品一覽" && to.name === "手機版首頁介紹")){
+                app.AboutViewIsGoBack = true;
+            }else{
+                app.AboutViewIsGoBack = false;
+            }
+
             /* 檢測'作品專欄'是否發生是否發生返回載入 */
             if((from.name === "小組作品" && to.name === "作品專欄")||(from.name === "手機版小組作品" && to.name === "手機版作品專欄")){
                 app.ProjectTypeViewIsGoBack = true;

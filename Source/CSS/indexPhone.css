@@ -1,3 +1,6 @@
+html {
+    touch-action: none;
+}
 
 body{
     position: fixed;
@@ -39,17 +42,30 @@ body{
     z-index: -999;
 }
 
+#PhoneIndexBackEnd2{
+    position: fixed;
+    margin: 0px;
+    background-image: url("../IMG/PhoneMainBackground.svg");
+    top: -10%;
+    left: -10%;
+    right: -10%;
+    width: 120%;
+    height: 120%;
+    padding: 0px;
+    z-index: -1000;
+}
+
 #PhoneIndexBackground{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/Background.svg");
     background-position: center;
     background-repeat:no-repeat;
-    top: -10%;
-    left: -10%;
-    right: -10%;
-    width: 120%;
-    height: 120%;
+    background-size: 110%;
+    top:-2.5%;
+    left: 0%;
+    right: 0%;
+    bottom: 5%;
     padding: 0px;
     z-index: -998;
 }
@@ -68,7 +84,7 @@ body{
     position: absolute;
     margin: 0px;
     padding: 0px;
-    top:5%;
+    top:2%;
     left: 5%;
     right: 5%;
     z-index: -995;
@@ -95,29 +111,32 @@ body{
     z-index: 2;
 }
 
+#PhoneMenuViewBackEnd{
+    position: fixed;
+    margin: 0px;
+    background-image: url("../IMG/PhoneMenuViewBackground.svg");
+    background-position: center;
+    top: -10%;
+    left: -10%;
+    right: -10%;
+    width: 120%;
+    height: 120%;
+    padding: 0px;
+    z-index: -1000;
+}
+
 #PhoneMenuViewBackground{
     position: fixed;
     margin: 0px;
-    background-image: url("../IMG/Background.svg");
-    background-position: center;
+    background-image: url("../IMG/AboutViewBackground.svg");
+    background-position: top;
     background-repeat:no-repeat;
-    top: -30%;
-    left: -70%;
-    right: 30%;
-    width: 160%;
-    height: 160%;
+    top: -10%;
+    right: 35%;
+    width: 125%;
+    height: 125%;
     padding: 0px;
     z-index: -999;
-}
-
-#PhoneMenuViewMenu{
-    position: absolute;
-    top: 30%;
-    height: 65%;
-    width: 65%;
-    bottom: 15%;
-    left: 0%;
-    z-index: -998;
 }
 
 #PhoneSubTitle1{
@@ -155,33 +174,42 @@ body{
 #PhoneMenuViewTitle{
     position: absolute;
     margin: 0px;
-    top: 1.5%;
-    right:  -7.5%;
+    top: 0%;
+    width: 100%;
+    right:  -5%;
     z-index: -997;
+    text-align: right;
 }
 
 #PhoneRightBtn{
+    position: absolute;
     text-align: right;
+    margin: 0px;
+    top:  70%;
+    right: 5%;
+    z-index: 2;
+}
+
+#PhoneCtlViewMaskBlock{
     position: absolute;
     margin: 0px;
-    top:  calc(100% - 55%);
-    height: calc(100% - 90%);
-    bottom: calc(100% - 55%);
-    width: 40%;
-    left: 60%;
-    right: 0%;
-    z-index: 2;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom: 0%;
+    z-index: -998;
 }
 
 #PhoneProjectViewBackground{
     position: fixed;
     margin: 0px;
+    background-image: url("../IMG/PhoneMenuViewBackground.svg");
     background-position: center;
-    background-color:#666666;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
+    top: -10%;
+    left: -10%;
+    right: -10%;
+    width: 120%;
+    height: 120%;
     padding: 0px;
     z-index: -996;
 }
@@ -254,7 +282,6 @@ body{
     text-align: justify;
     background-position: center;
     background-repeat:no-repeat;
-    background-color:#666666;
     height: 45%;
     margin: 0px;
     bottom: 42.5%;
@@ -378,7 +405,7 @@ body{
 }
 
 .PhoneProjectBTN{
-    background-color:#f2f2f2;
+    background-color:#dfdfdf;
     vertical-align: middle;
     text-align: center;
     padding: 4%;
@@ -396,7 +423,7 @@ body{
 }
 
 #PhoneProjectViewFaceBookBTN{
-    background-color:#f2f2f2;
+    background-color:#dfdfdf;
     width: 30%;
     padding: 2%;
     text-align: right;

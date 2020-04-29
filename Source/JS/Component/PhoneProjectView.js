@@ -124,7 +124,7 @@ const PhoneProjectView = {
         /* 未進行反向載入由右向左切入，反之由左向右切入*/
         if(!this.IsReMount){
             /* 載入上方控制欄位動畫 */
-            document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
+            //document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideInRight delay-0s";
             document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeInDown   delay-500ms";
             document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeInRight  delay-1s";
             document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeInRight  delay-1s";
@@ -160,7 +160,7 @@ const PhoneProjectView = {
 
             setTimeout(() => { 
                 /* 移出上方控制欄位動畫 */
-                document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-2s";
+                //document.getElementsByTagName("div").PhoneProjectViewBackground.className        = "animated slideOutRight delay-2s";
                 document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className    = "animated fadeOutUp     delay-1s";
                 document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className         = "animated fadeOutRight  delay-500ms";
                 document.getElementsByTagName("div").ProjecTitleTitleButton2.className           = "animated fadeOutRight  delay-500ms";
