@@ -79,7 +79,7 @@ const PhoneAboutView = {
             document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutDown delay-500ms";
             
-            app.DelayRoutePush("/phone",2500);
+            app.DelayRoutePush("/phone",2000);
         },
         /* 切換到下一頁(手機版作品一覽) */
         ChangeNextPage:function() {
