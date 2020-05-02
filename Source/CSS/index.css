@@ -81,7 +81,6 @@ body::-webkit-scrollbar {
     display:none;
 }
 
-
 #IndexBackground{
     position: fixed;
     margin: 0px;
@@ -102,6 +101,7 @@ body::-webkit-scrollbar {
     background-image: url("../IMG/PhoneMenuViewBackground.svg");
     background-size: 30%;
     background-position: top;
+    background-repeat: repeat-x;
     width: 100%;
     height: 100%;
     padding: 0px;

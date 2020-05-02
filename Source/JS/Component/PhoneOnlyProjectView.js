@@ -37,7 +37,7 @@ const PhoneOnlyProjectView = {
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col">
-                            <h2><br>兩側滑動以切換作品</h2>
+                            <h2><br>左右滑動切換作品</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -60,7 +60,7 @@ const PhoneOnlyProjectView = {
 
             <div id="PhoneProjectViewProjectImageBackgroundBlock"></div>
 
-            <div id="PhoneProjectViewProjectImageBlock">
+            <div id="PhoneProjectViewProjectImageBlock" @click="ChangeImageView()">
                 <img width="100%" height="100%" v-bind:src="ImagePhotoPath" />
             </div>
 
@@ -126,6 +126,7 @@ const PhoneOnlyProjectView = {
     `,
     data() {
         return {
+            ShowImage           : false                           , //是否完整顯示印象圖
             IsProjectAboutView  : false                           , //是否檢視作品說明界面
             IsProjectMumberView : false                           , //是否檢視參與成員資料界面
             WhichIs             : StudentGroups.data.WhichIs      , //'放視大賞'連結
@@ -223,6 +224,22 @@ const PhoneOnlyProjectView = {
         /* 提示用界面點擊關閉功能 */
         CloseCtlMask:function() {
             document.getElementsByTagName("div").PhoneCtlMask.style.display = "none";
+        },
+
+        ChangeImageView:function(){
+            if(!this.ShowImage){
+                document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className = "animated fadeOutUp delay-500ms";
+                document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className      = "animated fadeOutUp";
+                document.getElementsByTagName("div").ProjecTitleTitleGroups.className         = "animated fadeOutUp";
+                document.getElementsByTagName("div").PhoneBackBtn.className                   = "animated fadeOutUp";
+            }else{
+                document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className = "animated fadeInDown";
+                document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className      = "animated fadeInDown delay-500ms";
+                document.getElementsByTagName("div").ProjecTitleTitleGroups.className         = "animated fadeInDown delay-500ms";
+                document.getElementsByTagName("div").PhoneBackBtn.className                   = "animated fadeInDown delay-500ms";
+            }
+            
+            this.ShowImage = !this.ShowImage;
         }
     },
     computed: {

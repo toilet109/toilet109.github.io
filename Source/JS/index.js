@@ -106,7 +106,7 @@ var app = new Vue({
             this.DelayRoutePush(PushRoute,1000);
         },
         ChangeView:function(){
-            if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|iPad|WebOS)/i)){
+            if (navigator.userAgent.match(/(Android|iPhone|iPod|ios|WebOS)/i)){
                 if(window.orientation === 90 || window.orientation === -90 || (screen.mozOrientation !== undefined && window.outerWidth > window.outerHeight)){
                     if(document.getElementsByTagName('video')[0] === undefined || document.getElementsByTagName('video')[0].paused){
                         if(!this.IsLockView){

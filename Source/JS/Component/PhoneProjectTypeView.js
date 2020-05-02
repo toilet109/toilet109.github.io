@@ -81,8 +81,18 @@ const PhoneProjectTypeView = {
         }else{
             document.getElementsByTagName("div").PhoneProgectTypeListGroup.className           = "animated fadeInLeft  delay-0s";
         }
+        
+        /* 初始化化動監控事件 */
+        this.SetSwipe(event);
     },
     methods: {
+        
+        /* 初始化化動監控事件 */
+        SetSwipe:function(event) {
+            /* 底遮罩滑動控制 */
+
+           
+        },
         /* 切換到上一頁(手機版作品一覽) */
         ChangeBeforePage:function() {
             document.getElementsByTagName("div").PhoneBackBtn.className                      = "RollBackBTN";

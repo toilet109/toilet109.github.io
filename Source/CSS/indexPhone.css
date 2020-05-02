@@ -29,11 +29,11 @@ body{
 
 
 #PhoneIndexBackEnd{
-    position: fixed;
+    position: absolute;
     margin: 0px;
     background-position: center;
     background-repeat:no-repeat;
-    top: -10%;
+    top: 75px;
     left: -10%;
     right: -10%;
     width: 120%;
@@ -42,10 +42,22 @@ body{
     z-index: -999;
 }
 
+/*
+
+#PhoneIndexBackEnd{
+    position: absolute;
+    text-align: center;
+    margin: 0px;
+    top: 75px;
+    left:1%;
+    z-index: -999;
+}
+*/
+
 #PhoneIndexBackEnd2{
     position: fixed;
     margin: 0px;
-    background-image: url("../IMG/PhoneMainBackground.svg");
+    background-image: url("../IMG/PhoneMenuViewBackground.svg");
     top: -10%;
     left: -10%;
     right: -10%;
@@ -54,7 +66,6 @@ body{
     padding: 0px;
     z-index: -1000;
 }
-
 #PhoneIndexBackground{
     position: fixed;
     margin: 0px;
@@ -62,7 +73,7 @@ body{
     background-position: center;
     background-repeat:no-repeat;
     background-size: 110%;
-    top:-2.5%;
+    top:calc(75px - 1.25%);
     left: 0%;
     right: 0%;
     bottom: 5%;
@@ -200,6 +211,16 @@ body{
     z-index: -998;
 }
 
+#PhoneCtlProjectViewMaskBlock{
+    position: absolute;
+    margin: 0px;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom: 0%;
+    z-index: -998;
+}
+
 #PhoneProjectViewBackground{
     position: fixed;
     margin: 0px;
@@ -211,7 +232,7 @@ body{
     width: 120%;
     height: 120%;
     padding: 0px;
-    z-index: -996;
+    z-index: -999;
 }
 
 #PhoneProjecTitleViewBackground{
@@ -404,6 +425,15 @@ body{
     z-index: 3;
 }
 
+.PhoneProjectBTNMask:hover{
+    background-color:#1f1f1f33;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4%;
+    width: 35%;
+    z-index: 3;
+}
+
 .PhoneProjectBTN{
     background-color:#dfdfdf;
     vertical-align: middle;
@@ -504,7 +534,7 @@ body{
     margin: 0px;
     top:20%;
     height: 80%;
-    z-index: -995;
+    z-index: 90;
     overflow-y:scroll;
     overflow-x: hidden;
     scrollbar-width: none;

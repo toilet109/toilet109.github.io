@@ -8,6 +8,8 @@ const PhoneProjectView = {
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitleBackgroun.svg" />
             </div>
 
+            <div id="PhoneCtlProjectViewMaskBlock"></div>
+
             <div id="PhoneProjecTitleViewTitle">
                 <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewTitle.svg" />
             </div>
@@ -152,8 +154,31 @@ const PhoneProjectView = {
             document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeInLeft delay-0s";
         }
 
+        /* 初始化化動監控事件 */
+        this.SetSwipe(event);
     },
     methods: {
+        /* 初始化化動監控事件 */
+        SetSwipe:function(event) {
+            /* 底遮罩滑動控制 */
+            $("#PhoneCtlProjectViewMaskBlock").swipe( {
+                swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    PhoneProjectView.methods.ChangeBeforePage();
+                    console.log("!!");
+                    
+                },
+                threshold:0
+            });
+            /* 當左右滑動時更新索引ID */
+            $("#PhoneProjectTypeBTNGroup").swipe( {
+                swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    PhoneProjectView.methods.ChangeBeforePage();
+                    console.log("!!");
+                    
+                },
+                threshold:0
+            });
+        },
         /* 切換到上一頁(手機版首頁介紹) */
         ChangeBeforePage:function() {
             document.getElementsByTagName("div").PhoneBackBtn.className                          = "RollBackBTN";

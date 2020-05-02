@@ -58,7 +58,7 @@ const PhoneAboutView = {
     methods: {
         /* 初始化化動監控事件 */
         SetSwipe:function(event) {
-            /* 當左右滑動時更新索引ID */
+            /* 底遮罩滑動控制 */
             $("#PhoneCtlViewMaskBlock").swipe( {
                 swipeDown:function(event, direction, distance, duration, fingerCount, fingerData) {
                     PhoneAboutView.methods.ChangeBeforePage();
