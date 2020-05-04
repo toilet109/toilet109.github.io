@@ -208,7 +208,7 @@ body{
     margin: 0px;
     top: 2.5%;
     right: 0%;
-    z-index: -997;
+    z-index: -999;
     opacity: 0.4;
 }
 
@@ -222,7 +222,7 @@ body{
     margin: 0px;
     top: 60%;
     right: -30%;
-    z-index: -997;
+    z-index: -999;
     opacity: 0.4;
 }
 
@@ -235,7 +235,7 @@ body{
     margin: 0px;
     top: 40%;
     right: 2.5%;
-    z-index: -997;
+    z-index: -999;
 }
 
 #dotGroup3 img{
@@ -247,7 +247,7 @@ body{
     margin: 0px;
     top: 25%;
     right: 22.5%;
-    z-index: -997;
+    z-index: -999;
 }
 
 #dotGroup4 img{
