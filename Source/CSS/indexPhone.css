@@ -73,7 +73,7 @@ body{
     background-position: center;
     background-repeat:no-repeat;
     background-size: 110%;
-    top:calc(75px - 1.25%);
+    top:calc(70px - 2.25%);
     left: 0%;
     right: 0%;
     bottom: 5%;
@@ -85,9 +85,10 @@ body{
     position: absolute;
     margin: 0px;
     padding: 0px;
-    top:0%;
-    left: 0%;
-    right: 0%;
+    text-align: center;
+    top:-1%;
+    left: 2%;
+    right: 2%;
     z-index: -996;
 }
 
@@ -95,7 +96,8 @@ body{
     position: absolute;
     margin: 0px;
     padding: 0px;
-    top:2%;
+    text-align: center;
+    top:1.5%;
     left: 5%;
     right: 5%;
     z-index: -995;
@@ -758,48 +760,48 @@ body{
 
 @keyframes startLightDot1Event{
     10%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
     20%{
         filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
     }
     30%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
 }
 
 @keyframes startLightDot2Event{
     70%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
     80%{
         filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
     }
     90%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
 }
 
 @keyframes startLightDot3Event{
     50%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
     60%{
         filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
     }
     70%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
 }
 
 @keyframes startLightDot4Event{
     30%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
     40%{
         filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
     }
     50%{
-        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+        filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0)) ;
     }
 }
