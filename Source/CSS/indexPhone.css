@@ -201,6 +201,52 @@ body{
     z-index: 2;
 }
 
+#dotGroup1{
+    position: absolute;
+    margin: 0px;
+    top: 2.5%;
+    right: 0%;
+    z-index: -997;
+}
+
+
+#dotGroup2{
+    position: absolute;
+    text-align: right;
+    margin: 0px;
+    top: 60%;
+    right: -30%;
+    z-index: -997;
+}
+
+#dotGroup2 img{
+    filter: drop-shadow( 0px 0px 7.5px #ffffff) ;
+}
+
+#dotGroup3{
+    position: absolute;
+    margin: 0px;
+    top: 40%;
+    right: 2.5%;
+    z-index: -997;
+}
+
+#dotGroup3 img{
+    filter: drop-shadow( 0px 0px 7.5px #ffffff) ;
+}
+
+#dotGroup4{
+    position: absolute;
+    margin: 0px;
+    top: 25%;
+    right: 22.5%;
+    z-index: -997;
+}
+
+#dotGroup4 img{
+    filter: drop-shadow( 0px 0px 7.5px #ffffff) ;
+}
+
 #PhoneCtlViewMaskBlock{
     position: absolute;
     margin: 0px;
@@ -637,4 +683,123 @@ body{
         -ms-transform:rotate(0deg);
     }
 }
-  
+
+.startLightDot1{
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    animation-duration: 14s;
+    -webkit-animation-duration: 14s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: startLightDot1Event;
+    -webkit-animation-name: startLightDot1Event;
+
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    
+}
+
+.startLightDot2{
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    animation-duration: 14s;
+    -webkit-animation-duration: 14s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: startLightDot2Event;
+    -webkit-animation-name: startLightDot2Event;
+
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    
+}
+
+.startLightDot3{
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    animation-duration: 14s;
+    -webkit-animation-duration: 14s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: startLightDot3Event;
+    -webkit-animation-name: startLightDot3Event;
+
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    
+}
+
+.startLightDot4{
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    animation-duration: 14s;
+    -webkit-animation-duration: 14s;
+
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: startLightDot4Event;
+    -webkit-animation-name: startLightDot4Event;
+
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    
+}
+
+@keyframes startLightDot1Event{
+    10%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+    20%{
+        filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
+    }
+    30%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+}
+
+@keyframes startLightDot2Event{
+    70%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+    80%{
+        filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
+    }
+    90%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+}
+
+@keyframes startLightDot3Event{
+    50%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+    60%{
+        filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
+    }
+    70%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+}
+
+@keyframes startLightDot4Event{
+    30%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+    40%{
+        filter: drop-shadow(0px 0px 7.5px rgb(255, 255, 255)) ;
+    }
+    50%{
+        filter: drop-shadow(0px 0px 0px rgb(255, 255, 255)) ;
+    }
+}
