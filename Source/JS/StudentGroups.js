@@ -2,9 +2,9 @@ var StudentGroups = new Object();
 
 StudentGroups.data = {
     SelectID    : 0,
-    WhichIs     :`https://dcaward-vgw.org.tw/`, //'放視大賞'連結
-    WhyCall     :`mailto:#`, //聯絡方式
-    FaceBookLink:`https://www.facebook.com/`,
+    WhichIs     : `https://www.google.com.tw/maps/place/%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8D%97%E5%A4%A7%E5%AD%B8%E6%85%B6%E5%BF%A0%E8%A1%97%E8%97%9D%E8%A1%93%E7%89%B9%E5%8D%80%E7%AC%AC%E4%B8%89%E7%A9%BA%E9%96%93/@22.98498,120.2052822,18z/data=!4m8!1m2!2m1!1z6Ie65Y2X5aSn5a246Jed6KGT54m55Y2A!3m4!1s0x0:0x791dc80901c11908!8m2!3d22.9850923!4d120.2057954`, //地點
+    WhyCall     : `mailto:nutnvad@gmail.com`, //聯絡方式
+    FaceBookLink: `http://www.facebook.com/nutnvad`,
     GroupsData:[
         /*
         [*]Example:

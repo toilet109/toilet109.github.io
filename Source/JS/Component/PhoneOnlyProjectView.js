@@ -72,15 +72,14 @@ const PhoneOnlyProjectView = {
             <div id="PhoneProjectViewBottomBTNMaskBlock">
                 <div @click="SetProjectAboutView(true)"  class="PhoneProjectBTNMask"><br></div>
                 <div @click="SetProjectMumberView(true)" class="PhoneProjectBTNMask"><br></div>
+                <div class="PhoneFaceBookBTNMask"><a v-bind:href="Link" target="Web_FB"><img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewFacebookIcon.svg" /></a></div>
             </div>
 
             <div id="PhoneProjectViewBottomBTNBlock">
                 <div class="PhoneProjectBTN"><a>作品介紹</a></div>
                 <div class="PhoneProjectBTN"><a>製作成員</a></div>
                 <div id="PhoneProjectViewFaceBookBTN">
-                    <a v-bind:href="Link" target="Web_FB">
-                         <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewFacebookIcon.svg" />
-                    </a>
+                    <img height="100%" width="100%" src="./Source/IMG/PhoneProjectViewFacebookIcon.svg" />
                 </div>
             </div>
 
@@ -230,12 +229,12 @@ const PhoneOnlyProjectView = {
             if(!this.ShowImage){
                 document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className = "animated fadeOutUp delay-500ms";
                 document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className      = "animated fadeOutUp";
-                document.getElementsByTagName("div").ProjecTitleTitleGroups.className         = "animated fadeOutUp";
+                document.getElementsByTagName("div").ProjecTitleTitleGroups.className         = "animated fadeOutUp container-fluid";
                 document.getElementsByTagName("div").PhoneBackBtn.className                   = "animated fadeOutUp";
             }else{
                 document.getElementsByTagName("div").PhoneProjecTitleViewBackground.className = "animated fadeInDown";
                 document.getElementsByTagName("div").PhoneProjecTitleViewTitle.className      = "animated fadeInDown delay-500ms";
-                document.getElementsByTagName("div").ProjecTitleTitleGroups.className         = "animated fadeInDown delay-500ms";
+                document.getElementsByTagName("div").ProjecTitleTitleGroups.className         = "animated fadeInDown delay-500ms container-fluid";
                 document.getElementsByTagName("div").PhoneBackBtn.className                   = "animated fadeInDown delay-500ms";
             }
             

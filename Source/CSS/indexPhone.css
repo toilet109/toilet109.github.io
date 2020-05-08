@@ -58,9 +58,10 @@ body{
     position: fixed;
     margin: 0px;
     background-image: url("../IMG/PhoneMenuViewBackground.svg");
-    top: -10%;
-    left: -10%;
-    right: -10%;
+    background-position: center;
+    top: -5.5%;
+    left: -4%;
+    right: -16%;
     width: 120%;
     height: 120%;
     padding: 0px;
@@ -129,9 +130,9 @@ body{
     margin: 0px;
     background-image: url("../IMG/PhoneMenuViewBackground.svg");
     background-position: center;
-    top: -10%;
-    left: -10%;
-    right: -10%;
+    top: -5.5%;
+    left: -4%;
+    right: -16%;
     width: 120%;
     height: 120%;
     padding: 0px;
@@ -223,11 +224,11 @@ body{
     top: 60%;
     right: -30%;
     z-index: -999;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 #dotGroup2 img{
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 #dotGroup3{
@@ -236,10 +237,11 @@ body{
     top: 40%;
     right: 2.5%;
     z-index: -999;
+    opacity: 0.2;
 }
 
 #dotGroup3 img{
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 #dotGroup4{
@@ -248,10 +250,11 @@ body{
     top: 25%;
     right: 22.5%;
     z-index: -999;
+    opacity: 0.1;
 }
 
 #dotGroup4 img{
-    opacity: 0.4;
+    opacity: 0.1;
 }
 
 #PhoneCtlViewMaskBlock{
@@ -279,9 +282,9 @@ body{
     margin: 0px;
     background-image: url("../IMG/PhoneMenuViewBackground.svg");
     background-position: center;
-    top: -10%;
-    left: -10%;
-    right: -10%;
+    top: -5.5%;
+    left: -4%;
+    right: -16%;
     width: 120%;
     height: 120%;
     padding: 0px;
@@ -487,6 +490,25 @@ body{
     z-index: 3;
 }
 
+.PhoneFaceBookBTNMask{
+    background-color:#f2f2f200;
+    width: 30%;
+    padding: 2%;
+    text-align: right;
+    z-index: 3;
+}
+
+.PhoneFaceBookBTNMask:hover{
+    background-color:#1f1f1f33;
+    width: 30%;
+    padding: 2%;
+    text-align: right;
+    z-index: 3;
+}
+
+.PhoneFaceBookBTNMask img{
+    opacity: 0;
+}
 .PhoneProjectBTN{
     background-color:#dfdfdf;
     vertical-align: middle;
@@ -777,37 +799,37 @@ body{
 
 @keyframes startLightDot2Event{
     70% {
-        opacity: 0.4;
+        opacity: 0.1;
     }
     80% {
         opacity: 1;
     }
     90% {
-        opacity: 0.4;
+        opacity: 0.1;
     }
 }
 
 @keyframes startLightDot3Event{
     50% {
-        opacity: 0.4;
+        opacity: 0.3;
     }
     60% {
         opacity: 1;
     }
     70% {
-        opacity: 0.4;
+        opacity: 0.3;
     }
 }
 
 @keyframes startLightDot4Event{
     30% {
-        opacity: 0.4;
+        opacity: 0.2;
     }
     40% {
         opacity: 1;
     }
     50% {
-        opacity: 0.4;
+        opacity: 0.2;
     }
 }
 
@@ -825,36 +847,36 @@ body{
 
 @-webkit-keyframes startLightDot2Event{
     70% {
-        opacity: 0.4;
+        opacity: 0.1;
     }
     80% {
         opacity: 1;
     }
     90% {
-        opacity: 0.4;
+        opacity: 0.1;
     }
 }
 
 @-webkit-keyframes startLightDot3Event{
     50% {
-        opacity: 0.4;
+        opacity: 0.3;
     }
     60% {
         opacity: 1;
     }
     70% {
-        opacity: 0.4;
+        opacity: 0.3;
     }
 }
 
-@-webkit-keyframes  startLightDot4Event{
+@-webkit-keyframes startLightDot4Event{
     30% {
-        opacity: 0.4;
+        opacity: 0.2;
     }
     40% {
         opacity: 1;
     }
     50% {
-        opacity: 0.4;
+        opacity: 0.2;
     }
 }

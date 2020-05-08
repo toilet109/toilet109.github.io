@@ -9,7 +9,8 @@
         <meta name="description"            content="109年度 國立臺南大學 視覺藝術與設計學系畢展網頁">
         <meta name="keywords"               content="109南大視設 畢展 我如同 109th馬桶上 2020的你">
         <meta name="generator"              content="VS Code">
-
+        <meta name="mobile-web-app-capable" content="yes">
+        
         <!--CSS-->
         <link rel="stylesheet" href="./Source/CSS/bootstrap.css">
         <link rel="stylesheet" href="./Source/CSS/animate.css">
@@ -27,7 +28,6 @@
         <script>Vue.config.productionTip=false</script>
         <script src="./Source/JS/httpVueLoader.js"></script>
         <script src="./Source/JS/vue-router.js"></script>
-
         <title>我如同 109th 馬桶上 2020 的你 same as you</title>
     </head>
     <body>
@@ -60,9 +60,8 @@
 
 <!--Other-->
 <script>
-    function NotRightBottomEvent()
-    {
+    function NotRightBottomEvent(){
         return false
     }
-document.oncontextmenu = NotRightBottomEvent;
+    document.oncontextmenu = NotRightBottomEvent;
 </script>
