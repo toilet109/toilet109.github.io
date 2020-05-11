@@ -34,11 +34,11 @@ const PhoneIndexView = {
     `,
     mounted() {    
         //初始化 計算偏移量 + 手動建立高度自適應
-        setTimeout(() => { 
+        setInterval(() => {
             let UpPartBGHight                                                = document.getElementsByTagName("div").PhoneIndexUpPartBG.getElementsByTagName("img")[0].height;
             document.getElementsByTagName("div").PhoneIndexBackEnd.style.top = (UpPartBGHight - window.outerHeight/16) + "px";
             document.getElementsByTagName("div").PhoneInitView.className     = "PhoneInitView animated fadeOut delay-500ms";
-        },1000);
+        },100);
 
         /* 執行載入顯示首頁元件動畫 */
         setTimeout(() => { 
