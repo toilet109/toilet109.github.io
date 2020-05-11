@@ -34,14 +34,14 @@ const PhoneIndexView = {
     `,
     mounted() {    
         //初始化 計算偏移量 + 手動建立高度自適應
-        setInterval(() => {
+        var timer = setInterval(() => {
             let UpPartBGHight                                                = document.getElementsByTagName("div").PhoneIndexUpPartBG.getElementsByTagName("img")[0].height;
             document.getElementsByTagName("div").PhoneIndexBackEnd.style.top = (UpPartBGHight - window.outerHeight/16) + "px";
-            document.getElementsByTagName("div").PhoneInitView.className     = "PhoneInitView animated fadeOut delay-500ms";
-        },100);
+        },250);
 
         /* 執行載入顯示首頁元件動畫 */
         setTimeout(() => { 
+            document.getElementsByTagName("div").PhoneInitView.className                                               = "PhoneInitView animated fadeOut delay-0s";
             document.getElementsByTagName("div").PhoneIndexBackEnd2.className                                          = "animated fadeIn        delay-0s";
             document.getElementsByTagName("div").PhoneIndexBackEnd.className                                           = "animated fadeIn        delay-500ms";
             document.getElementsByTagName("div").PhoneIndexBackEnd.className                                           = "animated fadeOut       delay-4500ms";
@@ -53,6 +53,7 @@ const PhoneIndexView = {
             document.getElementsByTagName("div").PhoneIndexTitle.getElementsByTagName("div")[0].className              = "animated fadeOutDown   delay-4500ms";
 
             setTimeout(() => { 
+                clearInterval(timer);
                 this.ChangeNextPage();
             },5500);
         },1500);
