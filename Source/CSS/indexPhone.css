@@ -15,15 +15,13 @@ body{
 }
 
 #PhoneInitView{
-    position: fixed;
+    position: absolute;
     margin: 0px;
-    background-position: center;
-    background-color:aliceblue;
+    background-color:#ffffff;
     top: 0%;
     left: 0%;
     right: 0%;
     bottom: 0%;
-    padding: 0px;
     z-index: 999;
 }
 
@@ -31,28 +29,14 @@ body{
 #PhoneIndexBackEnd{
     position: absolute;
     margin: 0px;
-    background-position: center;
-    background-repeat:no-repeat;
-    top: 75px;
+    text-align:center;
+    top: 0px;
     left: -10%;
     right: -10%;
-    width: 120%;
-    height: 120%;
     padding: 0px;
     z-index: -999;
 }
 
-/*
-
-#PhoneIndexBackEnd{
-    position: absolute;
-    text-align: center;
-    margin: 0px;
-    top: 75px;
-    left:1%;
-    z-index: -999;
-}
-*/
 
 #PhoneIndexBackEnd2{
     position: fixed;
@@ -66,20 +50,6 @@ body{
     height: 120%;
     padding: 0px;
     z-index: -1000;
-}
-#PhoneIndexBackground{
-    position: fixed;
-    margin: 0px;
-    background-image: url("../IMG/Background.svg");
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: 110%;
-    top:calc(70px - 2.25%);
-    left: 0%;
-    right: 0%;
-    bottom: 5%;
-    padding: 0px;
-    z-index: -998;
 }
 
 #PhoneIndexUpPartBG{
@@ -509,6 +479,7 @@ body{
 .PhoneFaceBookBTNMask img{
     opacity: 0;
 }
+
 .PhoneProjectBTN{
     background-color:#dfdfdf;
     vertical-align: middle;
@@ -637,12 +608,10 @@ body{
 }
 
 #PhonePackagingDesignBTN,#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
-    /*background-image: linear-gradient(-45deg, #be3e3e, #65a0ff);*/
     border: 1px solid  #c3c3c3;
 }
 
 #PhonePackagingDesignBTN:hover,#PhoneThreeDimensionalModelingBTN:hover,#PhoneGraphicDesignBTN:hover,#PhonePictureBooksBTN:hover,#PhoneAlbumBTN,#PhoneAnimationBTN{
-    /*background-image: linear-gradient(-45deg, #00c3ff, #6831ff);*/
 }
 
 .PhoneListBTN{ 
