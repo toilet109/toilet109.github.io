@@ -34,29 +34,31 @@ const PhoneIndexView = {
     `,
     mounted() {    
         //初始化 計算偏移量 + 手動建立高度自適應
-        var timer = setInterval(() => {
-            let UpPartBGHight                                                = document.getElementsByTagName("div").PhoneIndexUpPartBG.getElementsByTagName("img")[0].height;
-            document.getElementsByTagName("div").PhoneIndexBackEnd.style.top = (UpPartBGHight - window.outerHeight/16) + "px";
-        },100);
-
-        /* 執行載入顯示首頁元件動畫 */
         setTimeout(() => { 
-            document.getElementsByTagName("div").PhoneInitView.className                                               = "PhoneInitView animated fadeOut delay-0s";
-            document.getElementsByTagName("div").PhoneIndexBackEnd2.className                                          = "animated fadeIn        delay-0s";
-            document.getElementsByTagName("div").PhoneIndexBackEnd.className                                           = "animated fadeIn        delay-500ms";
-            document.getElementsByTagName("div").PhoneIndexBackEnd.className                                           = "animated fadeOut       delay-4500ms";
-            document.getElementsByTagName("div").PhoneIndexUpPartBG.className                                          = "animated slideInDown   delay-500ms";
-            document.getElementsByTagName("div").PhoneIndexUpPartBG.getElementsByTagName("div")[0].className           = "animated fadeOutUp     delay-4500ms";
-            document.getElementsByTagName("div").PhoneIndexUpPartChineseTitle.className                                = "animated fadeInDownBig delay-1500ms";
-            document.getElementsByTagName("div").PhoneIndexUpPartChineseTitle.getElementsByTagName("div")[0].className = "animated fadeOutUp     delay-3500ms";
-            document.getElementsByTagName("div").PhoneIndexTitle.className                                             = "animated fadeIn        delay-2500ms";
-            document.getElementsByTagName("div").PhoneIndexTitle.getElementsByTagName("div")[0].className              = "animated fadeOutDown   delay-4500ms";
+            var timer = setInterval(() => {
+                let UpPartBGHight                                                = document.getElementsByTagName("div").PhoneIndexUpPartBG.getElementsByTagName("img")[0].height;
+                document.getElementsByTagName("div").PhoneIndexBackEnd.style.top = (UpPartBGHight - window.outerHeight/16) + "px";
+            },250);
 
+            /* 執行載入顯示首頁元件動畫 */
             setTimeout(() => { 
-                clearInterval(timer);
-                this.ChangeNextPage();
-            },5500);
-        },1500);
+                document.getElementsByTagName("div").PhoneInitView.className                                               = "PhoneInitView animated fadeOut delay-0s";
+                document.getElementsByTagName("div").PhoneIndexBackEnd2.className                                          = "animated fadeIn        delay-0s";
+                document.getElementsByTagName("div").PhoneIndexBackEnd.className                                           = "animated fadeIn        delay-500ms";
+                document.getElementsByTagName("div").PhoneIndexBackEnd.className                                           = "animated fadeOut       delay-4500ms";
+                document.getElementsByTagName("div").PhoneIndexUpPartBG.className                                          = "animated slideInDown   delay-500ms";
+                document.getElementsByTagName("div").PhoneIndexUpPartBG.getElementsByTagName("div")[0].className           = "animated fadeOutUp     delay-4500ms";
+                document.getElementsByTagName("div").PhoneIndexUpPartChineseTitle.className                                = "animated fadeInDownBig delay-1500ms";
+                document.getElementsByTagName("div").PhoneIndexUpPartChineseTitle.getElementsByTagName("div")[0].className = "animated fadeOutUp     delay-3500ms";
+                document.getElementsByTagName("div").PhoneIndexTitle.className                                             = "animated fadeIn        delay-2500ms";
+                document.getElementsByTagName("div").PhoneIndexTitle.getElementsByTagName("div")[0].className              = "animated fadeOutDown   delay-4500ms";
+
+                setTimeout(() => { 
+                    clearInterval(timer);
+                    this.ChangeNextPage();
+                },5500);
+            },1500);
+        },1000);
 
     },
     methods: {
