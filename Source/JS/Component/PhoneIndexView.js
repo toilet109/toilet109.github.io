@@ -37,7 +37,7 @@ const PhoneIndexView = {
         var timer = setInterval(() => {
             let UpPartBGHight                                                = document.getElementsByTagName("div").PhoneIndexUpPartBG.getElementsByTagName("img")[0].height;
             document.getElementsByTagName("div").PhoneIndexBackEnd.style.top = (UpPartBGHight - window.outerHeight/16) + "px";
-        },250);
+        },100);
 
         /* 執行載入顯示首頁元件動畫 */
         setTimeout(() => { 
