@@ -5,7 +5,7 @@ const WaitView = {
             <div id="PhoneCantTransformViewBackground" @click="ChangeHomePage()"></div>
             <div id="PhoneCantTransform">
                 <h1><br>Oops!<br><br></h1>
-                <h2>目前清潔工在進行打掃<br>敬待5月30日午夜時分<br>開始之時<br><br>{{Timer}}<br><br></h2><h2>按任意一處<br>返回前一頁</h2>
+                <h2>目前清潔工在進行打掃<br>敬待5月30日午夜時分<br>維護結束之時<br><br>{{Timer}}<br><br></h2><h2>按任意一處<br>返回前一頁</h2>
             </div>
         </div>
     `,data() {
