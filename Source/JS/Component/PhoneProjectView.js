@@ -38,28 +38,12 @@ const PhoneProjectView = {
             <div class="PhoneProjectTypeBTNGroup container-fluid">
                 <div class="row">
                     <div class="col">
-                        <div id="PhonePackagingDesignBTN">
-                            <a @click="ChangeNextPage('PackagingDesign')">
-                                <img height="100%" width="100%" src="./Source/IMG/PackagingDesign.png" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
                         <div id="PhoneThreeDimensionalModelingBTN">
                             <a @click="ChangeNextPage('ThreeDimensionalModeling')">
                                 <img height="100%" width="100%" src="./Source/IMG/ThreeDimensionalModeling.png" />
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <br>
-                    </div>
-                </div>
-
-                <div class="row">
                     <div class="col">
                         <div id="PhoneGraphicDesignBTN">
                             <a @click="ChangeNextPage('GraphicDesign')">
@@ -67,10 +51,26 @@ const PhoneProjectView = {
                             </a>
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
                     <div class="col">
                         <div id="PhonePictureBooksBTN">
                             <a @click="ChangeNextPage('PictureBooks')">
                                 <img height="100%" width="100%" src="./Source/IMG/PictureBooks.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="PhoneAlbumBTN">
+                            <a @click="ChangeNextPage('Album')">
+                                <img height="100%" width="100%" src="./Source/IMG/Album.png" />
                             </a>
                         </div>
                     </div>
@@ -84,18 +84,14 @@ const PhoneProjectView = {
 
                 <div class="row">
                     <div class="col">
-                        <div id="PhoneAlbumBTN">
-                            <a @click="ChangeNextPage('Album')">
-                                <img height="100%" width="100%" src="./Source/IMG/Album.png" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
                         <div id="PhoneAnimationBTN">
                             <a @click="ChangeNextPage('Animation')">
                                 <img height="100%" width="100%" src="./Source/IMG/Animation.png" />
                             </a>
                         </div>
+                    </div>
+                    <div class="col">
+                        <br>
                     </div>
                 </div>
 
@@ -138,7 +134,6 @@ const PhoneProjectView = {
             },1500);
            
             /* 由右向左載入主題分類的分組動畫 */
-            document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInRight delay-1500ms";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInRight delay-1500ms";
             document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInRight delay-1500ms";
             document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeInRight delay-1500ms";
@@ -146,7 +141,6 @@ const PhoneProjectView = {
             document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeInRight delay-1500ms";
         }else{
             /* 由左向右載入主題分類的分組動畫 */
-            document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeInLeft delay-0s";
@@ -164,8 +158,6 @@ const PhoneProjectView = {
             $("#PhoneCtlProjectViewMaskBlock").swipe( {
                 swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
                     PhoneProjectView.methods.ChangeBeforePage();
-                    console.log("!!");
-                    
                 },
                 threshold:0
             });
@@ -192,7 +184,6 @@ const PhoneProjectView = {
                 document.getElementsByTagName("div").PhoneBackBtn.className                      = "animated fadeOutLeft   delay-500ms";       
                 
                 /* 由左向右切出主題分類的分組動畫 */
-                document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeOutRight delay-0s";
@@ -205,7 +196,6 @@ const PhoneProjectView = {
         /* 切換到下一頁(手機版作品專欄) */
         ChangeNextPage:function(ProjectType) {
             /* 由右向左切出主題分類的分組動畫 */
-            document.getElementsByTagName("div").PhonePackagingDesignBTN.className           = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeOutLeft delay-0s";

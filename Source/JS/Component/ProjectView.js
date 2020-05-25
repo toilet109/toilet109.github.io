@@ -15,13 +15,6 @@ const ProjectView = {
             <div class="ProjectTypeBTNGroup container-fluid">
                 <div class="row">
                     <div class="col">
-                        <div id="PackagingDesignBTN">
-                            <a href="javascript:void(0);" @click="ChangeNextPage('PackagingDesign')">
-                                <img height="100%" width="100%" src="./Source/IMG/PackagingDesign.png" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
                         <div id="ThreeDimensionalModelingBTN">
                             <a href="javascript:void(0);" @click="ChangeNextPage('ThreeDimensionalModeling')">
                                 <img height="100%" width="100%" src="./Source/IMG/ThreeDimensionalModeling.png" />
@@ -35,6 +28,13 @@ const ProjectView = {
                             </a>
                         </div>
                     </div>
+                    <div class="col">
+                        <div id="PictureBooksBTN">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('PictureBooks')">
+                                <img height="100%" width="100%" src="./Source/IMG/PictureBooks.png" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
@@ -44,13 +44,9 @@ const ProjectView = {
                 </div>
 
                 <div class="row">
-                    <div class="col">
-                        <div id="PictureBooksBTN">
-                            <a href="javascript:void(0);" @click="ChangeNextPage('PictureBooks')">
-                                <img height="100%" width="100%" src="./Source/IMG/PictureBooks.png" />
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-2">
+                    <br>
+                </div>
                     <div class="col">
                         <div id="AlbumBTN">
                             <a href="javascript:void(0);" @click="ChangeNextPage('Album')">
@@ -64,6 +60,9 @@ const ProjectView = {
                                 <img height="100%" width="100%" src="./Source/IMG/Animation.png" />
                             </a>
                         </div>
+                    </div>
+                    <div class="col-2">
+                        <br>
                     </div>
                 </div>
 
@@ -93,7 +92,6 @@ const ProjectView = {
         if(!this.IsReMount){
             document.getElementsByTagName("div").MainBackground.className               = "animated fadeInUp   delay-0s";
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeInDown delay-800ms";
-            document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeInUp   delay-500ms";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeInUp   delay-500ms";
             document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeInUp   delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeInUp   delay-500ms";
@@ -101,7 +99,6 @@ const ProjectView = {
             document.getElementsByTagName("div").AnimationBTN.className                 = "animated fadeInUp   delay-500ms";
         }else{
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeInDown delay-1500ms";
-            document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeInDown delay-500ms";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeInDown delay-500ms";
             document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeInDown delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeInDown delay-500ms";
@@ -114,7 +111,6 @@ const ProjectView = {
         ChangeBeforePage:function() {
             document.getElementsByTagName("div").MainBackground.className               = "animated fadeOutDown delay-1s";
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeOutUp   delay-0s";
-            document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeOutDown delay-500ms";
@@ -126,7 +122,6 @@ const ProjectView = {
         /* 切換到下一頁(作品專欄) */
         ChangeNextPage:function(ProjectType) {
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeOutUp delay-0s";
-            document.getElementsByTagName("div").PackagingDesignBTN.className           = "animated fadeOutUp delay-500ms";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeOutUp delay-500ms";
             document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeOutUp delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeOutUp delay-500ms";

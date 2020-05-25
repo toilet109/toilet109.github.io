@@ -34,7 +34,7 @@ StudentGroups.data = {
         */
         {
             Name             : `test001`, //作品名稱
-            Type             : `PackagingDesign`, //作品種類
+            Type             : `Animation`, //作品種類
             About            : `早科再際視燈心國何影營；就都。
 
             所境正到，動靜往選星再。間吸講她不夠第臺就制，管依變容候總更現家員，臺來客吃權麼一朋位實之而義後樹的大告向我！緊半的著要久自士的電三王得越傷完畫。
@@ -62,7 +62,7 @@ StudentGroups.data = {
         },
         {
             Name             : `test002`, //作品名稱
-            Type             : `PackagingDesign`, //作品種類
+            Type             : `Animation`, //作品種類
             About            : `於不我無。了係未提次來竟是製然有會的研便：重因遊她，有真料當國河以錯西紅一主話先錢是叫這境有在樓國前太也達，等世常議和國。史發人上高失生的風中在香車愛是回四約統開下把器是寶業用自四不文天告讓件著：到怕文果和、苦大我下位你來坐動便登球因是製那總了錯去球下報統實人對難可特有，的從笑了期。奇不的，在其動定神公月火在態性，取園食不接市孩任、片開會己消了心我，亞害雨自四國可者，張不作度我找第的站天個法孩值孩的中有了時自男樂民其你美軍靜大因為表把果境止如規味要！`, //自介
             ProjectMeta      : `比亞由的力果的走技道，政嚴形不加不頭問不辦安長兩價；開空上然事備兒並年：手切校動生證會母求部老的工魚原以時要件如小利了線陸學個中小不學一政灣明，感紙時水會濟的，樣至國以府走想那長愛的想，一孩言年懷母你的，而在改稱下，我不質就。思好二活山還之很前到黨感像開細站產開能技我了女動學不，願同路的給動性黃沒，照來給如小處老起構？她件。
 
@@ -90,7 +90,7 @@ StudentGroups.data = {
         },
         {
             Name             : `test003`, //作品名稱
-            Type             : `PackagingDesign`, //作品種類
+            Type             : `Animation`, //作品種類
             About            : `test003-自介`, //自介
             ProjectMeta      : `test003-作品介紹`, //作品介紹
             ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
@@ -108,7 +108,7 @@ StudentGroups.data = {
         },
         {
             Name             : `test003`, //作品名稱
-            Type             : `PackagingDesign`, //作品種類
+            Type             : `Animation`, //作品種類
             About            : `test003-自介`, //自介
             ProjectMeta      : `test003-作品介紹`, //作品介紹
             ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
@@ -126,7 +126,7 @@ StudentGroups.data = {
         },
         {
             Name             : `test001`, //作品名稱
-            Type             : `PackagingDesign`, //作品種類
+            Type             : `Animation`, //作品種類
             About            : `test001-自介`, //自介
             ProjectMeta      : `test001-作品介紹`, //作品介紹
             ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
@@ -146,7 +146,7 @@ StudentGroups.data = {
         },
         {
             Name             : `test001`, //作品名稱
-            Type             : `PackagingDesign`, //作品種類
+            Type             : `Animation`, //作品種類
             About            : `test001-自介`, //自介
             ProjectMeta      : `test001-作品介紹`, //作品介紹
             ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑

@@ -152,7 +152,7 @@ body::-webkit-scrollbar {
     z-index: -995;
 }
 
-#PhonePackagingDesignBTN,#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
+#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
     border: 1px solid  #c3c3c3;
 }
 

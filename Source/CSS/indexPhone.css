@@ -607,11 +607,11 @@ body{
     width: 100%;
 }
 
-#PhonePackagingDesignBTN,#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
+#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
     border: 1px solid  #c3c3c3;
 }
 
-#PhonePackagingDesignBTN:hover,#PhoneThreeDimensionalModelingBTN:hover,#PhoneGraphicDesignBTN:hover,#PhonePictureBooksBTN:hover,#PhoneAlbumBTN,#PhoneAnimationBTN{
+#PhoneThreeDimensionalModelingBTN:hover,#PhoneGraphicDesignBTN:hover,#PhonePictureBooksBTN:hover,#PhoneAlbumBTN,#PhoneAnimationBTN{
 }
 
 .PhoneListBTN{ 
@@ -640,7 +640,7 @@ body{
     left:0%;
     right: 0%;
     z-index: 998;
-    padding: 20%;
+    padding: 5%;
     font-size: 150%;
     vertical-align: middle;
     text-align: center;
