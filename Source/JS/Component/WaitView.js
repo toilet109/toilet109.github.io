@@ -32,21 +32,21 @@ const WaitView = {
             }
 
             if(tmpTimer.getHours() < 10){
-                this.Timer += `-0`+tmpTimer.getHours();
+                this.Timer += ` 0`+tmpTimer.getHours();
             }else{
-                this.Timer += `-`+tmpTimer.getHours();
+                this.Timer += ` `+tmpTimer.getHours();
             }
 
             if(tmpTimer.getMinutes() < 10){
-                this.Timer += `-0`+tmpTimer.getMinutes();
+                this.Timer += `:0`+tmpTimer.getMinutes();
             }else{
-                this.Timer += `-`+tmpTimer.getMinutes();
+                this.Timer += `:`+tmpTimer.getMinutes();
             }
 
             if(tmpTimer.getSeconds() < 10){
-                this.Timer += `-0`+tmpTimer.getSeconds();
+                this.Timer += `:0`+tmpTimer.getSeconds();
             }else{
-                this.Timer += `-`+tmpTimer.getSeconds();
+                this.Timer += `:`+tmpTimer.getSeconds();
             }
             
         },1000);
