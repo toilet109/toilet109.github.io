@@ -88,10 +88,7 @@ var OnlyProjectView = {
                 
                 <div id="MaskObject">
                     <div v-if="TestMediaIsVideo">
-                        <video id="TestMediaIsVideo" width="100%" height="100%" muted autoplay="autoplay" loop="loop" controls="controls">
-                            <source v-bind:src="ProjectMoviePath" type="video/mp4">
-                            <p>錯誤！瀏覽器不支援Video播放器</p>
-                        </video>
+                        <iframe v-bind:height="VideoHeight" v-bind:width="VideoWidth" v-bind:src="ProjectMoviePath" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div v-else>
                         <img width="100%" height="100%" v-bind:src="ProjectPhotoPath">
@@ -143,6 +140,8 @@ var OnlyProjectView = {
             NowSelectGroupID    : 0                               , //目前選擇的作品ID(Array索引值)
             MediaIndexSum       : 1                               , //計算影音資料總數
             NowMediaIndex       : 0                               , //目前選擇的影音資料
+            VideoHeight         : window.outerHeight ,
+            VideoWidth          :window.outerWidth ,
         }
     },
     async mounted() {

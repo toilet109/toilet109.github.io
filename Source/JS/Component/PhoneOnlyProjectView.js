@@ -96,10 +96,7 @@ const PhoneOnlyProjectView = {
 
                     <h3>作品影音<hr></h3>
                     <div v-for="(item,index) in ProjectMoviePath">
-                        <video id="PhoneVideoView" width="100%" height="100%" loop="loop" controls="controls">
-                            <source v-bind:src="item" type="video/mp4">
-                            <p>錯誤！瀏覽器不支援Video播放器</p>
-                        </video>
+                        <iframe width="100%" v-bind:src="item" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br><br>
                     </div>
 

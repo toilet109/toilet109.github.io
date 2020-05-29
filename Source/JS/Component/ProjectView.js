@@ -22,9 +22,9 @@ const ProjectView = {
                         </div>
                     </div>
                     <div class="col">
-                        <div id="GraphicDesignBTN">
-                            <a href="javascript:void(0);" @click="ChangeNextPage('GraphicDesign')">
-                                <img height="100%" width="100%" src="./Source/IMG/GraphicDesign.png" />
+                        <div id="PackagingDesignBTN">
+                            <a href="javascript:void(0);" @click="ChangeNextPage('PackagingDesign')">
+                                <img height="100%" width="100%" src="./Source/IMG/PackagingDesign.png" />
                             </a>
                         </div>
                     </div>
@@ -93,14 +93,14 @@ const ProjectView = {
             document.getElementsByTagName("div").MainBackground.className               = "animated fadeInUp   delay-0s";
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeInDown delay-800ms";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeInUp   delay-500ms";
-            document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeInUp   delay-500ms";
+            document.getElementsByTagName("div").PackagingDesignBTN.className             = "animated fadeInUp   delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeInUp   delay-500ms";
             document.getElementsByTagName("div").AlbumBTN.className                     = "animated fadeInUp   delay-500ms";
             document.getElementsByTagName("div").AnimationBTN.className                 = "animated fadeInUp   delay-500ms";
         }else{
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeInDown delay-1500ms";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeInDown delay-500ms";
-            document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeInDown delay-500ms";
+            document.getElementsByTagName("div").PackagingDesignBTN.className             = "animated fadeInDown delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeInDown delay-500ms";
             document.getElementsByTagName("div").AlbumBTN.className                     = "animated fadeInDown delay-500ms";
             document.getElementsByTagName("div").AnimationBTN.className                 = "animated fadeInDown delay-500ms";
@@ -112,7 +112,7 @@ const ProjectView = {
             document.getElementsByTagName("div").MainBackground.className               = "animated fadeOutDown delay-1s";
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeOutUp   delay-0s";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeOutDown delay-500ms";
-            document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeOutDown delay-500ms";
+            document.getElementsByTagName("div").PackagingDesignBTN.className             = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").AlbumBTN.className                     = "animated fadeOutDown delay-500ms";
             document.getElementsByTagName("div").AnimationBTN.className                 = "animated fadeOutDown delay-500ms";
@@ -123,7 +123,7 @@ const ProjectView = {
         ChangeNextPage:function(ProjectType) {
             document.getElementsByTagName("div").UpBtn.className                        = "animated fadeOutUp delay-0s";
             document.getElementsByTagName("div").ThreeDimensionalModelingBTN.className  = "animated fadeOutUp delay-500ms";
-            document.getElementsByTagName("div").GraphicDesignBTN.className             = "animated fadeOutUp delay-500ms";
+            document.getElementsByTagName("div").PackagingDesignBTN.className             = "animated fadeOutUp delay-500ms";
             document.getElementsByTagName("div").PictureBooksBTN.className              = "animated fadeOutUp delay-500ms";
             document.getElementsByTagName("div").AlbumBTN.className                     = "animated fadeOutUp delay-500ms";
             document.getElementsByTagName("div").AnimationBTN.className                 = "animated fadeOutUp delay-500ms";

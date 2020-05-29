@@ -6,576 +6,122 @@ StudentGroups.data = {
     WhyCall     : `mailto:nutnvad@gmail.com`, //聯絡方式
     FaceBookLink: `http://www.facebook.com/nutnvad`,
     GroupsData:[
-        /*
-        [*]Example:
-        ---------------------------------------
-        */
-       /*
+        
         {
-            Name             : `王小明`, //組員名稱
-            //About            : `窩的簡介被丟到馬桶了 (OAQ)`, //自介
-            About            : `窩的簡介被丟到馬桶了WRWER的拉 窩的簡介被丟到馬桶了WRWER的拉 窩的簡介被丟到馬桶了WRWER的拉`, //自介
-            //ProjectMeta      : `火柴人集體升天`, //作品介紹
-            ProjectMeta      : `Wireframe 製作成本低,容易被修改、繪製快速,在開發初期是溝通和發想的重要步驟,節省時間和人力成本,又可防止開發中期發現缺漏或不合用導致全盤重來。很多時候案子都很趕,沒有時間讓 UI/UX在開發後期進行易用性測試,所以在 Wireframe 階段就要將易用性考慮進去,可以說未來所有的設計都是以 Wireframe 為基準。別小看它只是份簡單的框線圖稿,責任非常重大。`, //作品介紹
-            //ImagePhotoPath   : `../IMG/StudentGroupsImagePhoto/火柴人.gif`, //形象照路徑
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            //ProjectPhotoPath : `../IMG/StudentGroupsProjectPhoto/火柴人集體升天.png`, //作品照片路徑
-            ProjectPhotoPath : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //作品照片路徑
-            ProjectMoviePath : `../IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`, //作品影片路徑
-        },  
-        {
-            Name             : ``, //組員名稱
-            About            : ``, //自介
-            ProjectMeta      : ``, //作品介紹
-            ImagePhotoPath   : ``, //形象照路徑
-            ProjectPhotoPath : ``, //作品照片路徑
-            ProjectMoviePath : ``, //作品影片路徑
-        },
-        */
-        {
-            Name             : `test001`, //作品名稱
+            Name             : `Tear pot`, //作品名稱
             Type             : `Animation`, //作品種類
-            About            : `早科再際視燈心國何影營；就都。
+            About            : `馬晨玉 Ma,Chen-Yu`, //小組介紹
+            ProjectMeta      : `故事中出現的眼球都是小鹿們的眼睛，小鹿在此故事中代表的是有經濟價值的自然資源，眼球們被製成各種美好夢幻的商品，象徵人類藉由對產品的包裝，使人們活在自己塑造的美好假象中、而對於剝削自然以及生活中造成的殺戮逐漸麻木。`, //作品介紹
+            ImagePhotoPath   : `./Source/IMG/StudentGroupsImagePhoto/Tear pot/1.jpg`, //形象照路徑
+            MumberName       : [   //組員名稱
+                `馬晨玉 Ma,Chen-Yu`,
+            ],
+            ProjectMoviePath  : [   //作品影片路徑
+                `https://www.youtube.com/embed/aRYFeUXQlwc`,
 
-            所境正到，動靜往選星再。間吸講她不夠第臺就制，管依變容候總更現家員，臺來客吃權麼一朋位實之而義後樹的大告向我！緊半的著要久自士的電三王得越傷完畫。
-            
-            容合童一設有問學經房你……體於文片天制開到笑知？造多必果之我臺工質車克讓式學本石機。`, //自介
-            ProjectMeta      : `那我導導上亞重配最分，間球月兩的？供記子層不好黨，又不輕！著就所候無的落力孩須費利？了力以樣斯該升麼場子館。
+            ],
+            ProjectPhotoPath : [   //作品照片路徑
+                `./Source/IMG/StudentGroupsProjectPhoto/Tear pot/1.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/Tear pot/2.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/Tear pot/3.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/Tear pot/4.jpg`,
+            ],
+        },
 
-            低子隨報反了治的術飛作建讀晚寫友有相雲地們，好說真保如師，這然到古座小？頭查該心大了我前。
-            
-            片劇心現兒治……興裡密向在教站行一這發火不子建快制在小：全識強？近家期行出方人種水在期速中度人飛都員層清個導、未戰各血心了……可高成呢……上下一進成人，總期港程行們約地的！死的經的考間人只思身。同美半己之童病就藥個盡製面死候重個洋關蘭它重獨友理好河色故說展說狀必黨不的樣。`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test001-組員1`,
-                `test001-組員2`,
-                `test001-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`,
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_2.png`,
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_3.png`
-            ],
-        },
         {
-            Name             : `test002`, //作品名稱
+            Name             : `生產斂 Blindness`, //作品名稱
             Type             : `Animation`, //作品種類
-            About            : `於不我無。了係未提次來竟是製然有會的研便：重因遊她，有真料當國河以錯西紅一主話先錢是叫這境有在樓國前太也達，等世常議和國。史發人上高失生的風中在香車愛是回四約統開下把器是寶業用自四不文天告讓件著：到怕文果和、苦大我下位你來坐動便登球因是製那總了錯去球下報統實人對難可特有，的從笑了期。奇不的，在其動定神公月火在態性，取園食不接市孩任、片開會己消了心我，亞害雨自四國可者，張不作度我找第的站天個法孩值孩的中有了時自男樂民其你美軍靜大因為表把果境止如規味要！`, //自介
-            ProjectMeta      : `比亞由的力果的走技道，政嚴形不加不頭問不辦安長兩價；開空上然事備兒並年：手切校動生證會母求部老的工魚原以時要件如小利了線陸學個中小不學一政灣明，感紙時水會濟的，樣至國以府走想那長愛的想，一孩言年懷母你的，而在改稱下，我不質就。思好二活山還之很前到黨感像開細站產開能技我了女動學不，願同路的給動性黃沒，照來給如小處老起構？她件。
-
-            狀資字所、一了連行三得中：機動看意建量新中構念接部。說策證，青果卻作留不直吸，目最紀病車標油我量不光間須界福設我了兒來義名。林想爸最竟現學目著是來。歡決學所學毛。用小來兒高但北受地濟另整從動何建不們了野里有性前！著子家，東世著開自笑期性個事易門小處人沒入。
-            
-            利最實要感作投……使告四並，幾它時來倒感灣要之員。會代推當爸字父愛空智吃務治出品小李子、有士以前上聲男代白之高加量和之相開近公直，認行來！
-            
-            們定到在大縣面如得北的；化不生燈富。
-            
-            我界人作育個，上事照公里其上小本減現要士能基王展法！
-            
-            後足長可西所用不日人一開劇理電議體細樣科飛以，對未實又國如領很選治觀客人！不養遠研量。了的語一服趣，笑裝國轉政都多城機名環這試？`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
+            About            : `鐘元真 Chung,Yuan-Zhen`, //小組介紹
+            ProjectMeta      : `兩家競爭的工廠 類似的商品各有代表自身的擁護者。\n
+            然而塑膠皮下的內容物，似乎不是買家所在意的。\n
+            不管裡面有多少問題或其實並不適合拿來製成產品， 只要是他們所支持的店家,就無條件買單。\n
+            深怕被對手贏過。 一批一批的貨物持續的賣著,有人暗地使出陰招想贏得勝利。 \n
+            最終被有自我意識的民眾發現並擊殺，最後留下一地鮮血。\n
+            但其實真正的凶手卻另有其人，被殺者即使獲利，依然只是個被利用的棋子。\n`, //作品介紹
+            ImagePhotoPath   : `./Source/IMG/StudentGroupsImagePhoto/生產斂 Blindness/1.jpg`, //形象照路徑
             MumberName       : [   //組員名稱
-                `test002-組員1`,
-                `test002-組員2`,
-                `test002-組員3`,
+                `鐘元真 Chung,Yuan-Zhen`,
             ],
             ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
+                `https://www.youtube.com/embed/7YL6OLRzvno`,
             ],
             ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
+                `./Source/IMG/StudentGroupsProjectPhoto/生產斂 Blindness/1.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/生產斂 Blindness/2.jpg`,
             ],
         },
+        //多人照片問題....
         {
-            Name             : `test003`, //作品名稱
+            Name             : `魚月島 The island of the fish and moon`, //作品名稱
             Type             : `Animation`, //作品種類
-            About            : `test003-自介`, //自介
-            ProjectMeta      : `test003-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
+            About            : `許家榕 Syu,Jia-Rong\n 陳岳峰 Chen,Yue-Feng\n 黃靖博 Huang,Ching-Po`, //小組介紹
+            ProjectMeta      : `為什麼度假島上的海灘如此美麗，卻禁止嬉水？科學家老頓在度假村的沙灘上做研究時意外落海，發現了為了維持度假島美麗的風光，人們將垃圾丟進魚群的棲所，海中的生物開始變異，垃人類在海上建了樂園，卻在海底下築起一座垃圾城市，垃圾城最終會以什麼方式打碎人類以為的樂園？\n\nWhy do they forbid people not to play with the water in the beautiful island？In the resort, scientist Oldton falls into the sea when he is doing some research. He finds that people not only built up a paradise but also built a garbage city under the sea.Will the paradise collapse？`, //作品介紹
+            ImagePhotoPath   : `./Source/IMG/StudentGroupsImagePhoto/魚月島 The island of the fish and moon/1.jpg`, //形象照路徑
             MumberName       : [   //組員名稱
-                `test003-組員1`,
-                `test003-組員2`,
-                `test003-組員3`,
+                `許家榕 Syu,Jia-Rong`,
+                `陳岳峰 Chen,Yue-Feng`,
+                `黃靖博 Huang,Ching-Po`,
             ],
             ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
+                `https://www.youtube.com/embed/aRYFeUXQlwc`,
             ],
             ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
+                `./Source/IMG/StudentGroupsProjectPhoto/魚月島 The island of the fish and moon/1.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/魚月島 The island of the fish and moon/2.jpg`,
+            ],
+        },
+        //缺訊息 作品明
+        {
+            Name             : `Woong Kitchen`, //作品名稱
+            Type             : `PackagingDesign`, //作品種類
+            About            : `???`, //小組介紹
+            ProjectMeta      : `???`, //作品介紹
+            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/NotImage.png`, //`./Source/IMG/StudentGroupsImagePhoto/Woong Kitchen/1.jpg`, //形象照路徑
+            MumberName       : [   //組員名稱
+                `???`,
+            ],
+            ProjectMoviePath  : [   //作品影片路徑
+                
+            ],
+            ProjectPhotoPath : [   //作品照片路徑
+                //`./Source/IMG/StudentGroupsProjectPhoto/Woong Kitchen/1.jpg`,
             ],
         },
         {
-            Name             : `test003`, //作品名稱
-            Type             : `Animation`, //作品種類
-            About            : `test003-自介`, //自介
-            ProjectMeta      : `test003-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test003-組員1`,
-                `test003-組員2`,
-                `test003-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test001`, //作品名稱
-            Type             : `Animation`, //作品種類
-            About            : `test001-自介`, //自介
-            ProjectMeta      : `test001-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test001-組員1`,
-                `test001-組員2`,
-                `test001-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`,
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_2.png`,
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_3.png`
-            ],
-        },
-        {
-            Name             : `test001`, //作品名稱
-            Type             : `Animation`, //作品種類
-            About            : `test001-自介`, //自介
-            ProjectMeta      : `test001-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test001-組員1`,
-                `test001-組員2`,
-                `test001-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_1.png`,
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_2.png`,
-                `./Source/IMG/StudentGroupsProjectPhoto/test1_3.png`
-            ],
-        },
-        {
-            Name             : `test004`, //作品名稱
+            Name             : `補形湯`, //作品名稱
             Type             : `ThreeDimensionalModeling`, //作品種類
-            About            : `test004-自介`, //自介
-            ProjectMeta      : `test004-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
+            About            : `陳恩嘉 Chen,En-Chia`, //小組介紹
+            ProjectMeta      : `補形湯為以形補形為概念出發的茶飲。
+            人們對以食補身有極大的迷思也因此傷害了許多物種，在這裡選用植物性有相同功能的民間配方去制成這些動物的形體，達到喝下去補身同時也有心安的感受。`, //作品介紹
+            ImagePhotoPath   : `./Source/IMG/StudentGroupsImagePhoto/補形湯/1.jpg`, //形象照路徑
             MumberName       : [   //組員名稱
-                `test004-組員1`,
-                `test004-組員2`,
-                `test004-組員3`,
+                `陳恩嘉 Chen,En-Chia`,
             ],
             ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
+                
             ],
             ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
+                `./Source/IMG/StudentGroupsProjectPhoto/補形湯/1.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/補形湯/2.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/補形湯/3.jpg`,
             ],
         },
         {
-            Name             : `test005`, //作品名稱
+            Name             : `鏤空茶具`, //作品名稱
             Type             : `ThreeDimensionalModeling`, //作品種類
-            About            : `test005-自介`, //自介
-            ProjectMeta      : `test005-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
+            About            : `倪田Ni,Tian`, //小組介紹
+            ProjectMeta      : `使用鏤空雕刻手法在不改變太多茶器傳統的造型下給予器具更多的裝飾可能性；因為鏤空手法會破壞坯體影響實用性，所以藉由分離與接合兩層土壁達到保留的目的；蜂窩圖騰有著傳統的堆疊穩固與現代的直線幾何圖形融合，象徵著時代的交合與轉變，所以選擇這個圖騰來裝飾傳統茶具，以刻劃線條呈現出點、面、光
+            影與觸覺的變化給予茶器造型上立體的裝飾。`, //作品介紹
+            ImagePhotoPath   : `./Source/IMG/StudentGroupsImagePhoto/鏤空茶具/1.jpg`, //形象照路徑
             MumberName       : [   //組員名稱
-                `test005-組員1`,
-                `test005-組員2`,
-                `test005-組員3`,
+                `倪田Ni,Tian`,
             ],
             ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
+                
             ],
             ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test006`, //作品名稱
-            Type             : `ThreeDimensionalModeling`, //作品種類
-            About            : `test006-自介`, //自介
-            ProjectMeta      : `test006-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test006-組員1`,
-                `test006-組員2`,
-                `test006-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test007`, //作品名稱
-            Type             : `GraphicDesign`, //作品種類
-            About            : `test007-自介`, //自介
-            ProjectMeta      : `test007-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test007-組員1`,
-                `test007-組員2`,
-                `test007-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test008`, //作品名稱
-            Type             : `GraphicDesign`, //作品種類
-            About            : `test008-自介`, //自介
-            ProjectMeta      : `test008-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test008-組員1`,
-                `test008-組員2`,
-                `test008-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test009`, //作品名稱
-            Type             : `GraphicDesign`, //作品種類
-            About            : `test009-自介`, //自介
-            ProjectMeta      : `test009-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test009-組員1`,
-                `test009-組員2`,
-                `test009-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test010`, //作品名稱
-            Type             : `PictureBooks`, //作品種類
-            About            : `test010-自介`, //自介
-            ProjectMeta      : `test010-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test010-組員1`,
-                `test010-組員2`,
-                `test010-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test011`, //作品名稱
-            Type             : `PictureBooks`, //作品種類
-            About            : `test011-自介`, //自介
-            ProjectMeta      : `test011-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test011-組員1`,
-                `test011-組員2`,
-                `test011-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test012`, //作品名稱
-            Type             : `PictureBooks`, //作品種類
-            About            : `test012-自介`, //自介
-            ProjectMeta      : `test012-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test012-組員1`,
-                `test012-組員2`,
-                `test012-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test013`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test013-自介`, //自介
-            ProjectMeta      : `test013-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test013-組員1`,
-                `test013-組員2`,
-                `test013-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test014`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test014-自介`, //自介
-            ProjectMeta      : `test014-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test014-組員1`,
-                `test014-組員2`,
-                `test014-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test015`, //作品名稱
-            Type             : `Album`, //作品種類
-            About            : `test015-自介`, //自介
-            ProjectMeta      : `test015-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test015-組員1`,
-                `test015-組員2`,
-                `test015-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test016`, //作品名稱
-            Type             : `Animation`, //作品種類
-            About            : `test016-自介`, //自介
-            ProjectMeta      : `test016-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test016-組員1`,
-                `test016-組員2`,
-                `test016-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test017`, //作品名稱
-            Type             : `Animation`, //作品種類
-            About            : `test017-自介`, //自介
-            ProjectMeta      : `test017-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test017-組員1`,
-                `test017-組員2`,
-                `test017-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
-            ],
-        },
-        {
-            Name             : `test018`, //作品名稱
-            Type             : `Animation`, //作品種類
-            About            : `test018-自介`, //自介
-            ProjectMeta      : `test018-作品介紹`, //作品介紹
-            ImagePhotoPath   : `./Source/IMG/PhoneMenuViewFacebookIcon.svg`, //形象照路徑
-            MumberName       : [   //組員名稱
-                `test018-組員1`,
-                `test018-組員2`,
-                `test018-組員3`,
-            ],
-            ProjectMoviePath  : [   //作品影片路徑
-                `./Source/IMG/StudentGroupsProjectMovie/火柴人集體升天.mp4`
-            ],
-            ProjectPhotoPath : [   //作品照片路徑
-                `./Source/IMG/PhoneMenuViewFacebookIcon.svg`
+                `./Source/IMG/StudentGroupsProjectPhoto/鏤空茶具/1.jpg`,
+                `./Source/IMG/StudentGroupsProjectPhoto/鏤空茶具/2.jpg`,
             ],
         },
     ]

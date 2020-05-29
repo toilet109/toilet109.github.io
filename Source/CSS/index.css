@@ -1,3 +1,7 @@
+p{
+    white-space: pre-line;
+}
+
 * {
     font-family: "Taipei Sans TC Beta Regular";
 }
@@ -152,7 +156,7 @@ body::-webkit-scrollbar {
     z-index: -995;
 }
 
-#PhoneThreeDimensionalModelingBTN,#PhoneGraphicDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
+#PhoneThreeDimensionalModelingBTN,#PhonePackagingDesignBTN,#PhonePictureBooksBTN,#PhoneAlbumBTN,#PhoneAnimationBTN{
     border: 1px solid  #c3c3c3;
 }
 
@@ -235,23 +239,6 @@ body::-webkit-scrollbar {
     z-index: -999;
 }
 
-    /*
-#ProjectMainViewer{
-    position: fixed;
-    margin: 0px;
-    background: url("../IMG/StudentGroupsProjectPhoto/火柴人集體升天.png") no-repeat top center;
-    background-size: cover;
-    -webkit-mask: url("../IMG/ProjectViewMainViewer.svg") no-repeat center center;
-    mask: url("../IMG/ProjectViewMainViewer.svg"    ) no-repeat center center;
-    -webkit-mask-size: contain;
-    
-    mask-size: contain;
-    width: 100%;
-    top:-15%;
-    height: 120%;
-    padding: 0px;
-}
-*/
 #ProjectMainBlock{
     position: absolute;
     /*background-color:#cecece;*/

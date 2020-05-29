@@ -1,3 +1,7 @@
+p{
+    white-space: pre-line;
+}
+
 html {
     touch-action: none;
 }

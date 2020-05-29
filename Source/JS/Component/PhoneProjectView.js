@@ -45,9 +45,9 @@ const PhoneProjectView = {
                         </div>
                     </div>
                     <div class="col">
-                        <div id="PhoneGraphicDesignBTN">
-                            <a @click="ChangeNextPage('GraphicDesign')">
-                                <img height="100%" width="100%" src="./Source/IMG/GraphicDesign.png" />
+                        <div id="PhonePackagingDesignBTN">
+                            <a @click="ChangeNextPage('PackagingDesign')">
+                                <img height="100%" width="100%" src="./Source/IMG/PackagingDesign.png" />
                             </a>
                         </div>
                     </div>
@@ -135,14 +135,14 @@ const PhoneProjectView = {
            
             /* 由右向左載入主題分類的分組動畫 */
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInRight delay-1500ms";
-            document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInRight delay-1500ms";
+            document.getElementsByTagName("div").PhonePackagingDesignBTN.className             = "animated fadeInRight delay-1500ms";
             document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeInRight delay-1500ms";
             document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeInRight delay-1500ms";
             document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeInRight delay-1500ms";
         }else{
             /* 由左向右載入主題分類的分組動畫 */
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeInLeft delay-0s";
-            document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeInLeft delay-0s";
+            document.getElementsByTagName("div").PhonePackagingDesignBTN.className             = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeInLeft delay-0s";
             document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeInLeft delay-0s";
@@ -185,7 +185,7 @@ const PhoneProjectView = {
                 
                 /* 由左向右切出主題分類的分組動畫 */
                 document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutRight delay-0s";
-                document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutRight delay-0s";
+                document.getElementsByTagName("div").PhonePackagingDesignBTN.className             = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeOutRight delay-0s";
                 document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeOutRight delay-0s";
@@ -197,7 +197,7 @@ const PhoneProjectView = {
         ChangeNextPage:function(ProjectType) {
             /* 由右向左切出主題分類的分組動畫 */
             document.getElementsByTagName("div").PhoneThreeDimensionalModelingBTN.className  = "animated fadeOutLeft delay-0s";
-            document.getElementsByTagName("div").PhoneGraphicDesignBTN.className             = "animated fadeOutLeft delay-0s";
+            document.getElementsByTagName("div").PhonePackagingDesignBTN.className             = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhonePictureBooksBTN.className              = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhoneAlbumBTN.className                     = "animated fadeOutLeft delay-0s";
             document.getElementsByTagName("div").PhoneAnimationBTN.className                 = "animated fadeOutLeft delay-0s"; 
