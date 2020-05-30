@@ -5,7 +5,7 @@ p{
 * {
     font-family: "Taipei Sans TC Beta Regular";
 }
-  
+
 @font-face {
     font-family: "Taipei Sans TC Beta Light";
     src: url("./TaipeiSansTCBeta-Light.ttf");
@@ -83,6 +83,16 @@ body{
 
 body::-webkit-scrollbar {
     display:none;
+}
+
+#hideTop {
+    position: absolute;
+    margin: 0px;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    z-index: -1000;
 }
 
 #IndexBackground{

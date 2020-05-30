@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Source/
+
+Sitemap: https://toilet109.github.io/sitemap.xml
