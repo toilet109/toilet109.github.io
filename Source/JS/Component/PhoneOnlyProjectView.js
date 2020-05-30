@@ -114,8 +114,10 @@ const PhoneOnlyProjectView = {
                 
                 <div id="PhoneMumberTitle">
                     <h3>製作成員<hr></h3>
-                    <img width="100%" height="100%" v-bind:src="ImagePhotoPath" />
-                    <br><br><p>{{About}}</p>
+                    <div v-for="(item,index) in MumberPhotoPath">
+                        <img width="100%" height="100%" v-bind:src="item" />
+                        <br><br><p>{{MumberName[index]}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -266,6 +268,14 @@ const PhoneOnlyProjectView = {
         /* 載入作品照片路徑 */
         ProjectPhotoPath:function(value) {
             return StudentGroups.data.GroupsData[this.NowSelectGroupID].ProjectPhotoPath;
-        }
+        },
+        /* 載入作品照片路徑 */
+        MumberPhotoPath:function(value) {
+            return StudentGroups.data.GroupsData[this.NowSelectGroupID].MumberPhotoPath;
+        },
+        /* 載入自介 */
+        MumberName:function(value) {
+            return StudentGroups.data.GroupsData[this.NowSelectGroupID].MumberName;
+        },
     },
 };

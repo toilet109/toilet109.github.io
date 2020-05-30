@@ -74,11 +74,6 @@ var app = new Vue({
                 name: `不支援手機旋轉`,
                 component: PhoneCantTransformView
             },
-            {
-                path: `/WaitView`,
-                name: `維修頁面`,
-                component: WaitView
-            },
         ]
     }),
     methods: {

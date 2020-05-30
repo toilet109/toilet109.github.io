@@ -96,7 +96,7 @@ const IndexView = {
             document.getElementsByTagName("div").EnglishTitle.className     = "animated fadeOutRight   delay-500ms";
             document.getElementsByTagName("div").DownBtn.className          = "animated fadeOutDown    delay-0s";
 
-            app.DelayRoutePush("/WaitView",2000);
+            app.DelayRoutePush("/Project",2000);
         },
     },
 };

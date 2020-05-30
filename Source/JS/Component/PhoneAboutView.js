@@ -118,7 +118,7 @@ const PhoneAboutView = {
             document.getElementsByTagName("div").PhoneMenuViewFacebookIcon.className = "animated fadeOutDown  delay-500ms";
             document.getElementsByTagName("div").PhoneRightBtn.className             = "animated fadeOutLeft  delay-500ms";
             
-            app.DelayRoutePush("/WaitView",1500);
+            app.DelayRoutePush("/phoneProject",1500);
         },
     },
 };
