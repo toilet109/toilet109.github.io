@@ -41,7 +41,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsMumberPhoto/Woong Kitchen/1.jpg`,
             ],
             ProjectMoviePath  : [   //作品影片路徑
-                
+                `https://www.youtube.com/watch_popup?v=BVVEccqKI00;vq=hd1080&amp;version=3`,
+                `https://www.youtube.com/watch_popup?v=F3a4rU4-ZlI;vq=hd1080&amp;version=3`,
+                `https://www.youtube.com/watch_popup?v=hYmyUAkW3iA;vq=hd1080&amp;version=3`,
             ],
             ProjectPhotoPath : [   //作品照片路徑
                 `./Source/IMG/StudentGroupsProjectPhoto/Woong Kitchen/1.jpg`,
@@ -196,7 +198,7 @@ StudentGroups.data = {
             ],
             ProjectMoviePath : [   //作品影片路徑
                 `https://www.youtube.com/embed/aRYFeUXQlwc`,
-
+                `https://www.youtube.com/embed/IGqxoGGcwDI`,
             ],
             ProjectPhotoPath : [   //作品照片路徑
                 `./Source/IMG/StudentGroupsProjectPhoto/Tear pot/1.jpg`,
@@ -220,6 +222,7 @@ StudentGroups.data = {
             ],
             ProjectMoviePath  : [   //作品影片路徑
                 `https://www.youtube.com/embed/7YL6OLRzvno`,
+                `https://www.youtube.com/embed/Ot19ZjdTSc0`,
             ],
             ProjectPhotoPath : [   //作品照片路徑
                 `./Source/IMG/StudentGroupsProjectPhoto/生產斂 Blindness/1.jpg`,
@@ -244,7 +247,7 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsMumberPhoto/魚月島 The island of the fish and moon/3.jpg`,
             ],
             ProjectMoviePath  : [   //作品影片路徑
-                `https://www.youtube.com/embed/aRYFeUXQlwc`,
+                `https://www.youtube.com/embed/N8YM-Ga755Q`,
             ],
             ProjectPhotoPath : [   //作品照片路徑
                 `./Source/IMG/StudentGroupsProjectPhoto/魚月島 The island of the fish and moon/1.jpg`,
