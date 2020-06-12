@@ -95,6 +95,12 @@ const PhoneOnlyProjectView = {
                     <p>{{ProjectMeta}}<br><br></p>
 
                     <h3>作品影音<hr></h3>
+                    <div v-for="(item,index) in ProjectLinkPath">
+                        <div class="AlbumFrame">
+                            <iframe v-if="item.Type === 'Album'" v-bind:src="item.Link" width="500 transform！" height="500 transform！" scrolling="no" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+                        </div>
+                    </div>
+
                     <div v-for="(item,index) in ProjectMoviePath">
                         <iframe width="100%" v-bind:src="item" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br><br>
@@ -269,9 +275,13 @@ const PhoneOnlyProjectView = {
         ProjectPhotoPath:function(value) {
             return StudentGroups.data.GroupsData[this.NowSelectGroupID].ProjectPhotoPath;
         },
-        /* 載入作品照片路徑 */
+        /* 載入成員照片路徑 */
         MumberPhotoPath:function(value) {
             return StudentGroups.data.GroupsData[this.NowSelectGroupID].MumberPhotoPath;
+        },
+        /* 載入作品連結路徑 */
+        ProjectLinkPath:function(value) {
+            return StudentGroups.data.GroupsData[this.NowSelectGroupID].ProjectLinkPath;
         },
         /* 載入自介 */
         MumberName:function(value) {

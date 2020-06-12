@@ -626,6 +626,30 @@ body{
     padding: 0px;
 }
 
+.AlbumFrame{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    transform: scale(0.6);
+    transform-origin:0 0;
+    -ms-transform: scale(0.6); 
+    -ms-transform-origin:0 0;
+    -moz-transform: scale(0.6);
+    -moz-transform-origin:0 0;
+    -o-transform: scale(0.6);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.6); 
+    -webkit-transform-origin: 0 0;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.AlbumFrame{
+    margin:0;
+    width: 100%;
+}
+
 #PhoneCantTransformViewBackground{
     position: absolute;
     margin: 0px;

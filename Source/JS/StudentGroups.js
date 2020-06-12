@@ -26,6 +26,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/鏤空茶具/1.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/鏤空茶具/2.jpg`,
             ],
+            ProjectLinkPath : [   //作品連結路徑
+
+            ],
         },
         {
             Name             : `Woong Kitchen`, //作品名稱
@@ -47,6 +50,9 @@ StudentGroups.data = {
             ],
             ProjectPhotoPath : [   //作品照片路徑
                 `./Source/IMG/StudentGroupsProjectPhoto/Woong Kitchen/1.jpg`,
+            ],
+            ProjectLinkPath : [   //作品連結路徑
+
             ],
         },
         {
@@ -72,6 +78,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/揭露-人民的覺醒/4.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/揭露-人民的覺醒/5.jpg`,
             ],
+            ProjectLinkPath : [   //作品連結路徑
+
+            ],
         },
         {
             Name             : `日日藥時`, //作品名稱
@@ -92,6 +101,9 @@ StudentGroups.data = {
             ProjectPhotoPath : [   //作品照片路徑
                 `./Source/IMG/StudentGroupsProjectPhoto/日日藥時/1.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/日日藥時/2.jpg`,
+            ],
+            ProjectLinkPath : [   //作品連結路徑
+
             ],
         },
         {
@@ -114,6 +126,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/補形湯/1.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/補形湯/2.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/補形湯/3.jpg`,
+            ],
+            ProjectLinkPath : [   //作品連結路徑
+
             ],
         },
 
@@ -138,6 +153,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/太陽夜行: The sun travels in the night/2.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/太陽夜行: The sun travels in the night/3.jpg`,
             ],
+            ProjectLinkPath : [   //作品連結路徑
+
+            ],
         },
         {
             Name             : `短髮村`, //作品名稱
@@ -160,6 +178,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/短髮村/2.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/短髮村/3.jpg`,
             ],
+            ProjectLinkPath : [   //作品連結路徑
+
+            ],
         },
         {
             Name             : `日頭`, //作品名稱
@@ -181,6 +202,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/日頭/1.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/日頭/2.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/日頭/3.jpg`,
+            ],
+            ProjectLinkPath : [   //作品連結路徑
+                {Type:`Album`,Link:`https://streetvoice.com/music/embed/?id=614577&amp;s=l`}
             ],
         },
         {
@@ -206,6 +230,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/Tear pot/3.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/Tear pot/4.jpg`,
             ],
+            ProjectLinkPath : [   //作品連結路徑
+
+            ],
         },
         {
             Name             : `生產斂 Blindness`, //作品名稱
@@ -227,6 +254,9 @@ StudentGroups.data = {
             ProjectPhotoPath : [   //作品照片路徑
                 `./Source/IMG/StudentGroupsProjectPhoto/生產斂 Blindness/1.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/生產斂 Blindness/2.jpg`,
+            ],
+            ProjectLinkPath : [   //作品連結路徑
+
             ],
         },
         {
@@ -253,6 +283,9 @@ StudentGroups.data = {
                 `./Source/IMG/StudentGroupsProjectPhoto/魚月島 The island of the fish and moon/1.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/魚月島 The island of the fish and moon/2.jpg`,
                 `./Source/IMG/StudentGroupsProjectPhoto/魚月島 The island of the fish and moon/3.jpg`,
+            ],
+            ProjectLinkPath : [   //作品連結路徑
+
             ],
         },
     ]
